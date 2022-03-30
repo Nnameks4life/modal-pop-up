@@ -5,7 +5,8 @@ module.exports = {
     colors:{'primary-orange':'#DD4F05',
   'primary-black':'#282828',
 'primary-white':'#ffffff',
-'secondary-white':'#F5F5F5'},
+'secondary-white':'#F5F5F5',
+},
   fontSize:{
    '3tl':'32px',
    '1tl':'16px'
