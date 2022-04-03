@@ -18,10 +18,10 @@ export default function Buyer() {
   return (
     <section className="container  mx-auto">
       <div className="flex justify-center flex-row flex-nowrap">
-        <div className="w-full basis-1/2">
+        <div className="hidden md:block w-full basis-1/2">
           <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="basis-1/2 m-3">
+        <div className="md:basis-1/2 m-3">
           <div className="flex pt-8 mx-4  flex-row">
             <h5 className="basis-1/2 font-extrabold ">Back</h5>
             <h5 className="basis-1/2 text-1tl font-light">
@@ -53,7 +53,7 @@ export default function Buyer() {
             <div className="mt-3">
               <label
                 htmlFor="email"
-                class="text-sm font-medium leading-none text-gray-700"
+                className="text-sm font-medium leading-none text-gray-700"
               >
                 Email address
               </label>
@@ -80,36 +80,36 @@ export default function Buyer() {
                 onChange={handleChange}
               />
             </div>
-            <div class="mt-10 flex items-center justify-between">
-              <div class="flex items-center">
+            <div className="mt-10 flex items-center justify-between">
+              <div className="flex items-center">
                 <input
                   id="remember_me"
                   type="checkbox"
-                  class="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
+                  className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
                 />
                 <label
                   for="remember_me"
-                  class="ml-2 block text-sm leading-5 text-gray-900"
+                  className="ml-2 block text-sm leading-5 text-gray-900"
                 >
                   {" "}
                   I agree to terms & condition{" "}
                 </label>
               </div>
               </div>
-            <div class="mt-6 ">
-              <button class="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+            <div className="mt-6 ">
+              <button className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
                 Register
               </button>
               </div>
               
           </form>
           <div className="mx-11 mt-8">
-            <div class="w-full flex items-center justify-between py-5">
-              <hr class="w-full text-secondary-white" />
-              <p class="text-base font-medium leading-4 px-2.5 text-gray-400">
+            <div className="w-full flex items-center justify-between py-5">
+              <hr className="w-full text-secondary-white" />
+              <p className="text-base font-medium leading-4 px-2.5 text-gray-400">
                 or
               </p>
-              <hr class="w-full text-secondary-white"></hr>
+              <hr className="w-full text-secondary-white"></hr>
             </div>
           </div>
           <div className="mx-11">

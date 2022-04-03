@@ -61,6 +61,7 @@ export default function Seller() {
   return (
     <>
       <FirstRegisterPage handleChange={handleChange} registerDetail={registerDetail}/>
+      <SecondResgisterPage handleChange={handleChange} registerDetail={registerDetail}/>
       
     </>
                   
