@@ -7,10 +7,10 @@ export default function Register(){
   return (
     <section className="container  mx-auto">
       <div className="flex justify-center flex-row flex-nowrap">
-        <div className="w-full basis-1/2">
+        <div className="hidden md:block w-full basis-1/2">
           <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="basis-1/2 m-3">
+        <div className="md:basis-1/2 m-3">
           <div className="flex pt-8 mx-4  flex-row">
             <h5 className="basis-1/2 font-extrabold ">Back</h5>
             <h5 className="basis-1/2 text-1tl font-light">

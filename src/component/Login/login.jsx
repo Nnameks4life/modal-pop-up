@@ -1,6 +1,7 @@
 import React from "react";
 import grainMap from "../../photos/grainMap.jpeg";
 import { useState } from "react";
+import facebook from "../../photos/facebook 1.png";
 
 export default function Login() {
   const [loginDetail, setLoginDetail] = useState({
@@ -102,9 +103,9 @@ export default function Login() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  inline-flex border-transparent rounded-lg "
+              className="mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex space-x-12 border-transparent rounded-lg "
             >
-              <div className="pl-5">
+              <div className="pl-2">
                 <svg
                   width="50"
                   height="20"
@@ -130,7 +131,7 @@ export default function Login() {
                   />
                 </svg>
               </div>
-              <div className="pl-12">
+              <div className="pl-8">
                 <p className="text-base">Sign in with Google</p>
               </div>
             </button>
@@ -138,25 +139,12 @@ export default function Login() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  inline-flex border-transparent rounded-lg "
+              className="flex space-x-12 mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  border-transparent rounded-lg "
             >
               <div className="pl-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  version="1.0"
-                  x="0px"
-                  y="0px"
-                  width="50"
-                  height="50"
-                  viewBox="0 0 50 50"
-                  className="icon icons8-Facebook-Filled"
-                >
-                  {" "}
-                  <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path>
-                </svg>
+                <img src={facebook}/>
               </div>
-              <div className="pl-12">
+              <div className="pl-8">
                 <p className="text-base">Sign in with Facebook</p>
               </div>
             </button>

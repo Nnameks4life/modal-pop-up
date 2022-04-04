@@ -5,10 +5,10 @@ export default function SecondResgisterPage ({handleChange, registerDetail}) {
   return (
     <section className="container  mx-auto">
       <div className="flex justify-center flex-row flex-nowrap">
-        <div className="w-full basis-1/2">
+        <div className="hidden md:block w-full basis-1/2">
           <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="basis-1/2 m-3">
+        <div className="md:basis-1/2 m-3">
           <div className="mx-11 pt-20 xl:text-primary-black text-3tl font-extrabold">
             <h4 className='md:text-primary-orange'>Register as Seller</h4>
           </div>
@@ -75,16 +75,25 @@ export default function SecondResgisterPage ({handleChange, registerDetail}) {
               />
                </div>
     
-            
+               <div className="mt-10 flex items-center justify-between">
+              <div className="flex items-center">
+                <input
+                  id="remember_me"
+                  type="checkbox"
+                  className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
+                />
+                <label
+                  for="remember_me"
+                  className="ml-2 block text-sm leading-5 text-gray-900"
+                >
+                  {" "}
+                  I agree to terms & condition{" "}
+                </label>
+              </div>
+              </div>
             
             </div>
-           
-            <div className="mt-6 ">
-              <a href='/next' className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
-                Next
-              </a>
-              </div>
-          
+            
         
               </div>
       </div>
