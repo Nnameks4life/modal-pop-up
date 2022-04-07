@@ -24,21 +24,21 @@ export default function Login() {
         <div className="md:basis-1/2 m-3">
           <div className="flex pt-8 mx-4  flex-row">
             <h5 className="basis-1/2 font-extrabold ">Back</h5>
-            <h5 className="basis-1/2 text-1tl font-light">
+            <h5 className="basis-1/2 text-1tl font-light font-Mulish">
               Don't have an account?{" "}
               <a className="text-primary-orange" href="/signup">
                 SignIn
               </a>
             </h5>
           </div>
-          <div className="mx-11 pt-20 text-primary-black text-3tl font-extrabold">
+          <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
             <h4>Welcome back</h4>
           </div>
           <form onSubmit={handleSubmit} className="mx-11 pt-7">
             <div className="mt-3">
               <label
                 htmlFor="email"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="text-sm font-Mulish font-medium leading-none text-gray-700"
               >
                 Email address
               </label>
@@ -53,7 +53,7 @@ export default function Login() {
             <div className="mt-7">
               <label
                 htmlFor="password"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="text-sm font-Mulish font-medium leading-none text-gray-700"
               >
                 Password
               </label>
@@ -74,7 +74,7 @@ export default function Login() {
                 />
                 <label
                   for="remember_me"
-                  className="ml-2 block text-sm leading-5 text-gray-900"
+                  className="ml-2 font-Mulish block text-sm leading-5 text-gray-900"
                 >
                   {" "}
                   Remember me{" "}
@@ -132,7 +132,7 @@ export default function Login() {
                 </svg>
               </div>
               <div className="pl-8">
-                <p className="text-base">Sign in with Google</p>
+                <p className="text-base font-Mulish">Sign in with Google</p>
               </div>
             </button>
           </div>
@@ -145,7 +145,7 @@ export default function Login() {
                 <img src={facebook}/>
               </div>
               <div className="pl-8">
-                <p className="text-base">Sign in with Facebook</p>
+                <p className="text-base font-Mulish">Sign in with Facebook</p>
               </div>
             </button>
           </div>

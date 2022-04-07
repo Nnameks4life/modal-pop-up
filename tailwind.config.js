@@ -6,13 +6,14 @@ module.exports = {
   'primary-black':'#282828',
 'primary-white':'#ffffff',
 'secondary-white':'#F5F5F5',
+'primary-red':"#D50000"
 },
   fontSize:{
-   '3tl':'32px',
+   '3tl':'28px',
    '1tl':'16px'
   },
   fontWeight:{
-    'extrabold':800,
+    'extrabold':900,
     'light':300
   },
   screens: {
@@ -28,6 +29,9 @@ module.exports = {
       
       '2xl': '1536px',
     
+  },
+  fontFamily:{
+    "Mulish":['Mulish','sans-serif']
   },
     extend: {}
   },

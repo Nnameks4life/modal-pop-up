@@ -24,22 +24,22 @@ export default function Buyer() {
         </div>
         <div className="md:basis-1/2 m-3">
           <div className="flex pt-8 mx-4  flex-row">
-            <h5 className="basis-1/2 font-extrabold ">Back</h5>
-            <h5 className="basis-1/2 text-1tl font-light">
+            <h5 className="basis-1/2 font-extrabold font-Mulish ">Back</h5>
+            <h5 className="basis-1/2 font-Mulish text-1tl font-light">
               Already have an account?{" "}
               <a className="text-primary-orange" href="/signup">
                 Login
               </a>
             </h5>
           </div>
-          <div className="mx-11 pt-20 text-primary-black text-3tl font-extrabold">
+          <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
             <h4>Register as Buyer</h4>
           </div>
           <form onSubmit={handleSubmit} className="mx-11 pt-7">
           <div className="mt-3">
               <label
                 htmlFor="fullname"
-                class="text-sm font-medium leading-none text-gray-700"
+                className="text-sm font-Mulish font-medium leading-none text-gray-700"
               >
                 Full Name
               </label>
@@ -54,7 +54,7 @@ export default function Buyer() {
             <div className="mt-3">
               <label
                 htmlFor="email"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="text-sm font-Mulish font-medium leading-none text-gray-700"
               >
                 Email address
               </label>
@@ -69,7 +69,7 @@ export default function Buyer() {
             <div className="mt-7">
               <label
                 htmlFor="password"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="text-sm font-Mulish font-medium leading-none text-gray-700"
               >
                 Password
               </label>
@@ -90,7 +90,7 @@ export default function Buyer() {
                 />
                 <label
                   for="remember_me"
-                  className="ml-2 block text-sm leading-5 text-gray-900"
+                  className="ml-2 font-Mulish block text-sm leading-5 text-gray-900"
                 >
                   {" "}
                   I agree to terms & condition{" "}
@@ -98,7 +98,7 @@ export default function Buyer() {
               </div>
               </div>
             <div className="mt-6 ">
-              <button className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+              <button className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
                 Register
               </button>
               </div>
@@ -107,7 +107,7 @@ export default function Buyer() {
           <div className="mx-11 mt-8">
             <div className="w-full flex items-center justify-between py-5">
               <hr className="w-full text-secondary-white" />
-              <p className="text-base font-medium leading-4 px-2.5 text-gray-400">
+              <p className="text-base font-Mulish font-medium leading-4 px-2.5 text-gray-400">
                 or
               </p>
               <hr className="w-full text-secondary-white"></hr>
@@ -145,7 +145,7 @@ export default function Buyer() {
                 </svg>
               </div>
               <div className="pl-8">
-                <p className="text-base">Sign in with Google</p>
+                <p className="text-base font-Mulish">Sign in with Google</p>
               </div>
             </button>
           </div>
@@ -158,7 +158,7 @@ export default function Buyer() {
                 <img src={facebook}/>
               </div>
               <div className="pl-8">
-                <p className="text-base">Sign in with Facebook</p>
+                <p className="text-base font-Mulish">Sign in with Facebook</p>
               </div>
             </button>
           </div>

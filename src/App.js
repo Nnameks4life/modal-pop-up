@@ -3,6 +3,7 @@ import Login from './component/Login/login'
 import Register from './component/SignUp/register'
 import Buyer from './component/SignUp/buyer'
 import Seller from './component/SignUp/seller';
+import ForgotPassword from './component/ForgotPassword/forgotPassword'
 function App() {
   return (
     <div >
@@ -12,6 +13,7 @@ function App() {
         <Route exact path="/buyer" element={<Buyer />} />
         <Route exact path="/register" element={<Register/>} />
         <Route exact path="/seller" element={<Seller />} />
+        <Route exact path="/password" element={<ForgotPassword/>} />
       </Routes>
     </BrowserRouter>
       
