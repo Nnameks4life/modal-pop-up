@@ -6,11 +6,13 @@ module.exports = {
   'primary-black':'#282828',
 'primary-white':'#ffffff',
 'secondary-white':'#F5F5F5',
-'primary-red':"#D50000"
+'primary-red':"#D50000",
+'footer-black':'#1B1B1B'
 },
   fontSize:{
    '3tl':'28px',
-   '1tl':'16px'
+   '1tl':'16px',
+   '2tl':'14px'
   },
   fontWeight:{
     'extrabold':900,

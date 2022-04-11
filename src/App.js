@@ -4,9 +4,10 @@ import Register from './component/SignUp/register'
 import Buyer from './component/SignUp/buyer'
 import Seller from './component/SignUp/seller';
 import ForgotPassword from './component/ForgotPassword/forgotPassword'
+import HomePage from './component/MarketPlace/homePage'
+
 function App() {
   return (
-    <div >
       <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Login/>} />
@@ -14,11 +15,13 @@ function App() {
         <Route exact path="/register" element={<Register/>} />
         <Route exact path="/seller" element={<Seller />} />
         <Route exact path="/password" element={<ForgotPassword/>} />
+        <Route exact path="/market" element={<HomePage/>} />
+        
       </Routes>
     </BrowserRouter>
       
      
-    </div>
+   
   );
 }
 
