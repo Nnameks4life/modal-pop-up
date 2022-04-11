@@ -11,8 +11,8 @@ export default function Footer() {
     <div className='flex flex-row flex-wrap justify-between p-14'>
      <div>
        <img src={TofaImg}/>
-       <p className='pt-3'>Copyright @ 2022 Traders Of Africa</p>
-       <p className='pt-1'>All right reserved</p>
+       <p className='pt-3 text-2tl'>Copyright @ 2022 Traders Of Africa.</p>
+       <p className='pt-1 text-2tl'>All right reserved</p>
          <div className='pt-6 flex p-0'>
          <img className='p-2' src={instagram}/>
          <img className='p-2' src={discord}/>
