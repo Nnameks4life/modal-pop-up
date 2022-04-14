@@ -5,6 +5,7 @@ import Buyer from './component/SignUp/buyer'
 import Seller from './component/SignUp/seller';
 import ForgotPassword from './component/ForgotPassword/forgotPassword'
 import HomePage from './component/MarketPlace/homePage'
+import Rfq from './component/RFQPage/rfq'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/seller" element={<Seller />} />
         <Route exact path="/password" element={<ForgotPassword/>} />
         <Route exact path="/market" element={<HomePage/>} />
+        <Route exact path="/rfq" element={<Rfq/>} />
         
       </Routes>
     </BrowserRouter>
