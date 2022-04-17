@@ -17,12 +17,12 @@ export default function Buyer() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="container  mx-auto">
-      <div className="flex justify-center flex-row flex-nowrap">
-        <div className="hidden md:block w-full basis-1/2">
+    <section className="container m-0">
+      <div className="flex justify-center flex-nowrap">
+        <div className="hidden md:block w-full">
           <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="md:basis-1/2 m-3">
+        <div className="w-full">
           <div className="flex pt-8 mx-4  flex-row">
             <h5 className="basis-1/2 font-extrabold font-Mulish ">Back</h5>
             <h5 className="basis-1/2 font-Mulish text-1tl font-light">
@@ -116,9 +116,9 @@ export default function Buyer() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex space-x-12 border-transparent rounded-lg "
+              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex  border-transparent rounded-lg "
             >
-              <div className="pl-4">
+              <div className="md:pl-4">
                 <svg
                   width="50"
                   height="20"
@@ -144,21 +144,21 @@ export default function Buyer() {
                   />
                 </svg>
               </div>
-              <div className="pl-8">
-                <p className="text-base font-Mulish">Sign in with Google</p>
+              <div className="pl-1 md:pl-8">
+                <p className=" md:text-base font-Mulish">Sign in with Google</p>
               </div>
             </button>
           </div>
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="flex space-x-12 mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  border-transparent rounded-lg "
+              className="md:space-x-12 flex mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  border-transparent rounded-lg "
             >
-              <div className="pl-5">
+              <div className="pl:1 md:pl-4">
                 <img src={facebook}/>
               </div>
-              <div className="pl-8">
-                <p className="text-base font-Mulish">Sign in with Facebook</p>
+              <div className="pl-1 md:pl-8">
+                <p className="md:text-base font-Mulish">Sign in with Facebook</p>
               </div>
             </button>
           </div>

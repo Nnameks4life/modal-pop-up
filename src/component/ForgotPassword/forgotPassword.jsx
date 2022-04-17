@@ -72,13 +72,13 @@ export default function ForgotPassword() {
 
   return (
     <section className="container mx-auto">
-      <div className="flex justify-center flex-row flex-nowrap">
-        <section className="hidden bg-secondary-white md:block w-full basis-1/2">
+      <div className="flex justify-center flex-row">
+        <section className="hidden bg-secondary-white md:block w-full">
           <div className='flex justify-center pt-36'>
           <img className='flex justify-center' src={password} alt="password photo" />
         </div>
         </section>
-        <div className="md:basis-1/2 m-3">
+        <div className="md:w-full m-3">
           <div className="flex pt-8 mx-4  flex-row">
             <h5 className="basis-1/2 font-extrabold ">Back</h5>
           </div>

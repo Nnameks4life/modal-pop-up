@@ -16,12 +16,12 @@ export default function Login() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="container  mx-auto">
-      <div className="flex justify-center flex-row flex-nowrap">
-        <div className="hidden md:block w-full basis-1/2">
+    <section className="container m-0">
+      <div className="flex justify-center flex-nowrap">
+        <div className="hidden md:block w-full">
           <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="md:basis-1/2 m-3">
+        <div className="w-full">
           <div className="flex pt-8 mx-4  flex-row">
             <h5 className="basis-1/2 font-extrabold ">Back</h5>
             <h5 className="basis-1/2 text-1tl font-light font-Mulish">
@@ -65,7 +65,7 @@ export default function Login() {
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-10 flex items-center justify-between">
+            <div className="mt-10 flex justify-between">
               <div className="flex items-center">
                 <input
                   id="remember_me"
@@ -73,14 +73,14 @@ export default function Login() {
                   className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
                 />
                 <label
-                  for="remember_me"
-                  className="ml-2 font-Mulish block text-sm leading-5 text-gray-900"
+                  htmlFor="remember_me"
+                  className="md:ml-2 font-Mulish block text-sm leading-5 text-gray-900"
                 >
-                  {" "}
-                  Remember me{" "}
+                 
+                  Remember me
                 </label>
               </div>
-              <a href="/" className="text-sm">
+              <a href="/" className="text-sm sm:text-center">
                 {" "}
                 Forgot your password?{" "}
               </a>
@@ -103,7 +103,7 @@ export default function Login() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex space-x-12 border-transparent rounded-lg "
+              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex border-transparent rounded-lg "
             >
               <div className="pl-2">
                 <svg
@@ -139,12 +139,12 @@ export default function Login() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="flex space-x-12 mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  border-transparent rounded-lg "
+              className="md:space-x-12 flex mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  border-transparent rounded-lg "
             >
-              <div className="pl-5">
+              <div className="pl:1 md:pl-4">
                 <img src={facebook}/>
               </div>
-              <div className="pl-8">
+              <div className="pl-1 md:pl-8">
                 <p className="text-base font-Mulish">Sign in with Facebook</p>
               </div>
             </button>
