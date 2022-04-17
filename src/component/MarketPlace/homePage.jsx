@@ -58,19 +58,53 @@ export default function HomePage() {
         </div>
         <section className="pl-4">
           <div className='flex'>
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="rounded overflow-hidden shadow-lg w-full p-3">
   <img src={productSourcing}/>
 </div>
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
+<div class="rounded overflow-hidden shadow-lg w-full p-3">
 <img src={tradeBanner}/>
 </div>
           </div>
           <section>
-            <h4>Popular Products In each Category</h4>
-            <div className='grid grid-column-4 grid-flow-col gap-4'>
-          <img src={Test} />
-          <img src={Texts} />
-          </div>
+            <h4 className='text-primary-orange pt-8 font-Mulish text-2tl font-bold'>Popular Products In each Category</h4>
+            <main className='grid pt-7 grid-column-4 grid-flow-col gap-4'>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img src={Test} />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Processed Rice</div>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+    </div>
+</div>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+<img src={Texts} />
+  <div class="px-6 py-4">
+    <p class="font-bold text-xl mb-2"> Processed Rice</p>
+  </div>
+  <div class="px-2 pt-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+    </div>
+</div>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img src={Test} />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Processed Rice</div>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+    </div>
+</div>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+<img src={Texts} />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Processed Rice</div>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+    </div>
+</div>
+          </main>
           </section>
         </section>
       </div>
