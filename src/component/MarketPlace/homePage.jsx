@@ -21,7 +21,7 @@ export default function HomePage() {
     <>
       <MarketNav />
       <div className="flex bg-dull-white p-10">
-        <div className="bg-primary-white w-64">
+        <div className="bg-primary-white w-64 mr-5">
           <ul>
             <li className="p-4">
               
@@ -56,9 +56,9 @@ export default function HomePage() {
       )}
           </ul>
         </div>
-        <section className="pl-4">
+        <section className=" bg-primary-white">
           <div className='flex'>
-          <div class="rounded overflow-hidden shadow-lg w-full p-3">
+          <div class="rounded overflow-hidden shadow-lg w-full p-3 mr-2">
   <img src={productSourcing}/>
 </div>
 <div class="rounded overflow-hidden shadow-lg w-full p-3">
@@ -66,43 +66,47 @@ export default function HomePage() {
 </div>
           </div>
           <section>
-            <h4 className='text-primary-orange pt-8 font-Mulish text-2tl font-bold'>Popular Products In each Category</h4>
-            <main className='grid pt-7 grid-column-4 grid-flow-col gap-4'>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img src={Test} />
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Processed Rice</div>
-  </div>
-  <div class="px-6 pt-4 pb-2">
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    </div>
+            <h4 className='text-primary-orange pt-11 m-2 font-Mulish text-2tl font-bold'>Popular Products In each Category</h4>
+            <main className='grid pt-7 grid-cols-4 gap-4 p-5'>
+            <div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
 </div>
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-<img src={Texts} />
-  <div class="px-6 py-4">
-    <p class="font-bold text-xl mb-2"> Processed Rice</p>
-  </div>
-  <div class="px-2 pt-2">
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    </div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
 </div>
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img src={Test} />
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Processed Rice</div>
-  </div>
-  <div class="px-6 pt-4 pb-2">
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    </div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
 </div>
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-<img src={Texts} />
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Processed Rice</div>
-  </div>
-  <div class="px-6 pt-4 pb-2">
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    </div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
+</div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
+</div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
+</div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
+</div>
+<div className="border border-dull-white">
+            <img className='mt-7' src={Test} alt='bag of cereal' />
+    <div class="font-light text-2tl p-2">Processed Rice</div>
+    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
 </div>
           </main>
           </section>

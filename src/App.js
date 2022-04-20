@@ -5,8 +5,9 @@ import Buyer from './component/SignUp/buyer'
 import Seller from './component/SignUp/seller';
 import ForgotPassword from './component/ForgotPassword/forgotPassword'
 import HomePage from './component/MarketPlace/homePage'
+import ViewProduct from './component/MarketPlace/viewProduct'
 import Rfq from './component/RFQPage/rfq'
-
+import OrderStatus from './component/MarketPlace/orderStatus'
 function App() {
   return (
       <BrowserRouter>
@@ -18,6 +19,8 @@ function App() {
         <Route exact path="/password" element={<ForgotPassword/>} />
         <Route exact path="/market" element={<HomePage/>} />
         <Route exact path="/rfq" element={<Rfq/>} />
+        <Route exact path="/products" element={<ViewProduct/>} />
+        <Route exact path="/order" element={<OrderStatus/>} />
         
       </Routes>
     </BrowserRouter>

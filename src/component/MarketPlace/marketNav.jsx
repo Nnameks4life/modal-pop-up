@@ -7,34 +7,34 @@ function Nav() {
   return (
     <div>
       <nav className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 ml-20">
+            <div className="flex m-0">
+              <div className="flex-shrink-0">
                 <img
                   src={TofaImg}
                   alt="Tofa Logo"
                 />
               </div>
               <div className="hidden md:block">
-                <div className="flex items-baseline space-x-5 ml-52">
+                <div className="flex items-baseline justify-between">
                  
-     <div  className='px-3'>
-      <form>
+    
+      <form className='w-full border border-dull-white  '>
         <input
-        className='p-3 border border-dull-white shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 '
+        className='p-3 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 '
           type="search"
           placeholder="search here for a product"
           type="text"
         />
-        <button className='m-[-1] text-primary-blue'  type="submit">Search</button>
+        <button className='m-[-1] text-primary-blue  p-3 '  type="submit">Search</button>
       </form>
-      </div>
+      
     
-                  <div className=''>
+                  <div className='mr-0'>
                   <a
                     href="#"
-                    className="ml-44 bg-primary-blue py-4 px-7 text-primary-white rounded-sm"
+                    className=" bg-primary-blue py-4 px-7 text-primary-white rounded-sm"
                   >
                   Register
                   </a>
@@ -46,7 +46,7 @@ function Nav() {
                   </a>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
