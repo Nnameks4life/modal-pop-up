@@ -16,12 +16,12 @@ export default function HomePage() {
     setIsOpened(wasOpened => !wasOpened);
   }
   const showLists = () => setList(true)
+  
 
   return (
     <>
-      <MarketNav />
       <div className="flex bg-dull-white p-10">
-        <div className="bg-primary-white w-64 mr-5">
+        <div className="bg-primary-white w-64 mr-5 h-1/2">
           <ul>
             <li className="p-4">
               
@@ -37,21 +37,21 @@ export default function HomePage() {
             <li className='pl-11 p-3 border rounded-md border-secondary-white'> <button className='font-Mulish font-light text-1tl' onClick={showLists}>Agriculture </button></li>
             
            {lists ? 
-        <div className="boxContent">
+        <ul>
           <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Sesame Seeds </button></li>
           <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Cashew Nuts</button></li>
           <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Paddy RIce </button></li>
           <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Palm Kernel Nuts </button></li>
           <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Sorghum </button></li>
-        </div>
+        </ul>
       : null}
          
      
-            <li className='pl-11 p-3 border rounded-md border-secondary-white'> <button className='font-Mulish font-light text-1tl'>Food and Beverages </button></li>
-            <li className='pl-11 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Construction Materials </button></li>
-            <li className='pl-11 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Home and Furniture </button></li>
-            <li className='pl-11 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Packages and Supplies </button></li>
-            <li className='pl-11 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Minerals and Mattalurgy </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white'> <button className='font-Mulish font-light text-1tl'>Food and Beverages </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Construction Materials </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Home and Furniture </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Packages and Supplies </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Minerals and Mattalurgy </button></li>
         </div>
       )}
           </ul>

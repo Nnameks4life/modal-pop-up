@@ -12,7 +12,7 @@ export default function ViewProduct() {
   };
   return (
     <section>
-       <MarketNav/>
+      
       <main className="flex justify-between p-16 h-[35rem]">
         <div className="flex bg-dull-white ">
           <img className="pt-3 mr-28 ml-10 h-auto" src={Test} alt="text" />
