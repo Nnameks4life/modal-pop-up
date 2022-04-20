@@ -15,7 +15,7 @@ export default function HomePage() {
   function toggle() {
     setIsOpened(wasOpened => !wasOpened);
   }
-  const showLists = () => setList(true)
+  const showLists = () => setList(!lists)
   
 
   return (
