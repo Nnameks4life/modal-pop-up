@@ -1,18 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from './component/Login/login'
-import Register from './component/SignUp/register'
-import Buyer from './component/SignUp/buyer'
-import Seller from './component/SignUp/seller';
-import ForgotPassword from './component/ForgotPassword/forgotPassword'
+import Login from './component/MarketPlace/login'
+import Register from './component/MarketPlace/register'
+import Buyer from './component/MarketPlace/buyer'
+import Seller from './component/MarketPlace/seller';
+import ForgotPassword from './component/MarketPlace/forgotPassword'
 import HomePage from './component/MarketPlace/homePage'
 import ViewProduct from './component/MarketPlace/viewProduct'
-import Rfq from './component/RFQPage/rfq'
+import Rfq from './component/MarketPlace/rfq'
 import OrderStatus from './component/MarketPlace/orderStatus'
 function App() {
   return (
       <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Login/>} />
+        <Route exact path="/login" element={<Login/>} />
         <Route exact path="/buyer" element={<Buyer />} />
         <Route exact path="/register" element={<Register/>} />
         <Route exact path="/seller" element={<Seller />} />
@@ -29,5 +29,6 @@ function App() {
    
   );
 }
+
 
 export default App;

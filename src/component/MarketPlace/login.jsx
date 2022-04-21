@@ -1,11 +1,10 @@
 import React from "react";
 import grainMap from "../../photos/grainMap.jpeg";
-import facebook from "../../photos/facebook 1.png";
 import { useState } from "react";
+import facebook from "../../photos/facebook 1.png";
 
-export default function Buyer() {
+export default function Login() {
   const [loginDetail, setLoginDetail] = useState({
-      fullname:"",
     email: "",
     password: "",
   });
@@ -22,34 +21,19 @@ export default function Buyer() {
           <img src={grainMap} alt="a map made with crops" />
         </div>
         <div className="w-full">
-          <div className="flex pt-8 mx-4  flex-row">
-            <h5 className="basis-1/2 font-extrabold font-Mulish ">Back</h5>
-            <h5 className="basis-1/2 font-Mulish text-1tl font-light">
-              Already have an account?{" "}
-              <a className="text-primary-orange" href="/signup">
-                Login
+          <div className="flex pt-8 justify-between">
+            <h5 className="basis-1/2 font-extrabold ">Back</h5>
+            <h5 className="basis-1/2 text-1tl font-light font-Mulish">
+              Don't have an account?{" "}
+              <a className="text-primary-orange" href="/register">
+                SignIn
               </a>
             </h5>
           </div>
           <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
-            <h4>Register as Buyer</h4>
+            <h4>Welcome back</h4>
           </div>
           <form onSubmit={handleSubmit} className="mx-11 pt-7">
-          <div className="mt-3">
-              <label
-                htmlFor="fullname"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
-              >
-                Full Name
-              </label>
-              <input
-                className="w-full  px-4 py-4 rounded border border-black  "
-                type="text"
-                name="fullname"
-                value={loginDetail.fullname}
-                onChange={handleChange}
-              />
-            </div>
             <div className="mt-3">
               <label
                 htmlFor="email"
@@ -80,7 +64,7 @@ export default function Buyer() {
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-10 flex items-center justify-between">
+            <div className="mt-10 flex justify-between">
               <div className="flex items-center">
                 <input
                   id="remember_me"
@@ -88,25 +72,28 @@ export default function Buyer() {
                   className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
                 />
                 <label
-                  for="remember_me"
-                  className="ml-2 font-Mulish block text-sm leading-5 text-gray-900"
+                  htmlFor="remember_me"
+                  className="md:ml-2 font-Mulish block text-sm leading-5 text-gray-900"
                 >
-                  {" "}
-                  I agree to terms & condition{" "}
+                 
+                  Remember me
                 </label>
               </div>
-              </div>
+              <a href="/" className="text-sm sm:text-center">
+                {" "}
+                Forgot your password?{" "}
+              </a>
+            </div>
             <div className="mt-6 ">
-              <button className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
-                Register
+              <button className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+                Login
               </button>
-              </div>
-              
+            </div>
           </form>
           <div className="mx-11 mt-8">
             <div className="w-full flex items-center justify-between py-5">
               <hr className="w-full text-secondary-white" />
-              <p className="text-base font-Mulish font-medium leading-4 px-2.5 text-gray-400">
+              <p className="text-base font-medium leading-4 px-2.5 text-gray-400">
                 or
               </p>
               <hr className="w-full text-secondary-white"></hr>
@@ -115,9 +102,9 @@ export default function Buyer() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex  border-transparent rounded-lg "
+              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex border-transparent rounded-lg "
             >
-              <div className="md:pl-4">
+              <div className="pl-2">
                 <svg
                   width="50"
                   height="20"
@@ -143,8 +130,8 @@ export default function Buyer() {
                   />
                 </svg>
               </div>
-              <div className="pl-1 md:pl-8">
-                <p className=" md:text-base font-Mulish">Sign in with Google</p>
+              <div className="pl-8">
+                <p className="text-base font-Mulish">Sign in with Google</p>
               </div>
             </button>
           </div>
@@ -157,11 +144,12 @@ export default function Buyer() {
                 <img src={facebook}/>
               </div>
               <div className="pl-1 md:pl-8">
-                <p className="md:text-base font-Mulish">Sign in with Facebook</p>
+                <p className="text-base font-Mulish">Sign in with Facebook</p>
               </div>
             </button>
           </div>
         </div>
+     
     </section>
   );
 }

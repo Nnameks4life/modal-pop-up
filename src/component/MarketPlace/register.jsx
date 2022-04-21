@@ -15,7 +15,7 @@ export default function Register(){
             <h5 className="basis-1/2 font-xbold ">Back</h5>
             <h5 className="basis-1/2 text-2tl font-light">
               Already have an account?{" "}
-              <a className="text-primary-orange" href="/signup">
+              <a className="text-primary-orange" href="/login">
                 Login
               </a>
             </h5>
@@ -29,18 +29,22 @@ Personal account to manage all you activities.
 Seller
 Own or belong to a company, this is for you.</p>
 <div className='pt-20'>
-<div className='flex border font-Mulish border-primary-orange p-7 rounded-md'>
+<div className=' border font-Mulish border-primary-orange p-7 rounded-md'>
+  <a href="/buyer" className='flex'>
   <img className='h-12' src={buyerIcon} alt='buyer icon'/>
    <div className='ml-2'> <h4>Buyer</h4>
     <p >Personal account to manage all you activities.</p>
     </div>
+    </a>
 </div>
-<div className='flex font-Mulish mt-7 border border-primary-orange p-7 rounded-md'>
+<div className='font-Mulish mt-7 border border-primary-orange p-7 rounded-md'>
+<a href="/seller" className='flex'>
   <img src={sellerIcon} alt="seller icon" className='h-12' />
   <div  className='ml-2'>
     <h4>Seller</h4>
     <p>Own or belong to a company, this is for you.</p>
     </div>
+    </a>
 </div>
 </div>
         </div>
