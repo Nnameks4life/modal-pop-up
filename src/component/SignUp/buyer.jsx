@@ -17,8 +17,7 @@ export default function Buyer() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="container m-0">
-      <div className="flex justify-center flex-nowrap">
+    <section className="flex">
         <div className="hidden md:block w-full">
           <img src={grainMap} alt="a map made with crops" />
         </div>
@@ -163,7 +162,6 @@ export default function Buyer() {
             </button>
           </div>
         </div>
-      </div>
     </section>
   );
 }

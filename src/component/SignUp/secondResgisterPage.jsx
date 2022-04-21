@@ -21,9 +21,8 @@ export default function SecondResgisterPage({ handleChange, registerDetail,handl
   };
   
   return (
-    <section className="container  mx-auto">
-      <div className="flex justify-center flex-row flex-nowrap">
-        <div className="hidden md:block w-full basis-1/2">
+    <section className="flex h-fit">
+        <div className="hidden md:block w-full">
           <img src={grainMap} alt="a map made with crops" />
         </div>
         <div className="md:basis-1/2 m-3">
@@ -123,7 +122,6 @@ export default function SecondResgisterPage({ handleChange, registerDetail,handl
               </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

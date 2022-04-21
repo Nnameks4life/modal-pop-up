@@ -16,13 +16,12 @@ export default function Login() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="container m-0">
-      <div className="flex justify-center flex-nowrap">
+    <section className="flex">
         <div className="hidden md:block w-full">
           <img src={grainMap} alt="a map made with crops" />
         </div>
         <div className="w-full">
-          <div className="flex pt-8 mx-4  flex-row">
+          <div className="flex pt-8 justify-between">
             <h5 className="basis-1/2 font-extrabold ">Back</h5>
             <h5 className="basis-1/2 text-1tl font-light font-Mulish">
               Don't have an account?{" "}
@@ -150,7 +149,7 @@ export default function Login() {
             </button>
           </div>
         </div>
-      </div>
+     
     </section>
   );
 }
