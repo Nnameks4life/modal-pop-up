@@ -20,6 +20,12 @@ export default function HomePage() {
 
   return (
     <>
+    <div className='bg-dull-white'>
+      <ul className='flex justify-end font-Mulish text-primary-orange text-2tl'>
+        <li className='p-3'><a>Sell on Tofa </a></li>
+        <li className='p-3'><a>Create Rfq </a></li>
+      </ul>
+      </div>
     <MarketNav/>
       <div className="flex bg-dull-white p-10">
         <div className="bg-primary-white w-64 mr-5 h-1/2">
@@ -33,26 +39,26 @@ export default function HomePage() {
             </li>
             <li className='pl-16 p-2'><button className='font-Mulish font-bold text-1tl' onClick={toggle}>All Categories</button></li>
             {isOpened && (
-        <div className="boxContent">
-          <li className='pl-11 p-3 border rounded-md border-secondary-white'> <button className='font-Mulish font-light text-1tl'>Apparel </button></li>
-            <li className='pl-11 p-3 border rounded-md border-secondary-white'> <button className='font-Mulish font-light text-1tl' onClick={showLists}>Agriculture </button></li>
+        <div className="font-Mulish">
+          <li className='pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl'>Apparel </button></li>
+            <li className='pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl' onClick={showLists}>Agriculture </button></li>
             
            {lists ? 
         <ul>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Sesame Seeds </button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Cashew Nuts</button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Paddy RIce </button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Palm Kernel Nuts </button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Sorghum </button></li>
+          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Sesame Seeds </button></li>
+          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Cashew Nuts</button></li>
+          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Paddy RIce </button></li>
+          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Palm Kernel Nuts </button></li>
+          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Sorghum </button></li>
         </ul>
       : null}
          
      
-            <li className='pl-2 p-3 border rounded-md border-secondary-white'> <button className='font-Mulish font-light text-1tl'>Food and Beverages </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Construction Materials </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Home and Furniture </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Packages and Supplies </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white'><button className='font-Mulish font-light text-1tl'>Minerals and Mattalurgy </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl'>Food and Beverages </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Construction Materials </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Home and Furniture </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Packages and Supplies </button></li>
+            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Minerals and Mattalurgy </button></li>
         </div>
       )}
           </ul>
