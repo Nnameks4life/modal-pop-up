@@ -20,6 +20,7 @@ export default function HomePage() {
 
   return (
     <>
+    <MarketNav/>
       <div className="flex bg-dull-white p-10">
         <div className="bg-primary-white w-64 mr-5 h-1/2">
           <ul>
