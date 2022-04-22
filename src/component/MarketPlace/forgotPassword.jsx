@@ -71,7 +71,7 @@ export default function ForgotPassword() {
   }
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto ">
       <div className="flex justify-center flex-row">
         <section className="hidden bg-secondary-white md:block w-full">
           <div className='flex justify-center pt-36'>

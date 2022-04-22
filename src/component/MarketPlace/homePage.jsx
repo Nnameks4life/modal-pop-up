@@ -20,15 +20,15 @@ export default function HomePage() {
 
   return (
     <>
-    <div className='bg-dull-white'>
+    <div className='bg-dull-white w-full'>
       <ul className='flex justify-end font-Mulish text-primary-orange text-2tl'>
-        <li className='p-3'><a>Sell on Tofa </a></li>
-        <li className='p-3'><a>Create Rfq </a></li>
+        <li className='p-3'><a href='/register'>Sell on Tofa </a></li>
+        <li className='p-3'><a href='/rfq'>Create Rfq </a></li>
       </ul>
       </div>
     <MarketNav/>
-      <div className="flex bg-dull-white p-10">
-        <div className="bg-primary-white w-64 mr-5 h-1/2">
+      <div className="md:flex bg-dull-white md:p-10">
+        <div className="bg-primary-white md:w-64 md:mr-5 h-1/2">
           <ul>
             <li className="p-4">
               
@@ -74,7 +74,7 @@ export default function HomePage() {
           </div>
           <section>
             <h4 className='text-primary-orange pt-11 m-2 font-Mulish text-2tl font-bold'>Popular Products In each Category</h4>
-            <main className='grid pt-7 grid-cols-4 gap-4 p-5'>
+            <main className='grid pt-7 md:grid-cols-4 gap-4 md:p-5 grid-cols-2 '>
             <div className="border border-dull-white">
             <img className='mt-7' src={Test} alt='bag of cereal' />
     <div class="font-light text-2tl p-2">Processed Rice</div>

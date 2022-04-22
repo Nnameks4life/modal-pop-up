@@ -17,7 +17,7 @@ export default function Buyer() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="flex">
+    <section className="flex m-0 p-0 border-0">
         <div className="hidden md:block w-full">
           <img src={grainMap} alt="a map made with crops" />
         </div>
