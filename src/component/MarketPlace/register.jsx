@@ -6,8 +6,8 @@ import sellerIcon from "../../photos/sellerIcon.png";
 export default function Register(){
   
   return (
-    <section className="flex">
-        <div className="hidden md:block w-full basis-1/2">
+    <section className="flex m-0 p-0 h-full">
+        <div className="hidden md:block w-full basis-1/2 m-0 p-0">
           <img src={grainMap} alt="a map made with crops" />
         </div>
         <div className="md:basis-1/2 md:m-3">

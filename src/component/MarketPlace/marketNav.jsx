@@ -36,13 +36,13 @@ function Nav() {
        </div>
        <div className='pt-3 ml-44'>
                   <a
-                    href="#"
+                    href="/register"
                     className=" bg-primary-blue py-4 px-7 text-primary-white rounded-sm"
                   >
                   Register
                   </a>
                   <a
-                    href="#"
+                    href="/login"
                     className="ml-4 border border-primary-blue py-4 px-7 text-primary-blue rounded-sm"
                   >
                  Login
