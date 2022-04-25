@@ -37,11 +37,11 @@ export default function HomePage() {
               <p>Categories</p>
               </div>
             </li>
-            <li className='pl-16 p-2'><button className='font-Mulish font-bold text-1tl' onClick={toggle}>All Categories</button></li>
+            <li className='md:pl-16 p-2 font-xbold'><button className='font-Mulish font-bold text-1tl' onClick={toggle}>All Categories</button></li>
             {isOpened && (
         <div className="font-Mulish">
-          <li className='pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl'>Apparel </button></li>
-            <li className='pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl' onClick={showLists}>Agriculture </button></li>
+          <li className='md:pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl'>Apparel </button></li>
+            <li className='md:pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl' onClick={showLists}>Agriculture </button></li>
             
            {lists ? 
         <ul>

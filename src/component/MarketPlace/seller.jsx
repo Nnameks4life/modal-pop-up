@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect  } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import FirstRegisterPage from "./firstRegisterPage";
-// import SecondResgisterPage from "./secondResgisterPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SecondResgisterPage from "./secondResgisterPage";
 
 export default function Seller() {
   const [registerDetail, setRegisterDetail] = useState({
@@ -16,7 +16,7 @@ export default function Seller() {
     mainProduct: "maize",
     address:"",
     password: "",
-    confirmPassword:""
+    confirmPassword:"",
   });
   const [error, setError] = useState({});
   const [isSubmit, setSubmit] = useState(false);
@@ -43,10 +43,12 @@ export default function Seller() {
 
   return (
     <>
-      <FirstRegisterPage handleChange={handleChange} registerDetail={registerDetail}/>
-     
-      {/* <SecondResgisterPage handleChange={handleChange} registerDetail={registerDetail} handleSubmit={handleSubmit} error={error}/>
-       */}
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/first" element={<FirstRegisterPage handleChange={handleChange} registerDetail={registerDetail}/>} />
+        <Route exact path="/first" element={<SecondResgisterPage handleChange={handleChange} registerDetail={registerDetail}/>} />
+        </Routes>
+    </BrowserRouter>
       
     </>
                   

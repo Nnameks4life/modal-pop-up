@@ -24,7 +24,7 @@ export default function Rfq() {
   return (
     <>
     <Nav/>
-    <section className='bg-secondary-white p-32'>
+    <section className='bg-secondary-white md:p-32'>
       <div className='bg-primary-white p-12'>
       <h2 className='text-4tl font-Mulish font-bold text-primary-black'>Enter Product Specifications</h2>
       <p className='text-2tl font-light font-Mulish pt-8'>

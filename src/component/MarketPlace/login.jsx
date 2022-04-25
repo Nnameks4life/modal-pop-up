@@ -17,7 +17,7 @@ export default function Login() {
   };
   return (
     <section className="flex m-0 p-0 border-0">
-        <div className="hidden md:block w-full m-0 p-0">
+        <div className="hidden md:block w-full m-0 p-0 h-screen">
           <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
         <div className="w-full">
@@ -64,7 +64,7 @@ export default function Login() {
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-10 flex justify-between">
+            <div className="mt-10 md:flex justify-between">
               <div className="flex items-center">
                 <input
                   id="remember_me"
@@ -73,16 +73,17 @@ export default function Login() {
                 />
                 <label
                   htmlFor="remember_me"
-                  className="md:ml-2 font-Mulish block text-sm leading-5 text-gray-900"
+                  className="md:ml-2 p-1 font-Mulish block text-sm leading-5 text-gray-900"
                 >
                  
                   Remember me
                 </label>
               </div>
-              <a href="/" className="text-sm sm:text-center">
-                {" "}
+              <div className="text-sm sm:text-center mt-3">
+              <a href="/forgotpassword">
                 Forgot your password?{" "}
               </a>
+              </div>
             </div>
             <div className="mt-6 ">
               <button className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">

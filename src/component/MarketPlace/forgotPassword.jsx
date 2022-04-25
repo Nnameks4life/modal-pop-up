@@ -71,12 +71,11 @@ export default function ForgotPassword() {
   }
 
   return (
-    <section className="container mx-auto ">
-      <div className="flex justify-center flex-row">
-        <section className="hidden bg-secondary-white md:block w-full">
-          <div className='flex justify-center pt-36'>
-          <img className='flex justify-center' src={password} alt="password photo" />
-        </div>
+    <section className="flex">
+        <section className="hidden bg-secondary-white md:block w-full h-screen">
+          <div className='flex justify-center pt-32'>
+          <img src={password} alt="password photo" />
+          </div>
         </section>
         <div className="md:w-full m-3">
           <div className="flex pt-8 mx-4  flex-row">
@@ -130,7 +129,6 @@ export default function ForgotPassword() {
             </div>
           </form>
         </div>
-      </div>
     </section>
   );
 }

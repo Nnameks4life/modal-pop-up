@@ -4,21 +4,21 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 export default function SecondResgisterPage({ handleChange, registerDetail,handleSubmit })
  {
-  const validate = () => {
-    const error = {};
-    const regex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
-    if (!password) {
-      error.password = "Password is required";
-    } else if (password.length < 9) {
-      error.password = "Password must be greater than 9 character";
-    }
-    if (!confirmPassword) {
-      error.confirmPassword = "Confirm your password";
-    } else if (registerDetail.password !== registerDetail.confirmPassword) {
-      error.confirmPassword = "Password does not match";
-    }
-    return error;
-  };
+//   const validate = () => {
+//     const error = {};
+//     const regex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+//     if (!password) {
+//       error.password = "Password is required";
+//     } else if (password.length < 9) {
+//       error.password = "Password must be greater than 9 character";
+//     }
+//     if (!confirmPassword) {
+//       error.confirmPassword = "Confirm your password";
+//     } else if (registerDetail.password !== registerDetail.confirmPassword) {
+//       error.confirmPassword = "Password does not match";
+//     }
+//     return error;
+//   };
   
   return (
     <section className="flex h-fit m-0 p-0 border-0">
