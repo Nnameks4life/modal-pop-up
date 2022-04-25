@@ -22,13 +22,13 @@ export default function Login() {
         </div>
         <div className="w-full">
           <div className="flex pt-8 justify-between">
-            <h5 className="basis-1/2 font-extrabold ">Back</h5>
-            <h5 className="basis-1/2 text-1tl font-light font-Mulish">
+            <h5 className="font-extrabold ">Back</h5>
+            <p className=" md:text-1tl font-light font-Mulish text-2tl">
               Don't have an account?{" "}
-              <a className="text-primary-orange" href="/register">
+              <a className="text-primary-orange md:text-1tl p-0 text-2tl"  href="/register">
                 SignIn
               </a>
-            </h5>
+            </p>
           </div>
           <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
             <h4>Welcome back</h4>

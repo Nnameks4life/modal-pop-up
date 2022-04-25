@@ -31,8 +31,8 @@ const prev = (e) => {
         </div>
         <div className="md:basis-1/2">
         <div className="flex pt-2 justify-between font-Mulish">
-            <button onClick={prev} className="font-extrabold ">Back</button>
-            <h5 className=" text-2tl font-light font-Mulish">
+            <button onClick={prev} className="font-extrabold p-1 ">Back</button>
+            <h5 className=" text-2tl font-light font-Mulish p-1">
               STEP 2/2
             </h5>
           </div>

@@ -2,6 +2,7 @@ import React from "react";
 import grainMap from "../../photos/grainMap.jpeg";
 
 export default function FirstRegisterPage({handleChange, registerDetail, nextStep}) {
+  
 
   const submitFormData = (e) => {
     e.preventDefault();

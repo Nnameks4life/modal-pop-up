@@ -23,13 +23,13 @@ export default function Buyer() {
         </div>
         <div className="w-full">
           <div className="flex pt-8 mx-4  flex-row">
-            <h5 className="basis-1/2 font-extrabold font-Mulish ">Back</h5>
-            <h5 className="basis-1/2 font-Mulish text-1tl font-light">
+            <h5 className="font-extrabold font-Mulish ">Back</h5>
+            <p className=" font-Mulish text-1tl font-light">
               Already have an account?{" "}
               <a className="text-primary-orange" href="/login">
                 Login
               </a>
-            </h5>
+            </p>
           </div>
           <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
             <h4>Register as Buyer</h4>
