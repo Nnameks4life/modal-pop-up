@@ -17,8 +17,8 @@ export default function Login() {
   };
   return (
     <section className="flex m-0 p-0 border-0">
-        <div className="hidden md:block w-full">
-          <img src={grainMap} alt="a map made with crops" />
+        <div className="hidden md:block w-full m-0 p-0">
+          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
         <div className="w-full">
           <div className="flex pt-8 justify-between">

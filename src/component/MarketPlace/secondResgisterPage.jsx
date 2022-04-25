@@ -22,8 +22,8 @@ export default function SecondResgisterPage({ handleChange, registerDetail,handl
   
   return (
     <section className="flex h-fit m-0 p-0 border-0">
-        <div className="hidden md:block w-full">
-          <img src={grainMap} alt="a map made with crops" />
+        <div className="hidden md:block w-full m-0 p-0">
+          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
         <div className="md:basis-1/2 m-3">
           <div className="mx-11 pt-7">

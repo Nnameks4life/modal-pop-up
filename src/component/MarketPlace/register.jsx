@@ -8,7 +8,7 @@ export default function Register(){
   return (
     <section className="flex m-0 p-0 h-full">
         <div className="hidden md:block w-full basis-1/2 m-0 p-0">
-          <img src={grainMap} alt="a map made with crops" />
+          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
         <div className="md:basis-1/2 md:m-3">
           <div className="flex pt-8 mx-4  flex-row">

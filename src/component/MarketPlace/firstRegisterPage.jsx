@@ -4,8 +4,8 @@ import grainMap from "../../photos/grainMap.jpeg";
 export default function FirstRegisterPage({handleChange, registerDetail}) {
   return (
     <section className="flex">
-        <div className="hidden md:block w-full basis-1/2">
-          <img src={grainMap} alt="a map made with crops" />
+        <div className="hidden md:block w-full basis-1/2 m-0 p-0">
+          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
         <div className="md:basis-1/2 m-3">
         <div className="flex pt-2 justify-between font-Mulish">
