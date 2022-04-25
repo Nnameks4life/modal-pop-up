@@ -2,7 +2,7 @@ import React from "react";
 import grainMap from "../../photos/grainMap.jpeg";
 import ReCAPTCHA from "react-google-recaptcha";
 
-export default function SecondResgisterPage({ handleChange, registerDetail,handleSubmit })
+export default function SecondResgisterPage({ handleChange, registerDetail,handleSubmit, prevStep })
  {
 //   const validate = () => {
 //     const error = {};
@@ -19,13 +19,23 @@ export default function SecondResgisterPage({ handleChange, registerDetail,handl
 //     }
 //     return error;
 //   };
+const prev = (e) => {
+  e.preventDefault();
+    prevStep();
+};
   
   return (
     <section className="flex h-fit m-0 p-0 border-0">
-        <div className="hidden md:block w-full m-0 p-0">
+        <div className="hidden md:block w-full basis-1/2 m-0 p-0">
           <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="md:basis-1/2 m-3">
+        <div className="md:basis-1/2">
+        <div className="flex pt-2 justify-between font-Mulish">
+            <button onClick={prev} className="font-extrabold ">Back</button>
+            <h5 className=" text-2tl font-light font-Mulish">
+              STEP 2/2
+            </h5>
+          </div>
           <div className="mx-11 pt-7">
             <div className="mt-6">
               <label

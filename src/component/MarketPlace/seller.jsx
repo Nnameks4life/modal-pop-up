@@ -30,6 +30,10 @@ export default function Seller() {
   const nextStep = () => {
     setstep(step + 1);
   };
+  const prevStep = () => {
+    setstep(step - 1);
+  };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -60,6 +64,7 @@ export default function Seller() {
       return (
         <>
          <SecondResgisterPage
+         prevStep={prevStep}
                 handleChange={handleChange}
                 registerDetail={registerDetail}
                 handleSubmit={handleSubmit}
