@@ -1,7 +1,12 @@
 import React from "react";
 import grainMap from "../../photos/grainMap.jpeg";
 
-export default function FirstRegisterPage({handleChange, registerDetail}) {
+export default function FirstRegisterPage({handleChange, registerDetail, nextStep}) {
+
+  const submitFormData = (e) => {
+    e.preventDefault();
+      nextStep();
+  };
   return (
     <section className="flex">
         <div className="hidden md:block w-full basis-1/2 m-0 p-0">
@@ -115,9 +120,9 @@ export default function FirstRegisterPage({handleChange, registerDetail}) {
             </div>
            
             <div className="mt-11">
-              <a href='/next' className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+              <button onClick={submitFormData} className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
                 Next
-              </a>
+              </button>
               </div>
           
         

@@ -1,22 +1,22 @@
 import React from "react";
-import { useState, useEffect  } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import FirstRegisterPage from "./firstRegisterPage";
 import SecondResgisterPage from "./secondResgisterPage";
 
 export default function Seller() {
+  const [step, setstep] = useState(1);
   const [registerDetail, setRegisterDetail] = useState({
-    firstName:"",
-    lastName:"",
-    email:"",
-    phoneNumber:"",
-    selectCountry:"Algeria",
-    selectRegion:"costa-rica",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    selectCountry: "Algeria",
+    selectRegion: "costa-rica",
     mainProduct: "maize",
-    address:"",
+    address: "",
     password: "",
-    confirmPassword:"",
+    confirmPassword: "",
   });
   const [error, setError] = useState({});
   const [isSubmit, setSubmit] = useState(false);
@@ -27,10 +27,13 @@ export default function Seller() {
     setRegisterDetail({ ...registerDetail, [e.target.name]: [e.target.value] });
   };
 
-  
+  const nextStep = () => {
+    setstep(step + 1);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(registerDetail)
     // setError(validate(registerDetail));
     // setSubmit(true);
     // if (Object.keys(error).length === 0 && isSubmit) {
@@ -38,20 +41,30 @@ export default function Seller() {
     //   setIsValid(true);
     // }
   };
-  
 
-
-  return (
-    <>
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/first" element={<FirstRegisterPage handleChange={handleChange} registerDetail={registerDetail}/>} />
-        <Route exact path="/first" element={<SecondResgisterPage handleChange={handleChange} registerDetail={registerDetail}/>} />
-        </Routes>
-    </BrowserRouter>
-      
-    </>
-                  
-             
-  );
+  switch (step) {
+    case 1:
+      return (
+        <>
+         
+              <FirstRegisterPage
+                handleChange={handleChange}
+                registerDetail={registerDetail}
+                nextStep={nextStep}
+              />
+            
+            
+        </>
+      );
+    case 2:
+      return (
+        <>
+         <SecondResgisterPage
+                handleChange={handleChange}
+                registerDetail={registerDetail}
+                handleSubmit={handleSubmit}
+              />
+        </>
+      );
+  }
 }
