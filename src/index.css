@@ -1,0 +1,24 @@
+.menuitems{
+    display: flex;
+    text-decoration: none;
+
+}
+
+.btncolor{
+    background-color: #DD4F05;
+    ;
+}
+
+.bgbody {
+    background-image: url('../src/photos/grainMap.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: cover;
+    width: 100% ;
+    height: 100%;
+  }
+
+  .arrange{
+      justify-content: center;
+  }
