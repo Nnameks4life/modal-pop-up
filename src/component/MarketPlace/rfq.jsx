@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Footer from "../LandingPage/footer";
+
 import Nav from "../LandingPage/nav";
 
 export default function Rfq() {
@@ -197,7 +197,7 @@ export default function Rfq() {
       </form>
     </div>
     </section>
-    <Footer/>
+    
 </>
   );
 }

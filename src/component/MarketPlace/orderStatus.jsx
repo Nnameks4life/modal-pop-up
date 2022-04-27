@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from "../LandingPage/footer";
+
 import status1 from '../../photos/status1.png'
 import status2 from '../../photos/status2.png'
 import status3 from '../../photos/status3.png'
@@ -32,7 +32,7 @@ export default function OrderStatus() {
         
     </section>
     <div className='absolute bottom-0 w-full'>
-    <Footer/>
+    
     </div>
 </>
   )

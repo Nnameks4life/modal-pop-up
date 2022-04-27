@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../LandingPage/footer";
+
 import MarketNav from "./marketNav";
 import { useState } from "react";
 import Test from "../../photos/test.png";
@@ -119,7 +119,7 @@ export default function HomePage() {
           </section>
         </section>
       </div>
-      <Footer />
+      
     </>
   );
 }
