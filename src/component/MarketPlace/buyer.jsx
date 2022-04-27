@@ -17,33 +17,32 @@ export default function Buyer() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="flex m-0 p-0 border-0">
-        <div className="hidden md:block w-full m-0 p-0">
-          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
+    <section>
+        <div>
+          <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="w-full">
-          <div className="flex pt-8 mx-4  flex-row">
-            <h5 className="font-extrabold font-Mulish ">Back</h5>
-            <p className=" font-Mulish text-1tl font-light">
+        <div >
+          <div >
+            <h5>Back</h5>
+            <p >
               Already have an account?{" "}
-              <a className="text-primary-orange" href="/login">
+              <a href="/login">
                 Login
               </a>
             </p>
           </div>
-          <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
+          <div>
             <h4>Register as Buyer</h4>
           </div>
           <form onSubmit={handleSubmit} className="mx-11 pt-7">
-          <div className="mt-3">
+          <div>
               <label
                 htmlFor="fullname"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
               >
                 Full Name
               </label>
               <input
-                className="w-full  px-4 py-4 rounded border border-black  "
+                
                 type="text"
                 name="fullname"
                 value={loginDetail.fullname}
@@ -53,12 +52,12 @@ export default function Buyer() {
             <div className="mt-3">
               <label
                 htmlFor="email"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
+                
               >
                 Email address
               </label>
               <input
-                className="w-full  px-4 py-4 rounded border border-black  "
+                
                 type="email"
                 name="email"
                 value={loginDetail.email}
@@ -68,35 +67,35 @@ export default function Buyer() {
             <div className="mt-7">
               <label
                 htmlFor="password"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
+               
               >
                 Password
               </label>
               <input
-                className="w-full px-5 py-4 rounded border border-black"
+                
                 type="password"
                 name="password"
                 value={loginDetail.password}
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-10 flex items-center justify-between">
+            <div >
               <div className="flex items-center">
                 <input
                   id="remember_me"
                   type="checkbox"
-                  className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
+                 
                 />
                 <label
                   for="remember_me"
-                  className="ml-2 font-Mulish block text-sm leading-5 text-gray-900"
+                  
                 >
                   {" "}
                   I agree to terms & condition{" "}
                 </label>
               </div>
               </div>
-            <div className="mt-6 ">
+            <div>
               <button className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
                 Register
               </button>
