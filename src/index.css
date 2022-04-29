@@ -1,24 +1,209 @@
-.menuitems{
-    display: flex;
-    text-decoration: none;
-
+.menuitems {
+  display: flex;
+  list-style-type: none;
 }
 
-.btncolor{
-    background-color: #DD4F05;
-    ;
+.li {
+  text-decoration: none;
+  color: white;
+}
+
+.btncolor {
+  background-color: #dd4f05;
+}
+
+.content {
+  position: relative;
 }
 
 .bgbody {
-    background-image: url('../src/photos/grainMap.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-position: center;
-    background-size: cover;
-    width: 100% ;
-    height: 100%;
-  }
+  position: absolute;
+}
 
-  .arrange{
-      justify-content: center;
-  }
+.arrange {
+  justify-content: center;
+}
+
+.descrip {
+  left: -15.12%;
+  right: -15.12%;
+  top: 0%;
+  bottom: 12.5%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: white;
+}
+
+.btnlight {
+  border: #dd4f05 2px solid;
+}
+
+.textss {
+  text-align: center;
+  padding: 200px 0;
+}
+.tractortexts {
+  height: 149.75px;
+  left: 718px;
+  right: 182px;
+  top: calc(50% - 149.75px / 2 - 2096.38px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #000000;
+}
+.products {
+  font-family: "Mulish";
+  font-style: normal;
+  color: #000000;
+  text-align: center;
+}
+
+.product {
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -100%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #282828;
+}
+
+.sourcing {
+  height: 144px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #282828;
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+.finance {
+  height: 144px;
+  left: 817px;
+  right: 192px;
+  top: 3695px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #282828;
+}
+.psourcing {
+  height: 40px;
+  left: 174px;
+  right: 991px;
+  top: calc(50% - 40px / 2 + 390px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+.tfinance {
+  height: 40px;
+  left: 817px;
+  right: 372px;
+  top: calc(50% - 40px / 2 + 393px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
+.center {
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 50%;
+}
+
+.cereals {
+  height: 50vh;
+  width: 50%;
+}
+
+.cereals {
+  height: 45vh;
+  width: 50%;
+}
+
+.event-container {
+  margin-top: 10%;
+}
+
+.event-img-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  border-radius: 5px;
+}
+.a {
+  grid-column: 1;
+}
+.b {
+  grid-column: 3;
+  grid-row: 1;
+}
+.c {
+  grid-column: 1;
+  grid-row: 2;
+}
+.d {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.partners {
+  background: linear-gradient(180deg, #e8e8e8 0%, #ffffff 28.54%);
+}
+.partner {
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  width: 1110px;
+left: -28.5px;
+top: 0px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 24px 0px;
+padding: 20px 100px;
+}
+
+.story{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
