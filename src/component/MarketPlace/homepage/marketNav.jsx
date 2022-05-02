@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import TofaImg from "../../photos/tofaLogo.png";
+import TofaImg from "../../../photos/tofaLogo.png";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);

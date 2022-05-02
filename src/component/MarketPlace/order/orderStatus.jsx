@@ -1,9 +1,9 @@
 import React from 'react'
 
-import status1 from '../../photos/status1.png'
-import status2 from '../../photos/status2.png'
-import status3 from '../../photos/status3.png'
-import status4 from '../../photos/status4.png'
+import status1 from '../../../photos/status1.png'
+import status2 from '../../../photos/status2.png'
+import status3 from '../../../photos/status3.png'
+import status4 from '../../../photos/status4.png'
 export default function OrderStatus() {
   return (
       <>

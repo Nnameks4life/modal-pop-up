@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import MarketNav from "./marketNav";
 import { useEffect, useState } from "react";
-import Test from "../../photos/test.png";
+import Test from "../../../photos/test.png";
 
 export default function ViewProduct() {
   const [tonne, setTonne] = useState("");

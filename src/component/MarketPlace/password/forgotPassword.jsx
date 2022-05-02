@@ -1,5 +1,5 @@
 import React from "react";
-import password from "../../photos/passwordImg.png";
+import password from "../../../photos/passwordImg.png";
 import { useState } from "react";
 
 export default function ForgotPassword() {
@@ -71,7 +71,7 @@ export default function ForgotPassword() {
   }
 
   return (
-    <section className="flex">
+    <section className='d-flex w-100'>
         <section className="hidden bg-secondary-white md:block w-full h-screen">
           <div className='flex justify-center pt-32'>
           <img src={password} alt="password photo" />

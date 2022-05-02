@@ -1,11 +1,11 @@
 import React from "react";
-import grainMap from "../../photos/grainMap.jpeg";
-import facebook from "../../photos/facebook 1.png";
+import grainMap from "../../../photos/grainMap.jpeg";
 import { useState } from "react";
+import facebook from "../../../photos/facebook 1.png";
 
-export default function Buyer() {
+
+export default function Login() {
   const [loginDetail, setLoginDetail] = useState({
-      fullname:"",
     email: "",
     password: "",
   });
@@ -17,42 +17,27 @@ export default function Buyer() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section>
+    <section className='' >
         <div>
           <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div >
-          <div >
+        <div className='w-50 mt-4'>
+          <div className=''>
             <h5>Back</h5>
-            <p >
-              Already have an account?{" "}
-              <a href="/login">
-                Login
+            <p>
+              Don't have an account?{" "}
+              <a href="/register">
+                SignIn
               </a>
             </p>
           </div>
           <div>
-            <h4>Register as Buyer</h4>
+            <h4>Welcome back</h4>
           </div>
-          <form onSubmit={handleSubmit} className="mx-11 pt-7">
-          <div>
-              <label
-                htmlFor="fullname"
-              >
-                Full Name
-              </label>
-              <input
-                
-                type="text"
-                name="fullname"
-                value={loginDetail.fullname}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="mt-3">
+          <form onSubmit={handleSubmit}>
+            <div>
               <label
                 htmlFor="email"
-                
               >
                 Email address
               </label>
@@ -67,56 +52,59 @@ export default function Buyer() {
             <div className="mt-7">
               <label
                 htmlFor="password"
-               
+                
               >
                 Password
               </label>
               <input
-                
+               
                 type="password"
                 name="password"
                 value={loginDetail.password}
                 onChange={handleChange}
               />
             </div>
-            <div >
-              <div className="flex items-center">
+            <div>
+              <div >
                 <input
                   id="remember_me"
                   type="checkbox"
                  
                 />
                 <label
-                  for="remember_me"
+                  htmlFor="remember_me"
                   
                 >
-                  {" "}
-                  I agree to terms & condition{" "}
+                 
+                  Remember me
                 </label>
               </div>
+              <div>
+              <a href="/forgotpassword">
+                Forgot your password?{" "}
+              </a>
               </div>
-            <div>
-              <button className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
-                Register
+            </div>
+            <div className="mt-6 ">
+              <button className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+                Login
               </button>
-              </div>
-              
+            </div>
           </form>
-          <div className="mx-11 mt-8">
-            <div className="w-full flex items-center justify-between py-5">
-              <hr className="w-full text-secondary-white" />
-              <p className="text-base font-Mulish font-medium leading-4 px-2.5 text-gray-400">
-                or
+          <div className="">
+            <div className="">
+              <hr className="" />
+              <p className="">
               </p>
-              <hr className="w-full text-secondary-white"></hr>
+              <hr className=""></hr>
             </div>
           </div>
-          <div className="mx-11">
+          <div className="">
             <button
               aria-label="Continue with google"
-              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex  border-transparent rounded-lg "
+              className=""
             >
-              <div className="md:pl-4">
+              <div className="pl-2">
                 <svg
                   width="50"
                   height="20"
@@ -142,25 +130,26 @@ export default function Buyer() {
                   />
                 </svg>
               </div>
-              <div className="pl-1 md:pl-8">
-                <p className=" md:text-base font-Mulish">Sign in with Google</p>
+              <div className="pl-8">
+                <p className="">Sign in with Google</p>
               </div>
             </button>
           </div>
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="md:space-x-12 flex mt-5 w-full focus:outline-none px-4 py-3  bg-secondary-white  border-transparent rounded-lg "
+              className=" "
             >
-              <div className="pl:1 md:pl-4">
+              <div className="">
                 <img src={facebook}/>
               </div>
-              <div className="pl-1 md:pl-8">
-                <p className="md:text-base font-Mulish">Sign in with Facebook</p>
+              <div className="">
+                <p className="">Sign in with Facebook</p>
               </div>
             </button>
           </div>
         </div>
+     
     </section>
   );
 }

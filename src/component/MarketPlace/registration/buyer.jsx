@@ -1,10 +1,11 @@
 import React from "react";
-import grainMap from "../../photos/grainMap.jpeg";
+import grainMap from "../../../photos/grainMap.jpeg";
+import facebook from "../../../photos/facebook 1.png";
 import { useState } from "react";
-import facebook from "../../photos/facebook 1.png";
 
-export default function Login() {
+export default function Buyer() {
   const [loginDetail, setLoginDetail] = useState({
+      fullname:"",
     email: "",
     password: "",
   });
@@ -16,33 +17,47 @@ export default function Login() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
-    <section className="flex m-0 p-0 border-0">
-        <div className="hidden md:block w-full m-0 p-0 h-screen">
-          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
+    <section className='d-flex w-100'>
+        <div>
+          <img src={grainMap} alt="a map made with crops" />
         </div>
-        <div className="w-full">
-          <div className="flex pt-8 justify-between">
-            <h5 className="font-extrabold ">Back</h5>
-            <p className=" md:text-1tl font-light font-Mulish text-2tl">
-              Don't have an account?{" "}
-              <a className="text-primary-orange md:text-1tl p-0 text-2tl"  href="/register">
-                SignIn
+        <div >
+          <div >
+            <h5>Back</h5>
+            <p >
+              Already have an account?{" "}
+              <a href="/login">
+                Login
               </a>
             </p>
           </div>
-          <div className="mx-11 font-Mulish pt-20 text-primary-black text-3tl font-extrabold">
-            <h4>Welcome back</h4>
+          <div>
+            <h4>Register as Buyer</h4>
           </div>
           <form onSubmit={handleSubmit} className="mx-11 pt-7">
+          <div>
+              <label
+                htmlFor="fullname"
+              >
+                Full Name
+              </label>
+              <input
+                
+                type="text"
+                name="fullname"
+                value={loginDetail.fullname}
+                onChange={handleChange}
+              />
+            </div>
             <div className="mt-3">
               <label
                 htmlFor="email"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
+                
               >
                 Email address
               </label>
               <input
-                className="w-full  px-4 py-4 rounded border border-black  "
+                
                 type="email"
                 name="email"
                 value={loginDetail.email}
@@ -52,49 +67,45 @@ export default function Login() {
             <div className="mt-7">
               <label
                 htmlFor="password"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
+               
               >
                 Password
               </label>
               <input
-                className="w-full px-5 py-4 rounded border border-black"
+                
                 type="password"
                 name="password"
                 value={loginDetail.password}
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-10 md:flex justify-between">
+            <div >
               <div className="flex items-center">
                 <input
                   id="remember_me"
                   type="checkbox"
-                  className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
+                 
                 />
                 <label
-                  htmlFor="remember_me"
-                  className="md:ml-2 p-1 font-Mulish block text-sm leading-5 text-gray-900"
+                  for="remember_me"
+                  
                 >
-                 
-                  Remember me
+                  {" "}
+                  I agree to terms & condition{" "}
                 </label>
               </div>
-              <div className="text-sm sm:text-center mt-3">
-              <a href="/forgotpassword">
-                Forgot your password?{" "}
-              </a>
               </div>
-            </div>
-            <div className="mt-6 ">
-              <button className="w-full text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
-                Login
+            <div>
+              <button className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+                Register
               </button>
-            </div>
+              </div>
+              
           </form>
           <div className="mx-11 mt-8">
             <div className="w-full flex items-center justify-between py-5">
               <hr className="w-full text-secondary-white" />
-              <p className="text-base font-medium leading-4 px-2.5 text-gray-400">
+              <p className="text-base font-Mulish font-medium leading-4 px-2.5 text-gray-400">
                 or
               </p>
               <hr className="w-full text-secondary-white"></hr>
@@ -103,9 +114,9 @@ export default function Login() {
           <div className="mx-11">
             <button
               aria-label="Continue with google"
-              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex border-transparent rounded-lg "
+              className="md:space-x-12 mt-13 w-full focus:outline-none px-4 py-3  bg-secondary-white  flex  border-transparent rounded-lg "
             >
-              <div className="pl-2">
+              <div className="md:pl-4">
                 <svg
                   width="50"
                   height="20"
@@ -131,8 +142,8 @@ export default function Login() {
                   />
                 </svg>
               </div>
-              <div className="pl-8">
-                <p className="text-base font-Mulish">Sign in with Google</p>
+              <div className="pl-1 md:pl-8">
+                <p className=" md:text-base font-Mulish">Sign in with Google</p>
               </div>
             </button>
           </div>
@@ -145,12 +156,11 @@ export default function Login() {
                 <img src={facebook}/>
               </div>
               <div className="pl-1 md:pl-8">
-                <p className="text-base font-Mulish">Sign in with Facebook</p>
+                <p className="md:text-base font-Mulish">Sign in with Facebook</p>
               </div>
             </button>
           </div>
         </div>
-     
     </section>
   );
 }

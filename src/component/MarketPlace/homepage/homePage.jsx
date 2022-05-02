@@ -2,11 +2,11 @@ import React from "react";
 
 import MarketNav from "./marketNav";
 import { useState } from "react";
-import Test from "../../photos/test.png";
-import vector from "../../photos/vector.png";
-import Texts from "../../photos/test2.png";
-import productSourcing from "../../photos/productSourcing.jpg";
-import tradeBanner from "../../photos/tradeBanner.jpg";
+import Test from "../../../photos/test.png";
+import vector from "../../../photos/vector.png";
+import Texts from "../../../photos/test2.png";
+import productSourcing from "../../../photos/productSourcing.jpg";
+import tradeBanner from "../../../photos/tradeBanner.jpg";
 
 export default function HomePage() {
   const [image, setImage] = useState(null);

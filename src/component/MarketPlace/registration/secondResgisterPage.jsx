@@ -1,5 +1,5 @@
 import React from "react";
-import grainMap from "../../photos/grainMap.jpeg";
+import grainMap from "../../../photos/grainMap.jpeg";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function SecondResgisterPage({ handleChange, registerDetail,handleSubmit, prevStep })
@@ -25,7 +25,7 @@ const prev = (e) => {
 };
   
   return (
-    <section className="flex h-fit m-0 p-0 border-0">
+    <section className='d-flex w-100'>
         <div className="hidden md:block w-full basis-1/2 m-0 p-0">
           <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>

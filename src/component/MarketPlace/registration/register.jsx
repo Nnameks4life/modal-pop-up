@@ -1,12 +1,12 @@
 import React from "react";
-import grainMap from "../../photos/grainMap.jpeg";
-import buyerIcon from "../../photos/buyerIcon.png";
-import sellerIcon from "../../photos/sellerIcon.png";
+import grainMap from "../../../photos/grainMap.jpeg";
+import buyerIcon from "../../../photos/buyerIcon.png";
+import sellerIcon from "../../../photos/sellerIcon.png";
 
 export default function Register(){
   
   return (
-    <section className="flex m-0 p-0 h-full">
+    <section className='d-flex w-100'>
         <div className="hidden md:block w-full basis-1/2 m-0 p-0">
           <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>

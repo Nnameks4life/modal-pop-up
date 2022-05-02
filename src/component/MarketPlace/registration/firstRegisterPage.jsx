@@ -1,5 +1,5 @@
 import React from "react";
-import grainMap from "../../photos/grainMap.jpeg";
+import grainMap from "../../../photos/grainMap.jpeg";
 
 export default function FirstRegisterPage({handleChange, registerDetail, nextStep}) {
   
@@ -9,7 +9,7 @@ export default function FirstRegisterPage({handleChange, registerDetail, nextSte
       nextStep();
   };
   return (
-    <section className="flex">
+    <section className='d-flex w-100'>
         <div className="hidden md:block w-full basis-1/2 m-0 p-0">
           <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
         </div>
