@@ -195,6 +195,7 @@ const Carousel = () => {
         </div>
         <div className="col-7">
           <img src={peeps} alt="academy"/>
+          <div className="leftpic"/>
         </div>
       </div>
 

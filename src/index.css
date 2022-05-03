@@ -252,3 +252,12 @@ background: #DD4F05;
 border-radius: 4px;
 color: #ffffff;
 }
+
+.leftpic{
+width: 335px;
+height: 178px;
+left: 925px;
+top: 4189px;
+background: #DD4F05;
+border-radius: 0px 0px 110px 0px;
+}
