@@ -204,6 +204,51 @@ padding: 20px 100px;
 }
 
 .story{
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.date{
+font-family: Mulish;
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+.mali{
+font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.para{
+font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.readmore{
+font-family: Mulish;
+font-size: 14px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #dd4f05;
+
+}
+.blogbtn{
+width: 170px;
+height: 60px;
+
+background: #DD4F05;
+border-radius: 4px;
+color: #ffffff;
 }

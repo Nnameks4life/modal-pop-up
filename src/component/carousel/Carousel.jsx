@@ -9,8 +9,9 @@ import hub from "../../photos/hubspot.png";
 import micro from "../../photos/microsoft.png";
 import goog from "../../photos/google.png";
 import wal from "../../photos/walmart.png";
-import fed from '../../photos/fedex.png'
-import man from '../../photos/manspic.png'
+import fed from "../../photos/fedex.png";
+import man from "../../photos/manspic.png";
+import peeps from '../../photos/people.png'
 import { Link } from "react-router-dom";
 
 const Carousel = () => {
@@ -102,7 +103,7 @@ const Carousel = () => {
       </div>
       <div className="mt-5">
         <h3 className="products">Our Products</h3>
-        
+
         <p className="product">
           You can buy our African Sourced and manufactured products from the
           comfort of your home
@@ -110,112 +111,168 @@ const Carousel = () => {
       </div>
       <div className="row mx-auto px-0">
         <div className="col-4">
-        <img src={egus} alt="egusi" className=""/>
+          <img src={egus} alt="egusi" className="" />
         </div>
         <div className="col-4">
-        <img src={maiz} alt="maize" className=""/>
+          <img src={maiz} alt="maize" className="" />
         </div>
         <div className="col-4">
-        <img src={cash} alt="cashew" className=""/>
+          <img src={cash} alt="cashew" className="" />
         </div>
-
       </div>
       <div className="container d-flex pl-2">
-        <img src={egus} alt="egusi" className="cereals"/>
-        <img src={maiz} alt="maize" className="cereals"/>
-        <img src={cash} alt="cashew" className="cereal"/>
+        <img src={egus} alt="egusi" className="cereals" />
+        <img src={maiz} alt="maize" className="cereals" />
+        <img src={cash} alt="cashew" className="cereal" />
       </div>
 
       <div class="container event-container">
-            <div class="col-12 col-md-12 col-sm-1">
-              
-            </div>
-            <div class="event-img-wrapper">
-              
-            <div class="box a">a
-            <img src={egus} alt="egusi" className=""/>
-            </div>
-            <div class="box b">b
-            <img src={maiz} alt="maize" className=""/>
-            </div>
-            <div class="box c">c
-                <img src="../assets/images/ahhann-2@2x.png" align="left"/>
-            </div>
-            <div class="box d">d
-            <img src={cash} alt="cashew" className="cereal"/>
-            </div>
-            </div>
-            </div>
-
-      <div className="d-flex">
-        <div className="">
-          <div className="text-center">
-        <i className="fa-solid fa-business-time text-center"></i>
-        </div>
-        <h3 className="psourcing text-center">Product Sourcing</h3>
-        <p className="sourcing px-5">
-          SourcePro is a unit of TOFA that works directly with our
-          online/offline to ensure that buys specifications are met. The
-          SourcePro team handles products like wood, agro-commodities, textile
-          and finished products, all sourced from various African countries and
-          shipped to buyers within and outside Africa.<br/>
-          <Link to>Get Started</Link>
-        </p>
-        
-        </div>
-        <div>
-        <div className="text-center">
-        <i className="fa-solid fa-business-time text-center"></i>
-        </div>
-        <h3 className="tfinance text-center">Trade Finance</h3>
-        <p className="finance px-5">
-          Africa Trade Invest (ATI) is a Pan African digital trade and
-          investment platform. ATI is dedicated solely towards fundinf and
-          inversting in African trade, where investors can erarn a share of pr
-          adequate funding and execution to create a sustainable business,
-          yielding great and stable returns.{" "}<br/>
-          <Link to>Get Started</Link>
-        </p>
+        <div class="col-12 col-md-12 col-sm-1"></div>
+        <div class="event-img-wrapper">
+          <div class="box a">
+            a
+            <img src={egus} alt="egusi" className="" />
+          </div>
+          <div class="box b">
+            b
+            <img src={maiz} alt="maize" className="" />
+          </div>
+          <div class="box c">
+            c
+            <img src="../assets/images/ahhann-2@2x.png" align="left" />
+          </div>
+          <div class="box d">
+            d
+            <img src={cash} alt="cashew" className="cereal" />
+          </div>
         </div>
       </div>
+
+      <div className="row">
+        <div className="col-6">
+          <div className="text-center">
+            <i className="fa-solid fa-business-time text-center"></i>
+          </div>
+          <h3 className="psourcing text-center">Product Sourcing</h3>
+          <p className="sourcing px-5">
+            SourcePro is a unit of TOFA that works directly with our
+            online/offline to ensure that buys specifications are met. The
+            SourcePro team handles products like wood, agro-commodities, textile
+            and finished products, all sourced from various African countries
+            and shipped to buyers within and outside Africa.
+            <br />
+            <Link to className="readmore">
+              Get Started
+            </Link>
+          </p>
+        </div>
+        <div className="col-6">
+          <div className="text-center">
+            <i className="fa-solid fa-business-time text-center"></i>
+          </div>
+          <h3 className="tfinance text-center">Trade Finance</h3>
+          <p className="finance px-5">
+            Africa Trade Invest (ATI) is a Pan African digital trade and
+            investment platform. ATI is dedicated solely towards fundinf and
+            inversting in African trade, where investors can erarn a share of pr
+            adequate funding and execution to create a sustainable business,
+            yielding great and stable returns. <br />
+            <Link to className="readmore">
+              Get Funding
+            </Link>
+          </p>
+        </div>
+      </div>
+      <div className="row mt-5">
+        <div className="col-5">
+          <h5 className="tfinance px-5">Traders Of Africa (TOFA) Academy</h5>
+          <p className="finance px-5">
+            Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
+            no suscipit quaerendum. At nam minimum ponderum. Est audiam animal
+            molestiae te. Ex duo eripuit mentitum Ex duo eirput mentitum.
+          </p>
+          <button className="blogbtn">See more</button>
+        </div>
+        <div className="col-7">
+          <img src={peeps} alt="academy"/>
+        </div>
+      </div>
+
       <div className="partners">
         <h5 className="text-center mb-5">Our Partners</h5>
         <div className="row mx-auto mb-5 partner">
-
           <div className="col-2">
-          <img src={air} alt='airbnb logo' />
+            <img src={air} alt="airbnb logo" />
           </div>
           <div className="col-2">
-          <img src={hub} alt='hubspot logo' />
+            <img src={hub} alt="hubspot logo" />
           </div>
           <div className="col-2">
-          <img src={goog} alt='google logo' />
+            <img src={goog} alt="google logo" />
           </div>
           <div className="col-2">
-          <img src={micro} alt='microsoft logo' />
+            <img src={micro} alt="microsoft logo" />
           </div>
           <div className="col-2">
-          <img src={wal} alt='walmartlogo' />
+            <img src={wal} alt="walmartlogo" />
           </div>
           <div className="col-2">
-          <img src={fed} alt='fedex logo' />
+            <img src={fed} alt="fedex logo" />
           </div>
         </div>
         <div>
           <h5 className="text-center my-5">Our Stories</h5>
           <div className="row mx-auto mb-5 story">
-          <div className="col-4">
-          <img src={man} alt='man'/>
+            <div className="col-4 card px-2">
+              <img src={man} alt="man" />
+              <p className="date mt-3">January 2021</p>
+              <p className="date">4 mins read</p>
+              <h5 className="mali">TOFA Academy takes Mali</h5>
+              <p className="para">
+                Lorem ipsum dolor sit amet, consectetur give adipiscing elit.
+                Risus, sit imperdiet risus, loving venenatis at. Lorem ipsum
+                dolor sit amet, in at consectetur give adipiscing elit. Risus,
+                sit imperdiet risus, loving venenatis at.{" "}
+              </p>
+              <Link to className="readmore">
+                Read more
+              </Link>
+            </div>
+            <div className="col-4 card">
+              <img src={man} alt="man" />
+              <p className="date mt-3">January 2021</p>
+              <p className="date">4 mins read</p>
+              <h5 className="mali">TOFA Academy takes Mali</h5>
+              <p className="para">
+                Lorem ipsum dolor sit amet, consectetur give adipiscing elit.
+                Risus, sit imperdiet risus, loving venenatis at. Lorem ipsum
+                dolor sit amet, in at consectetur give adipiscing elit. Risus,
+                sit imperdiet risus, loving venenatis at.{" "}
+              </p>
+              <Link to className="readmore">
+                Read more
+              </Link>
+            </div>
+            <div className="col-4 card mx-">
+              <img src={man} alt="man" />
+              <p className="date mt-3">January 2021</p>
+              <p className="date">4 mins read</p>
+              <h5 className="mali">TOFA Academy takes Mali</h5>
+              <p className="para">
+                Lorem ipsum dolor sit amet, consectetur give adipiscing elit.
+                Risus, sit imperdiet risus, loving venenatis at. Lorem ipsum
+                dolor sit amet, in at consectetur give adipiscing elit. Risus,
+                sit imperdiet risus, loving venenatis at.{" "}
+              </p>
+              <Link to className="readmore">
+                Read more
+              </Link>
+            </div>
           </div>
-          <div className="col-4">
-          <img src={man} alt='man'/>
-          </div>
-          <div className="col-4">
-          <img src={man} alt='man'/>
-          </div>
+          <div className="text-center">
+            <button className="blogbtn">Go to Blog</button>
           </div>
         </div>
-
       </div>
     </div>
   );
