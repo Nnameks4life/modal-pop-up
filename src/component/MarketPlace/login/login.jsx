@@ -5,6 +5,7 @@ import "../login/login.css";
 import facebookImg from "../../../photos/fb.svg";
 import googleImg from "../../../photos/gl.svg";
 import backIcon from "../../../photos/back-icon.svg";
+import './login.css'
 
 export default function Login() {
   const [loginDetail, setLoginDetail] = useState({

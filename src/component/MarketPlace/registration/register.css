@@ -1,0 +1,106 @@
+* {
+	font-family: 'Mulish', sans-serif;
+}
+
+p,h1,h2,h3,h4,h5 {
+	color: #282828;
+}
+
+#user-auth {
+	height: 100vh;
+}
+
+.map-img {
+	height: 100vh;
+	background-image: url(../../../photos/grainMap.jpeg);
+	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.back-txt {
+	font-weight: 700;
+}
+
+.back-txt a {
+	color: #282828;
+	text-decoration: none;
+}
+
+.back-txt img {
+	width: 15px;
+	margin-right: 10px;
+}
+.info-txt a{
+    color: #DD4F05;
+	text-decoration: none;
+}
+.info-txt p {
+	font-size: .95rem;
+}
+#header-text{
+    margin-top: 15px;
+}
+.register-content img{
+height: 9vh;
+padding: 5px ;
+}
+.register-content a{
+    text-decoration: none;
+}
+.register-content h4{
+    font-weight: 500;
+font-size: 18px;
+}
+.register-content{
+background: #FFFFFF;
+	border: 1px solid #F5F5F5;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08)!important;
+	margin-bottom: 15px;
+	font-size: .95rem;
+	font-weight: 400;
+    padding: 5px;
+}
+.all-content{
+   padding: 6rem;
+}
+.all-content p{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+.all-content h3{
+font-size: 1.8rem;
+font-weight: 700;
+}
+
+.register-options{
+    padding-top: 3rem;
+}
+.register-content p{
+font-weight: 500;
+font-size: 14px;
+}
+@media (max-width: 768px) {
+
+	.user-auth-wrap {
+	    width: 100%;
+	    padding:0px;
+	}
+
+	.user-auth-rhs {
+    padding: 25px;
+	}
+
+}
+
+/*End of Auth page*/
+
+
+
+
+
+
+

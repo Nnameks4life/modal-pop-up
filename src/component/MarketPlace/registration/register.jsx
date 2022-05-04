@@ -2,54 +2,66 @@ import React from "react";
 import grainMap from "../../../photos/grainMap.jpeg";
 import buyerIcon from "../../../photos/buyerIcon.png";
 import sellerIcon from "../../../photos/sellerIcon.png";
+import backIcon from "../../../photos/back-icon.svg";
+import './register.css'
 
 export default function Register(){
   
   return (
-    <section className='d-flex w-100'>
-        <div className="hidden md:block w-full basis-1/2 m-0 p-0">
-          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
+    <section className='w-100'>
+<div className="row g-0">
+        <div className="col-lg-6 d-none d-lg-block">
+          <div className="map-img"></div>
         </div>
-        <div className="md:basis-1/2 md:m-3">
-          <div className="flex pt-8 mx-4  flex-row">
-            <h5 className="basis-1/2 font-xbold ">Back</h5>
-            <h5 className="basis-1/2 text-2tl font-light">
+        <div className="col-lg-6">
+          <main className="row">
+          <div className="col-lg-6 col-3" id='header-text'>
+                  <p className="back-txt">
+                    <img src={backIcon} />
+                    <a href="#">Back</a>
+                  </p>
+                </div>
+                <div className="col-lg-6 col-9" id='header-text'>
+            <p className="info-txt">
               Already have an account?{" "}
-              <a className="text-primary-orange" href="/login">
+              <a className="" href="/login">
                 Login
               </a>
-            </h5>
-          </div>
-        <div className='mt-20 md:mx-20 mx-4'>
-         <h3 className='text-primary-black font-extrabold text-3tl font-Mulish'>Register</h3>
-         <p className='mt-3 text-1tl font-light font-Mulish'>
+            </p>
+            </div>
+          </main>
+        <div className='all-content'>
+         <h3>Register</h3>
+         <p className=''>
 To begin this journey, tell us what type of account you’d be opening.
-Buyer
-Personal account to manage all you activities.
-Seller
-Own or belong to a company, this is for you.</p>
-<div className='pt-20'>
-<div className=' border font-Mulish border-primary-orange p-7 rounded-md'>
-  <a href="/buyer" className='flex'>
-  <img className='h-12' src={buyerIcon} alt='buyer icon'/>
+</p>
+<section className='register-options'>
+
+<div className='register-content'>
+  <a href="/buyer" className='d-flex'>
+  <img className='' src={buyerIcon} alt='buyer icon'/>
    <div className='ml-2'> <h4>Buyer</h4>
     <p >Personal account to manage all you activities.</p>
     </div>
     </a>
 </div>
-<div className='font-Mulish mt-7 border border-primary-orange p-7 rounded-md'>
-<a href="/seller" className='flex'>
-  <img src={sellerIcon} alt="seller icon" className='h-12' />
+
+<div className='register-content' >
+<a href="/seller" className='d-flex'>
+  <img src={sellerIcon} alt="seller icon" className='h-3' />
   <div  className='ml-2'>
     <h4>Seller</h4>
     <p>Own or belong to a company, this is for you.</p>
     </div>
     </a>
 </div>
-</div>
+
+</section>
+
         </div>
          
-          </div>   
+          </div>  
+          </div> 
     </section>
   );
 }
