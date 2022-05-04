@@ -9,6 +9,7 @@ import ViewProduct from './component/MarketPlace/viewProduct'
 import Rfq from './component/MarketPlace/rfq'
 import OrderStatus from './component/MarketPlace/orderStatus'
 import Landing from "./pages/landing/Landing";
+import ContactUs from "./pages/contactus/ContactUs";
 function App() {
   return (
       <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/products" element={<ViewProduct/>} />
         <Route exact path="/order" element={<OrderStatus/>} />
         <Route exact path='/landing' element={<Landing/>} />
+        <Route exact path='/contactus' element={<ContactUs/>} />
         
       </Routes>
     </BrowserRouter>

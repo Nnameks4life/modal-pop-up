@@ -109,41 +109,18 @@ const Carousel = () => {
           comfort of your home
         </p>
       </div>
-      <div className="row mx-auto px-0">
-        <div className="col-4">
-          <img src={egus} alt="egusi" className="" />
-        </div>
-        <div className="col-4">
-          <img src={maiz} alt="maize" className="" />
-        </div>
-        <div className="col-4">
-          <img src={cash} alt="cashew" className="" />
-        </div>
-      </div>
-      <div className="container d-flex pl-2">
-        <img src={egus} alt="egusi" className="cereals" />
-        <img src={maiz} alt="maize" className="cereals" />
-        <img src={cash} alt="cashew" className="cereal" />
-      </div>
 
       <div class="container event-container">
         <div class="col-12 col-md-12 col-sm-1"></div>
         <div class="event-img-wrapper">
           <div class="box a">
-            a
-            <img src={egus} alt="egusi" className="" />
+            <img src={egus} alt="egusi" className="cereals" />
           </div>
           <div class="box b">
-            b
-            <img src={maiz} alt="maize" className="" />
-          </div>
-          <div class="box c">
-            c
-            <img src="../assets/images/ahhann-2@2x.png" align="left" />
+            <img src={maiz} alt="maize" className="cereals" />
           </div>
           <div class="box d">
-            d
-            <img src={cash} alt="cashew" className="cereal" />
+            <img src={maiz} alt="cashew" className="cereals" />
           </div>
         </div>
       </div>
@@ -194,8 +171,12 @@ const Carousel = () => {
           <button className="blogbtn">See more</button>
         </div>
         <div className="col-7">
-          <img src={peeps} alt="academy"/>
+          <div className="position-relative">
+          <img src={peeps} alt="academy" className="leftpics"/>
+          <div className="position-absolute">
           <div className="leftpic"/>
+          </div>
+          </div>
         </div>
       </div>
 

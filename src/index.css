@@ -145,14 +145,14 @@
   width: 50%;
 }
 
-.cereals {
-  height: 50vh;
-  width: 50%;
-}
 
 .cereals {
-  height: 45vh;
-  width: 50%;
+  width: 100%;
+}
+
+.cereal{
+  margin-top: 23px;
+  width: 90%;
 }
 
 .event-container {
@@ -180,7 +180,7 @@
 }
 .d {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .partners {
@@ -253,6 +253,15 @@ border-radius: 4px;
 color: #ffffff;
 }
 
+.leftpics{
+width: 474px;
+height: 259px;
+left: 761px;
+top: 4079px;
+filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+border-radius: 6px 6px 9a0px 6px;
+}
+
 .leftpic{
 width: 335px;
 height: 178px;
@@ -260,4 +269,75 @@ left: 925px;
 top: 4189px;
 background: #DD4F05;
 border-radius: 0px 0px 110px 0px;
+}
+
+.contactbg{
+  background: #E5E5E5;
+}
+
+.contact{
+  height: 96px;
+left: 181px;
+right: 858.14px;
+top: calc(50% - 96px/2 - 48.5px);
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: justify;
+letter-spacing: 0.3px;
+padding: 0 10rem 0 10rem;
+}
+.contactus{
+  margin-top: 10rem;
+}
+.form{
+  padding: 0 3rem 0 3rem;
+}
+.btnsubmit{
+width: 426px;
+height: 64px;
+left: 0px;
+top: 0px;
+background: #DD4F05;
+border-radius: 6px;
+}
+
+.inputstyle{
+  left: 52.29%;
+right: 18.12%;
+top: 23.9%;
+bottom: 72.25%;
+
+background: #FFFFFF;
+border: 1px solid #282828;
+box-sizing: border-box;
+border-radius: 6px;
+height: 62px;
+width: 426px;
+}
+
+.inputpartner{
+width: 326px;
+height: 58px;
+left: 673px;
+top: 194px;
+background: #FFFFFF;
+border-radius: 6px;
+border: 2px solid #DD4F05;
+color: #dd4f05;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+}
+.forms{
+width: 585px;
+height: 787px;
+left: 673px;
+top: 194px;
+background: #FFFFFF;
+border-radius: 6px;
+
 }
