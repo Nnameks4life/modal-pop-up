@@ -271,10 +271,6 @@ background: #DD4F05;
 border-radius: 0px 0px 110px 0px;
 }
 
-.contactbg{
-  background: #E5E5E5;
-}
-
 .contact{
   height: 96px;
 left: 181px;
@@ -339,5 +335,33 @@ left: 673px;
 top: 194px;
 background: #FFFFFF;
 border-radius: 6px;
+}
 
+.top{
+  width: 1443px;
+height: 509px;
+left: -2px;
+top: 0px;
+background: rgba(221, 79, 5, 0.07);
+}
+
+.search{
+  width: 922px;
+height: 60px;
+left: 165px;
+top: 340px;
+background: rgba(221, 79, 5, 0.2);
+border-radius: 4px;
+}
+
+.faqss{
+  width: 1110px;
+height: 56px;
+left: 165px;
+top: 260px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
 }
