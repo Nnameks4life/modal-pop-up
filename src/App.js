@@ -11,6 +11,9 @@ import OrderStatus from './component/MarketPlace/orderStatus'
 import Landing from "./pages/landing/Landing";
 import ContactUs from "./pages/contactus/ContactUs";
 import Faq from "./pages/faq/Faq";
+import Nav from "./component/nav/Nav";
+import ProdSourcing from "./pages/prodsourcing/ProdSourcing";
+import TofaAcademy from "./pages/tofaacademy/TofaAcademy";
 function App() {
   return (
       <BrowserRouter>
@@ -27,6 +30,9 @@ function App() {
         <Route exact path='/landing' element={<Landing/>} />
         <Route exact path='/contactus' element={<ContactUs/>} />
         <Route exact path='/faq' element={<Faq/>} />
+        <Route exact path='/nav' element={<Nav/>} />
+        <Route exact path='/prodsourcing' element={<ProdSourcing/>} />
+        <Route exact path='/tofaacademy' element={<TofaAcademy/>} />
         
       </Routes>
     </BrowserRouter>

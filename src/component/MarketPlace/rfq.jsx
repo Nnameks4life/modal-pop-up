@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import Nav from "../LandingPage/nav";
+import Nav from "../nav/Nav";
 
 export default function Rfq() {
   const [rfqDetail, setRfqDetail] = useState({

@@ -1,0 +1,8 @@
+.circle {
+width: 486px;
+height: 486px;
+right: 183px;
+top: calc(50% - 486px/2 - 2063.5px);
+border: 3px solid rgba(0, 131, 211, 0.5);
+box-sizing: border-box;
+}

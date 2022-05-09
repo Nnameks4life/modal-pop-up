@@ -338,7 +338,7 @@ border-radius: 6px;
 }
 
 .top{
-  width: 1443px;
+width: 100%;
 height: 509px;
 left: -2px;
 top: 0px;
@@ -365,3 +365,55 @@ font-weight: 400;
 font-size: 16px;
 line-height: 28px;
 }
+
+.faqsheading {
+  width: 165px;
+height: 40px;
+left: 165px;
+top: 600px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 40px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #DD4F05;
+}
+
+.faqhead{
+width: 353px;
+left: -16px;
+font-family: 'Mulish';
+font-style: normal;
+}
+
+.prodbody{
+
+    height: 96px;
+    left: 186px;
+    right: 850px;
+    top: calc(50% - 96px/2 - 1173px);
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.prodhead{
+  width: 373px;
+height: 56px;
+left: 181px;
+top: 250px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 56px;
+text-align: center;
+letter-spacing: 0.2px;
+}
+
+

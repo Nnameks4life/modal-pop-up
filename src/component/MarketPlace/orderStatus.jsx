@@ -22,7 +22,7 @@ export default function OrderStatus() {
     <div className='h-80 p-3'> 
     <img className='w-44 h-44 object-contain' src={status3} alt='goods shipped'/>
     <h4 className='text-1tl font-bold'>Goods Shipped</h4>
-    <p className='text-2tl font-light' className='text-2tl font-light'>Your goods has been shipped, It would arrive in 2 days</p>
+    <p className='text-2tl font-light'>Your goods has been shipped, It would arrive in 2 days</p>
     </div>
     <div className='h-80 p-3'> 
     <img className='w-44 h-44 object-contain' src={status4} alt='order received'/>
