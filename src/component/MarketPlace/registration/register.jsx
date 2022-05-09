@@ -8,7 +8,7 @@ import './register.css'
 export default function Register(){
   
   return (
-    <section className='w-100'>
+    <section className='w-100' id='register-page'>
 <div className="row g-0">
         <div className="col-lg-6 d-none d-lg-block">
           <div className="map-img"></div>
@@ -30,7 +30,7 @@ export default function Register(){
             </p>
             </div>
           </main>
-        <div className='all-content'>
+        <div className='registration-content'>
          <h3>Register</h3>
          <p className=''>
 To begin this journey, tell us what type of account you’d be opening.

@@ -5,8 +5,7 @@
 p,h1,h2,h3,h4,h5 {
 	color: #282828;
 }
-
-#user-auth {
+#register-page{
 	height: 100vh;
 }
 
@@ -63,19 +62,24 @@ background: #FFFFFF;
 	font-weight: 400;
     padding: 5px;
 }
-.all-content{
+.registration-content{
    padding: 6rem;
 }
-.all-content p{
+.registration-content p{
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 }
-.all-content h3{
+.info-txt{
+	float: right;	
+}
+.registration-content h3{
 font-size: 1.8rem;
 font-weight: 700;
 }
-
+.register-content:hover{
+	border:1px solid #DD4F05;
+}
 .register-options{
     padding-top: 3rem;
 }
@@ -93,6 +97,10 @@ font-size: 14px;
 	.user-auth-rhs {
     padding: 25px;
 	}
+	.all-content{
+		padding: 2rem;
+		margin-top: 5rem;
+	 }
 
 }
 

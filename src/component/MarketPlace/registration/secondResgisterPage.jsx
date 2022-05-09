@@ -1,6 +1,8 @@
 import React from "react";
 import grainMap from "../../../photos/grainMap.jpeg";
 import ReCAPTCHA from "react-google-recaptcha";
+import backIcon from "../../../photos/back-icon.svg";
+import './seller.css'
 
 export default function SecondResgisterPage({ handleChange, registerDetail,handleSubmit, prevStep })
  {
@@ -25,57 +27,71 @@ const prev = (e) => {
 };
   
   return (
-    <section className='d-flex w-100'>
-        <div className="hidden md:block w-full basis-1/2 m-0 p-0">
-          <img className='ml-0 mr-0 mb-0 p-0' src={grainMap} alt="a map made with crops" />
-        </div>
-        <div className="md:basis-1/2">
-        <div className="flex pt-2 justify-between font-Mulish">
-            <button onClick={prev} className="font-extrabold p-1 ">Back</button>
-            <h5 className=" text-2tl font-light font-Mulish p-1">
-              STEP 2/2
-            </h5>
-          </div>
-          <div className="mx-11 pt-7">
-            <div className="mt-6">
+    <section className='w-100' id='seller-page'>
+
+    <div className="row g-0">
+    
+            <div className="col-lg-6 d-none d-lg-block">
+              <div className="buyer-map-img"></div>
+            </div>
+    
+            <div className="col-lg-6">
+    
+            <main className="row">
+              <div className="col-lg-6 col-3" id='header-text'>
+                      <p className="back-txt">
+                        <img src={backIcon} />
+                        <a href="#">Back</a>
+                      </p>
+                    </div>
+                    <div className="col-lg-6 col-9" id='header-text'>
+                <p className="info-txt">
+                  STEP 02/02
+                </p>
+                </div>
+              </main>
+             
+              <section className='seller-page'>
+                <div className='first-register-content'>
+            <div className="">
               <label
                 htmlFor="product"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="form-label"
               >
                 Main Product
               </label>
               <input
-                className="w-full mt-3 px-4 py-4 rounded border border-black  "
+                className="form-control input "
                 type="text"
                 name="product"
                 value={registerDetail.mainProduct}
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-5">
+            <div className="mt-3">
               <label
                 htmlFor="address"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="form-label"
               >
                 Input Address
               </label>
               <input
-                className="w-full mt-3  px-4 py-4 rounded border border-black  "
+                className="form-control input "
                 type="text"
                 name="address"
                 value={registerDetail.address}
                 onChange={handleChange}
               />
             </div>
-            <div className="mt-5">
+            <div className="mt-3">
               <label
                 htmlFor="password"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="form-label"
               >
                 password
               </label>
               <input
-                className="w-full mt-3  px-4 py-4 rounded border border-black  "
+                className="form-control input "
                 type="password"
                 name="password"
                 value={registerDetail.password}
@@ -83,25 +99,25 @@ const prev = (e) => {
               />
             </div>
 
-            <div className="mt-5">
+            <div className="mt-3">
               <label
                 htmlFor="confirmPassword"
-                className="text-sm font-medium leading-none text-gray-700"
+                className="form-label"
               >
                 Confirm Password
               </label>
               <input
-                className="w-full mt-3 px-4 py-4 rounded border border-black  "
+                className="form-control input "
                 type="text"
                 name="confirmPassword"
                 value={registerDetail.confirmPassword}
                 onChange={handleChange}
               />
             </div>
-            <div className='pt-6 text-1tl'>
+            <div className='mt-3'>
               <p>We need to confirm you are not a robot</p>
             </div>
-            <div className='pt-4'>
+            <div className='mt-3'>
               <ReCAPTCHA
                 sitekey="6Lci50MfAAAAAC0Y0obH9-flF5s8THmB1wCYAFVr"
                 onChange={handleChange}
@@ -109,27 +125,29 @@ const prev = (e) => {
             </div>
            
 
-            <div className="mt-10 flex items-center justify-between">
-              <div className="flex items-center">
+           
+            <div className="mt-4">
                 <input
                   id="remember_me"
                   type="checkbox"
-                  className="border border-gray-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50"
+                 
                 />
                 <label
-                  htmlFor="remember_me"
-                  className="ml-2 block text-sm leading-5 text-gray-900"
+                  for="remember_me"
+                  className='checkbox-label'
                 >
                   {" "}
                   I agree to terms & condition{" "}
                 </label>
               </div>
-            </div>
-            <div className="mt-6 ">
-              <button onClick={handleSubmit} className="w-full mt-8 text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+
+            <div className="mt-4">
+              <button onClick={handleSubmit} className="btn btn-danger button">
                 Register
               </button>
               </div>
+              </div>
+              </section>
           </div>
         </div>
     </section>

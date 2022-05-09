@@ -1,6 +1,8 @@
 import React from "react";
 import password from "../../../photos/passwordImg.png";
 import { useState } from "react";
+import './password.css';
+import backIcon from "../../../photos/back-icon.svg";
 
 export default function ForgotPassword() {
   const [passwordError, setPasswordErr] = useState("");
@@ -71,64 +73,71 @@ export default function ForgotPassword() {
   }
 
   return (
-    <section className='d-flex w-100'>
-        <section className="hidden bg-secondary-white md:block w-full h-screen">
-          <div className='flex justify-center pt-32'>
+    <section className='w-100 row g-0'  id='password-page'>
+        <section className="row g-0">
+          
+          <div className='col-lg-6' id='password-image'>
           <img src={password} alt="password photo" />
           </div>
-        </section>
-        <div className="md:w-full m-3">
-          <div className="flex pt-8 mx-4  flex-row">
-            <h5 className="basis-1/2 font-extrabold ">Back</h5>
+        
+        <div className="col-lg-6" id='password-part'>
+          <div>
+          <p className="back-txt">
+                    <img src={backIcon} />
+                    <a href="#">Back</a>
+                  </p>
           </div>
-          <div className='mx-11'>
-            <h2 className='pt-11 font-Mulish text-3tl font-extrabold' >Change Password</h2>
-            <p className='pt-7 font-Mulish '>Input your new desired password in the input fields below to create a new password. We strongly advise you to store it safely.</p>
+          <main className='password-content'>
+          <div className='mt-3'>
+            <h3>Change Password</h3>
+            <p className='mt-1'>Input your new desired password in the input fields below to create a new password. We strongly advise you to store it safely.</p>
           </div>
-          <form onSubmit={handleSubmit} className="mx-9 pt-7">
-            <div className="mt-7">
+          <form onSubmit={handleSubmit} className="password-form">
+            <div className="mt-2">
               <label
                 htmlFor="password"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
+                className="form-label"
               >
-                Password
+                Enter New Password
               </label>
               <input
-                className="w-full px-5 py-4 rounded border border-black"
+                className="form-control input"
                 type="password"
                 name="password"
                 value={passwordInput.password}
                 onChange={handlePasswordChange}
                 onKeyUp={handleValidation}
               />
-              <p className='text-primary-red'>{passwordError}</p>
+              <p className='error-message'>{passwordError}</p>
             </div>
-            <div className="mt-7">
+            <div className="mt-4">
               <label
                 htmlFor="confirmPassword"
-                className="text-sm font-Mulish font-medium leading-none text-gray-700"
+                className="form-label"
               >
-                Confirm Password
+                Confirm New Password
               </label>
               <input
-                className="w-full px-5 py-4 rounded border border-black"
+                className="form-control input"
                 type="password"
                 name="confirmPassword"
                 value={passwordInput.confirmPassword}
                 onChange={handlePasswordChange}
                 onKeyUp={handleValidation}
               />
-              <p className='text-primary-red'>{confirmPasswordError}</p>
+              <p className='error-message'>{confirmPasswordError}</p>
               
             </div>
 
-            <div className="mt-6 ">
-              <button className="w-full font-Mulish text-primary-white inline-flex items-center justify-center px-4 py-3 bg-primary-orange border-transparent rounded-md font-semibold capitalize hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">
+            <div className=" mt-4">
+              <button className="btn btn-white button">
                 Change Password
               </button>
             </div>
           </form>
+          </main>
         </div>
+        </section>
     </section>
   );
 }

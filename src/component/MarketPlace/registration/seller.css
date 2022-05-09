@@ -1,0 +1,89 @@
+* {
+  font-family: "Mulish", sans-serif;
+}
+#seller-page {
+  min-height: 100vh;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #282828;
+}
+
+
+
+.seller-page h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.info-txt{
+	float: right;	
+}
+
+.checkbox-label {
+  padding: 8px;
+}
+.register-map-img {
+  height: 100%;
+  background-image: url(../../../photos/grainMap.jpeg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#page-num {
+  margin-top: 15px;
+}
+
+.seller-page {
+  padding: 2rem 6rem;
+}
+.first-register-content {
+  margin-top: 30px;
+}
+
+.first-register-content label {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.first-register-content .input {
+  height: 50px;
+}
+
+.first-register-content button {
+  background: #dd4f05;
+  border-color: #dd4f05;
+  opacity: 1;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.first-register-content button:hover {
+  background: #dd4f05;
+  border-color: #dd4f05;
+  opacity: 0.9;
+}
+.button {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.info-txt {
+  float: right;
+}
+
+@media (max-width: 768px) {
+
+  .seller-page {
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+}
