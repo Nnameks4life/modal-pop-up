@@ -6,6 +6,9 @@ import './faq.css'
 
 const Faq = () => {
   const [query, setQuery] = useState("");
+  const handleChange = (e) => {
+    e.preventDdfault(e)
+  }
 
   return (
     <div className="container-fluid">
@@ -34,7 +37,7 @@ const Faq = () => {
           <h6 className="mx-5 mt-5 faqsheading">Top Questions</h6>
           <div className="row px-5">
             <div className="col-6">
-              <Demo text={`This will contain different tex? text = ${query}`} />
+              <Demo text={`This will contain different tex? text = ${query}`} onChange={handleChange}/>
             </div>
             <div className="col-6">
               <Demo text={`This will contain different tex? text = ${query}`} />
