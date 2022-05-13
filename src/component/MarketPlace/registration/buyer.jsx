@@ -98,7 +98,7 @@ export default function Buyer() {
               />
             </div>
             <div >
-              <div className="mt-4">
+              <div className="mt-4 d-flex">
                 <input
                   id="remember_me"
                   type="checkbox"

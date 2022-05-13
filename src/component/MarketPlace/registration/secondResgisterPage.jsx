@@ -126,7 +126,7 @@ const prev = (e) => {
            
 
            
-            <div className="mt-4">
+            <div className="mt-4 d-flex">
                 <input
                   id="remember_me"
                   type="checkbox"

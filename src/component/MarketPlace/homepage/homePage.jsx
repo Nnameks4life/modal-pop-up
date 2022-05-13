@@ -7,119 +7,152 @@ import vector from "../../../photos/vector.png";
 import Texts from "../../../photos/test2.png";
 import productSourcing from "../../../photos/productSourcing.jpg";
 import tradeBanner from "../../../photos/tradeBanner.jpg";
+import "./marketPlace.css";
 
 export default function HomePage() {
   const [image, setImage] = useState(null);
   const [isOpened, setIsOpened] = useState(true);
-  const [lists, setList] = React.useState(false)
+  const [lists, setList] = React.useState(false);
   function toggle() {
-    setIsOpened(wasOpened => !wasOpened);
+    setIsOpened((wasOpened) => !wasOpened);
   }
-  const showLists = () => setList(!lists)
-  
+  const showLists = () => setList(!lists);
 
   return (
-    <>
-    <div className='bg-dull-white w-full'>
-      <ul className='flex justify-end font-Mulish text-primary-orange text-2tl'>
-        <li className='p-3'><a href='/register'>Sell on Tofa </a></li>
-        <li className='p-3'><a href='/rfq'>Create Rfq </a></li>
+    <div className="overflow-hidden" id="market-content">
+      {/* <div className=''>
+      <ul className=''>
+        <li className=''><a href='/register'>Sell on Tofa </a></li>
+        <li className=''><a href='/rfq'>Create Rfq </a></li>
       </ul>
-      </div>
-    <MarketNav/>
-      <div className="md:flex bg-dull-white md:p-10">
-        <div className="bg-primary-white md:w-64 md:mr-5 h-1/2">
+      </div> */}
+      <section className="w-full d-flex m-3" id="market-home-page">
+
+        <aside id="side-list">
           <ul>
-            <li className="p-4">
-              
-              <div className="flex text-primary-blue  font-xbold font-Mulish py-2 text-4tl border rounded-md">
-              <img src={vector} className='p-3'/>
+            <div className="d-flex " id='category'>
+              <img src={vector} className="category-img" />
               <p>Categories</p>
-              </div>
+            </div>
+
+            <li className="mt-2">
+              <button className="" onClick={toggle}>
+                All Categories
+              </button>
             </li>
-            <li className='md:pl-16 p-2 font-xbold'><button className='font-Mulish font-bold text-1tl' onClick={toggle}>All Categories</button></li>
             {isOpened && (
-        <div className="font-Mulish">
-          <li className='md:pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl'>Apparel </button></li>
-            <li className='md:pl-11 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl' onClick={showLists}>Agriculture </button></li>
-            
-           {lists ? 
-        <ul>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Sesame Seeds </button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Cashew Nuts</button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Paddy RIce </button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Palm Kernel Nuts </button></li>
-          <li className='pl-14 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-2tl'>Sorghum </button></li>
-        </ul>
-      : null}
-         
-     
-            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'> <button className='font-Mulish font-light text-1tl'>Food and Beverages </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Construction Materials </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Home and Furniture </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Packages and Supplies </button></li>
-            <li className='pl-2 p-3 border rounded-md border-secondary-white font-Mulish'><button className='font-Mulish font-light text-1tl'>Minerals and Mattalurgy </button></li>
-        </div>
-      )}
+              <div className="mt-3">
+                <li className="">
+                  {" "}
+                  <button className="">Apparel </button>
+                </li>
+                <li className="mt-2">
+                  {" "}
+                  <button className="" onClick={showLists}>
+                    Agriculture{" "}
+                  </button>
+                </li>
+
+                {lists ? (
+                  <ul>
+                    <li className="mt-2">
+                      <button className="">Sesame Seeds </button>
+                    </li>
+                    <li className="mt-2">
+                      <button className="">Cashew Nuts</button>
+                    </li>
+                    <li className="mt-2">
+                      <button className="">Paddy RIce </button>
+                    </li>
+                    <li className="mt-2">
+                      <button className="">Palm Kernel Nuts </button>
+                    </li>
+                    <li className="mt-2">
+                      <button className="">Sorghum </button>
+                    </li>
+                  </ul>
+                ) : null}
+
+                <li className="mt-2">
+                  {" "}
+                  <button className="">Food and Beverages </button>
+                </li>
+                <li className="mt-2">
+                  <button className="">Construction Materials </button>
+                </li>
+                <li className="mt-2">
+                  <button className="">Home and Furniture </button>
+                </li>
+                <li className="mt-2">
+                  <button className="">Packages and Supplies </button>
+                </li>
+                <li className="mt-2">
+                  <button className="">Minerals and Mattalurgy </button>
+                </li>
+              </div>
+            )}
           </ul>
-        </div>
-        <section className=" bg-primary-white">
-          <div className='flex'>
-          <div class="rounded overflow-hidden shadow-lg w-full p-3 mr-2">
-  <img src={productSourcing}/>
-</div>
-<div class="rounded overflow-hidden shadow-lg w-full p-3">
-<img src={tradeBanner}/>
-</div>
+        </aside>
+
+        <section id="product-section" >
+           <div className="banner-section">
+            <div className="banner-section-one">
+              <img src={productSourcing} />
+            </div>
+
+            <div className="banner-section-two">
+              <img src={tradeBanner} />
+            </div>
+          </div> 
+
+          <div className='pt-4'>
+            <h4 className="">Popular Products In each Category</h4>
+
+            <main className="market-container">
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+              <div className="market-item">
+                <img className="" src={Test} alt="bag of cereal" />
+                <div class="">Processed Rice</div>
+                <span class="">rating</span>
+              </div>
+            </main>
           </div>
-          <section>
-            <h4 className='text-primary-orange pt-11 m-2 font-Mulish text-2tl font-bold'>Popular Products In each Category</h4>
-            <main className='grid pt-7 md:grid-cols-4 gap-4 md:p-5 grid-cols-2 '>
-            <div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-<div className="border border-dull-white">
-            <img className='mt-7' src={Test} alt='bag of cereal' />
-    <div class="font-light text-2tl p-2">Processed Rice</div>
-    <span class="inline-block bg-gray-200 rounded-full text-sm font-semibold text-gray-700 mr-2">rating</span>
-</div>
-          </main>
-          </section>
         </section>
-      </div>
-      
-    </>
+      </section>
+    </div>
   );
 }

@@ -1,0 +1,17 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
+p,h1,h2,h3,h4,h5 {
+	color: #282828;
+}
+button{
+    background-color:#DD4F05 ;
+    color: #ffff;
+    height: 3rem;
+}
+input{
+    height: 50px;
+    font-size: .9rem;
+    background-color: #FFFFFF!important;
+}
+

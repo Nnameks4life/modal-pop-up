@@ -1,26 +1,13 @@
-* {
-  font-family: "Mulish", sans-serif;
-}
 #seller-page {
   min-height: 100vh;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #282828;
-}
-
-
 
 .seller-page h3 {
   font-size: 1.8rem;
   font-weight: 700;
 }
-.info-txt{
-	float: right;	
+.info-txt {
+  float: right;
 }
 
 .checkbox-label {
@@ -81,7 +68,6 @@ h5 {
 }
 
 @media (max-width: 768px) {
-
   .seller-page {
     padding: 2rem;
     margin-top: 1rem;
