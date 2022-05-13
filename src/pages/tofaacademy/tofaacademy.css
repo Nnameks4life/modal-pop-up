@@ -1,0 +1,271 @@
+.headacademy {
+  margin-top: 12rem;
+}
+
+.academy {
+  width: 482px;
+  height: 72px;
+  left: calc(50% - 482px / 2 - 294px);
+  top: 372px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.circle {
+  width: 486px;
+  height: 486px;
+  right: 183px;
+  top: calc(50% - 486px / 2 - 2063.5px);
+  border: 3px solid rgba(0, 131, 211, 0.5);
+  box-sizing: border-box;
+}
+
+.dot {
+  position: relative;
+  height: 28rem;
+  width: 28rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid rgba(0, 131, 211, 0.5);
+  margin: auto;
+  margin-top: 55px;
+}
+
+.dot2 {
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  top: 80px;
+  left: 810px;
+  display: inline-block;
+  border: 3px solid rgba(0, 131, 211, 0.5);
+  margin: auto;
+  margin-top: 55px;
+}
+
+.point1 {
+  position: absolute;
+  height: 63px;
+  left: 922px;
+  top: 34px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+  margin: auto;
+}
+
+.point2 {
+  position: absolute;
+  height: 63px;
+  left: 922px;
+  top: 474px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+.point3 {
+  position: absolute;
+  height: 63px;
+  left: 730px;
+  top: 354px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+.point4 {
+  position: absolute;
+  height: 63px;
+  left: 1125px;
+  top: 354px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+.point5 {
+  position: absolute;
+  height: 63px;
+  left: 745px;
+  top: 124px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+
+.point6 {
+  position: absolute;
+  height: 63px;
+  left: 1105px;
+  top: 124px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+
+.dot3 {
+  position: absolute;
+  height: 22rem;
+  width: 22rem;
+  border-radius: 50%;
+  top: 50px;
+  left: 780px;
+  display: inline-block;
+  border: 60px solid rgba(0, 131, 211, 0.5);
+  margin-top: 55px;
+}
+
+.point7 {
+  position: absolute;
+  height: 63px;
+  left: 815px;
+  top: 254px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+.point8 {
+  position: absolute;
+  height: 63px;
+  left: 915px;
+  top: 135px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+.point9 {
+  position: absolute;
+  height: 63px;
+  left: 1035px;
+  top: 254px;
+  filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
+}
+
+.video {
+  left: 5.15%;
+  right: 0%;
+  top: 0%;
+  bottom: 7.89%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.goals{
+    margin-top: 150px;
+}
+.goalstext{
+height: 1161px;
+left: 0px;
+top: 1484px;
+background: linear-gradient(180deg, #F5F9FE 0%, rgba(245, 249, 254, 0) 100%);
+}
+
+.numbers{
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+    border-color: #DD4F05;
+}
+.numbertext{
+right: 0%;
+top: 58.82%;
+bottom: 0%;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+}
+
+.textstart{
+    position: relative;
+    
+}
+
+.orange{
+    position: absolute;
+    float: right;
+    right: 90px;
+    top: 63rem;
+    
+}
+.applytofa{
+  margin-top: 20rem;
+  display: grid;
+
+}
+.apply{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #ffff;
+}
+
+.subtext{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+}
+
+.imgstyle{
+  max-width: 100%;
+  margin: auto;
+  height: 425px;
+
+top: 2597px;
+  background: linear-gradient(180deg, #DD4F05 22.59%, rgba(0, 131, 211, 0.551637) 77.41%, rgba(0, 131, 211, 0) 100%);
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.tofapartner {
+  
+    background: linear-gradient(90deg, rgba(239, 240, 241, 0.1) 0%, rgba(240, 241, 242, 0.6), rgba(192, 204, 218, 0.1) );
+  width: 1110px;
+left: -28.5px;
+top: 0px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 24px 0px;
+padding: 20px 100px;
+}
+.partnerheading{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 40px;
+}
+.partnersub {
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 2.22%;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.3px;
+}
+
+.paragraphs{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+font-feature-settings: 'salt' on, 'liga' off;
+}
+
+.dotted-img{
+  position: relative;
+  
+}
+
+.academyy{
+  position: absolute;
+  bottom: 8px;
+  right: 100px;
+  
+}
+.dott{
+  top: 15px;
+}
+
+
+

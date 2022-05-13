@@ -1,0 +1,77 @@
+.fullname{
+background: #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.11);
+border-radius: 6px;
+padding: 8px 10rem 8px 10rem;
+}
+
+.desired-products{
+    width: 896px;
+height: 56px;
+left: 267px;
+top: 332px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+
+}
+.first-parag{
+    margin-left: 65px;
+}
+
+.label{
+    display: inline-block;
+}
+
+.names{
+left: 18.54%;
+right: 51.74%;
+top: 17.75%;
+bottom: 79.76%;
+width: 100%;
+padding: 12px 0 12px 0;
+background: #FFFFFF;
+
+box-sizing: border-box;
+box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.11);
+border-radius: 6px;
+}
+
+.firstname{
+   padding-left: 5rem;
+   align-items: center;
+    margin: auto;
+}
+
+.attend{
+    padding-left: 4rem;
+}
+
+.lastname{
+    align-items: center;
+    margin: auto;
+    padding-right: 5rem;
+}
+.homeaddress{
+    align-items: center;
+    margin: auto;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.upload{
+    width: 645px;
+height: 48px;
+left: 267px;
+top: 1620px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+}

@@ -1,0 +1,55 @@
+.top{
+    width: 100%;
+    height: 509px;
+    left: -2px;
+    top: 0px;
+    background: rgba(221, 79, 5, 0.07);
+    }
+  
+  .faqss{
+    width: 1110px;
+  height: 56px;
+  left: 165px;
+  top: 260px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  }
+  
+  .faqsheading {
+    width: 165px;
+  height: 40px;
+  left: 165px;
+  top: 600px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #DD4F05;
+  }
+  
+  .faqhead{
+  width: 353px;
+  left: -16px;
+  font-family: 'Mulish';
+  font-style: normal;
+  }
+
+  .inputstyle{
+    left: 52.29%;
+  right: 18.12%;
+  top: 23.9%;
+  bottom: 72.25%;
+  
+  background: #FFFFFF;
+  border: 1px solid #282828;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 62px;
+  width: 426px;
+  } 
