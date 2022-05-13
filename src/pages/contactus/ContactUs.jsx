@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import contact from "../../photos/contactus.png";
 import axios from "axios";
+import './contact.css'
 
 const ContactUs = () => {
  
@@ -42,25 +43,23 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="container-fluid ">
+    <div className="container">
       <div className="row">
-        <div className="col-6 contactus text-center">
-          <h3>Contact Us</h3>
+        <div className="col-6 contactus py-5">
+          <h3 className="mx-5">Contact Us</h3>
           <div className="text-center">
-            <img src={contact} alt="contact us" />
-            <p className="contact">
+            <img src={contact} alt="contact us" style={{width:'100%'}} />
+            <p className="contact" >
               Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
               nam no suscipit quaerendum. At nam minimum pondeum. Estvvg the
               stadium audiam animal molestiae te. .{" "}
             </p>
           </div>
         </div>
-        <div className="col-6 mt-5 forms mx-auto">
-          <form className="form py-5" onSubmit={handleSubmit}>
-            <button onClick={dropCountry}>Get latest jokes now</button>
-            {/* {country} */}
+        <div className="col-6 contactus py-5 forms ">
+          <form className="form py-4" onSubmit={handleSubmit}>
             <select
-              className="form-select py-2 inputpartner"
+              className="form-select inputpartner"
               aria-label="Default select example"
             >
               <option>For Partnership</option>
@@ -69,7 +68,7 @@ const ContactUs = () => {
               <option value="3">Three</option>
             </select>
             <br />
-            <label className="form-label">Fullname</label>
+            <label className="form-label">Fullname*</label>
             <input
               type="text"
               value={contacts.fullName}
@@ -77,7 +76,7 @@ const ContactUs = () => {
               className="form-control inputstyle"
               onChange={handleChange}
             />
-            <label className="form-label">Email Address</label>
+            <label className="form-label">Email Address*</label>
             <input
               type="text"
               className="form-control inputstyle"
@@ -107,7 +106,7 @@ const ContactUs = () => {
               name='phoneNumber'
               onChange={handleChange}
             />
-            <button className="btnsubmit mt-3" type="submit">Submit</button>
+            <button className="btnsubmit mt-3 btn" type="submit">Submit</button>
           </form>
         </div>
       </div>

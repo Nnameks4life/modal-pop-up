@@ -1,3 +1,31 @@
+.prodbody{
+
+    height: 96px;
+    left: 186px;
+    right: 850px;
+    top: calc(50% - 96px/2 - 1173px);
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.prodhead{
+  width: 373px;
+height: 56px;
+left: 181px;
+top: 250px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 56px;
+text-align: center;
+letter-spacing: 0.2px;
+}
+
 .heading{
     
     height: 56px;

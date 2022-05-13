@@ -3,6 +3,7 @@ import tofa from "../../photos/logolanding.png";
 import "../../index.css";
 import Carousel from "../../component/carousel/Carousel";
 import { Link } from "react-router-dom";
+import './landing.css'
 
 const Landing = () => {
   return (

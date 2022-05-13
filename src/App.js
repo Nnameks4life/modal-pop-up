@@ -14,6 +14,7 @@ import Faq from "./pages/faq/Faq";
 import Nav from "./component/nav/Nav";
 import ProdSourcing from "./pages/prodsourcing/ProdSourcing";
 import TofaAcademy from "./pages/tofaacademy/TofaAcademy";
+import AcademyForm from "./pages/academyform/AcademyForm";
 function App() {
   return (
       <BrowserRouter>
@@ -33,6 +34,7 @@ function App() {
         <Route exact path='/nav' element={<Nav/>} />
         <Route exact path='/prodsourcing' element={<ProdSourcing/>} />
         <Route exact path='/tofaacademy' element={<TofaAcademy/>} />
+        <Route exact path= 'academyform' element={<AcademyForm/>} />
         
       </Routes>
     </BrowserRouter>

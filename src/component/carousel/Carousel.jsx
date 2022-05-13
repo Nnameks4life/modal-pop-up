@@ -13,6 +13,7 @@ import fed from "../../photos/fedex.png";
 import man from "../../photos/manspic.png";
 import peeps from '../../photos/people.png'
 import { Link } from "react-router-dom";
+import '../../pages/landing/landing.css'
 
 const Carousel = () => {
   return (
