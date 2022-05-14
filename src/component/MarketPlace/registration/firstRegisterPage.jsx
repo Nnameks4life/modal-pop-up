@@ -1,5 +1,4 @@
 import React from "react";
-import grainMap from "../../../photos/grainMap.jpeg";
 import backIcon from "../../../photos/back-icon.svg";
 import './seller.css'
 

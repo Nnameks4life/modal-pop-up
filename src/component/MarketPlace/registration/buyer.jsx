@@ -1,5 +1,4 @@
 import React from "react";
-import grainMap from "../../../photos/grainMap.jpeg";
 import facebook from "../../../photos/facebook 1.png";
 import { useState } from "react";
 import './buyer.css'

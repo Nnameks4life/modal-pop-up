@@ -1,5 +1,4 @@
 import React from "react";
-import grainMap from "../../../photos/grainMap.jpeg";
 import buyerIcon from "../../../photos/buyerIcon.png";
 import sellerIcon from "../../../photos/sellerIcon.png";
 import backIcon from "../../../photos/back-icon.svg";
