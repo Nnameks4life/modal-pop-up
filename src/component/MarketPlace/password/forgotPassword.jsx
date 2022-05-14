@@ -82,7 +82,7 @@ export default function ForgotPassword() {
         
         <div className="col-lg-6" id='password-part'>
           <div>
-          <p className="back-txt">
+          <p className="back-txt m-3 d-flex">
                     <img src={backIcon} />
                     <a href="#">Back</a>
                   </p>

@@ -29,11 +29,11 @@ export default function Buyer() {
           <div className="buyer-map-img"></div>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6" id='buyer-section'>
 
-        <main className="row">
+        <main className="row m-3">
           <div className="col-lg-6 col-3" id='header-text'>
-                  <p className="back-txt">
+                  <p className="back-txt d-flex">
                     <img src={backIcon} />
                     <a href="#">Back</a>
                   </p>

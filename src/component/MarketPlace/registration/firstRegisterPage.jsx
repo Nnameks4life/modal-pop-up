@@ -18,10 +18,10 @@ export default function FirstRegisterPage({handleChange, registerDetail, nextSte
   <div className="register-map-img"></div>
 </div>
 
-<div className="col-lg-6">
-<main className="row">
+<div className="col-lg-6" id='register-section'>
+<main className="row m-3">
           <div className="col-lg-6 col-3" id='header-text'>
-                  <p className="back-txt">
+                  <p className="back-txt d-flex">
                     <img src={backIcon} />
                     <a href="#">Back</a>
                   </p>

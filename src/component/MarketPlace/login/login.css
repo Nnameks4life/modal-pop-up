@@ -41,7 +41,7 @@ button {
 /*Auth Page*/
 
 #user-auth {
-	height: 100vh;
+	height: 100vh !important;
 }
 
 .user-auth-lhs {
@@ -54,14 +54,17 @@ button {
   	background-size: cover;
 }
 
-
+#form-page{
+	height: 100vh;
+	overflow: scroll;
+}
 .user-auth-rhs {
 	height: 100vh;
-	padding: 50px 50px;
+	padding: 40px 40px;
 }
 
 .user-nav {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 .user-nav p {

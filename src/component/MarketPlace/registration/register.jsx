@@ -14,9 +14,9 @@ export default function Register(){
           <div className="map-img"></div>
         </div>
         <div className="col-lg-6">
-          <main className="row">
+          <main className="row m-3">
           <div className="col-lg-6 col-3" id='header-text'>
-                  <p className="back-txt">
+                  <p className="back-txt d-flex">
                     <img src={backIcon} />
                     <a href="#">Back</a>
                   </p>

@@ -25,7 +25,7 @@ export default function Login() {
         <div className="col-lg-6 d-none d-lg-block">
           <div className="user-auth-lhs"></div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6" id='form-page'>
           <div className="user-auth-rhs">
             <div className="user-nav">
               <div className="row">
