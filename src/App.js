@@ -9,7 +9,6 @@ import ViewProduct from './component/MarketPlace/homepage/viewProduct'
 import Rfq from './component/MarketPlace/order/rfq'
 import OrderStatus from './component/MarketPlace/order/orderStatus'
 import Landing from "./pages/landing/Landing";
-import Login from './component/MarketPlace/login'
 import Nav from "./component/nav/Nav";
 import OrderStatus from './component/MarketPlace/orderStatus'
 import ProdSourcing from "./pages/prodsourcing/ProdSourcing";
