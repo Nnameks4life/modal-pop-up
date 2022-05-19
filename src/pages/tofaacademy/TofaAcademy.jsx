@@ -32,7 +32,7 @@ import fed from "../../photos/fedex.png";
 
 const TofaAcademy = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row mx-auto">
         <div className="col-6 headacademy">
           <h1 className="font-mulish">TOFA Academy</h1>

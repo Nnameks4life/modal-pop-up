@@ -33,12 +33,12 @@ const Landing = () => {
         </div>
 
         <div className="textss">
-          <div className="text-center text-light px-10">
+          <div className="text-center text-light px-1">
             <p className="descrip">
               Small Business Communities,
               <br /> Big Market Opportunities
             </p>
-            <p>
+            <p className="text-light">
               Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
               <br /> am no suscipit quaerendum. At nam minimum{" "}
             </p>

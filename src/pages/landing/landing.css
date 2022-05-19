@@ -185,6 +185,8 @@
   
   .partners {
     background: linear-gradient(180deg, #e8e8e8 0%, #ffffff 28.54%);
+    height: 100vh;
+    width: 100vw;
   }
   .partner {
     background: linear-gradient(
@@ -265,4 +267,10 @@
       border-radius: 6px;
       height: 62px;
       width: 426px;
+      }
+
+      .tofa-image{
+        width: 100vw;
+        height: 100vh;
+
       }

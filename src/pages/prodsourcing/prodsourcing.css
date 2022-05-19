@@ -179,6 +179,11 @@ top: 1380px;
 background: #DD4F05;
 }
 
+.radioitem{
+    display: inline !important;
+    height: 13px !important;
+}
+
     /* .scndimg{
         position: relative;
         width: 360px;
