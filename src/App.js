@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from './component/MarketPlace/login'
-import Register from './component/MarketPlace/register'
-import Buyer from './component/MarketPlace/buyer'
-import Seller from './component/MarketPlace/seller';
-import ForgotPassword from './component/MarketPlace/forgotPassword'
-import HomePage from './component/MarketPlace/homePage'
-import ViewProduct from './component/MarketPlace/viewProduct'
-import Rfq from './component/MarketPlace/rfq'
-import OrderStatus from './component/MarketPlace/orderStatus'
+import Login from './component/MarketPlace/login/login'
+import Register from './component/MarketPlace/registration/register'
+import Buyer from './component/MarketPlace/registration/buyer'
+import Seller from './component/MarketPlace/registration/seller';
+import ForgotPassword from './component/MarketPlace/password/forgotPassword'
+import HomePage from './component/MarketPlace/homepage/homePage'
+import ViewProduct from './component/MarketPlace/homepage/viewProduct'
+import Rfq from './component/MarketPlace/order/rfq'
+import OrderStatus from './component/MarketPlace/order/orderStatus'
 import Landing from "./pages/landing/Landing";
 import Login from './component/MarketPlace/login'
 import Nav from "./component/nav/Nav";
@@ -39,10 +39,9 @@ function App() {
         <Route exact path='/nav' element={<Nav/>} />
         <Route exact path='/prodsourcing' element={<ProdSourcing/>} />
         <Route exact path='/tofaacademy' element={<TofaAcademy/>} />
-        <Route exact path= '/academyform' element={<AcademyForm/>} />
+        <Route exact path= 'academyform' element={<AcademyForm/>} />
         <Route exact path='/allblogs' element={<AllBlogs/>} />
         <Route exact path='/blogdetails' element={<BlogDetails/>} />
-        
       </Routes>
     </BrowserRouter>
       
