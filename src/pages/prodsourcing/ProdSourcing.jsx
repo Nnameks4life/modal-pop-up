@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import floodrice from "../../photos/flood.png";
 import cornn from "../../photos/smilingcorn.png";
 import calling from "../../photos/call.png";
+import cart from "../../photos/cart.png";
+import savetime from "../../photos/savetime.png";
+import cred from "../../photos/cred.png";
+import easybuy from "../../photos/easybuy.png";
 import "./prodsourcing.css";
+import Maps from "./Maps";
+
 
 const ProdSourcing = () => {
   const note1 = `
@@ -64,17 +70,17 @@ const ProdSourcing = () => {
           <div className="col-4 headeralign">
             <h3>Our Services</h3>
             <p onClick={() => setText(note1)} style={{ cursor: "pointer" }}>
-              <i className="fa-brands fa-accusoft itemcolor"></i>Product
+              <img src={cart} alt=''/>Product
               Sourcing
             </p>
             <p onClick={() => setText(note2)} style={{ cursor: "pointer" }}>
-              <i className="fa-brands fa-accusoft itemcolor"></i>Save Time
+              <img src={savetime} alt=''/>Save Time
             </p>
             <p onClick={() => setText(note3)} style={{ cursor: "pointer" }}>
-              <i className="fa-brands fa-accusoft itemcolor"></i>Credibility
+              <img src={cred} alt=''/>Credibility
             </p>
             <p onClick={() => setText(note4)} style={{ cursor: "pointer" }}>
-              <i className="fa-brands fa-accusoft itemcolor"></i>Easy Buy
+              <img src={easybuy} alt=''/>Easy Buy
             </p>
           </div>
           <div className="col-8 boxx mx-auto">
@@ -122,28 +128,35 @@ const ProdSourcing = () => {
           </div>
         </div>
       </div>
-      <div className="row">
-        <h5 className="text-center">
+        <h5 className="text-center my-5">
           Get to Know Where our Products are Sourced
         </h5>
-          <h6>Crops</h6>
-        <div className="mx-5 my-5 col-3 text-right">
-          <label>Maize</label>
-          <input type="radio" className="itemcolor my-3" />
+      <div className="my-3">
+        <div className="mx-5">
+          <h6 className="py-2">Crops</h6>
+          <input type="radio" className="itemcolor my-1 radioitem mx-2" />
+          <label className="py-2">Maize</label>
           <br />
-          <label>Sesame Seed</label>
-          <input type="radio" className="itemcolor my-3" />
+          <div className="radioitem">
+          <input type="radio" className="itemcolor radioitem my-1 mx-2" />
+          <label className="py-2">Sesame</label>
+          </div>
           <br />
-          <label>Charcoal</label>
-          <input type="radio" className="itemcolor my-3" />
+          <input type="radio" className="itemcolor mt-1 radioitem my-1 mx-2" />
+          <label className="py-2">Charcoal</label>
           <br />
-          <label>Cashew Nuts</label>
-          <input type="radio" className="itemcolor my-3" />
+          <input type="radio" className="itemcolor radioitem my-1 mx-2" />
+          <label className="py-2">Cashew Nuts</label>
           <br />
-          <label>Crude Palm Oil</label>
-          <input type="radio" className="itemcolor my-3" />
+          <input type="radio" className="itemcolor my-1 radioitem my-1 mx-2" />
+          <label className="py-2">Crude Palm Oil</label>
         </div>
-        <div className="col-8"></div>
+        <div className="">
+          
+          <Maps/>
+
+
+        </div>
       </div>
     </div>
   );

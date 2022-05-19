@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/rfq" element={<Rfq/>} />
         <Route exact path="/products" element={<ViewProduct/>} />
         <Route exact path="/order" element={<OrderStatus/>} />
-        <Route exact path='/landing' element={<Landing/>} />
+        <Route exact path='/' element={<Landing/>} />
         <Route exact path='/contactus' element={<ContactUs/>} />
         <Route exact path='/faq' element={<Faq/>} />
         <Route exact path='/nav' element={<Nav/>} />
