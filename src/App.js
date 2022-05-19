@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import AcademyForm from "./pages/academyform/AcademyForm";
-import Buyer from './component/MarketPlace/buyer'
-import ContactUs from "./pages/contactus/ContactUs";
-import Faq from "./pages/faq/Faq";
-import ForgotPassword from './component/MarketPlace/forgotPassword'
-import HomePage from './component/MarketPlace/homePage'
+import Login from './component/MarketPlace/login/login'
+import Register from './component/MarketPlace/registration/register'
+import Buyer from './component/MarketPlace/registration/buyer'
+import Seller from './component/MarketPlace/registration/seller';
+import ForgotPassword from './component/MarketPlace/password/forgotPassword'
+import HomePage from './component/MarketPlace/homepage/homePage'
+import ViewProduct from './component/MarketPlace/homepage/viewProduct'
+import Rfq from './component/MarketPlace/order/rfq'
+import OrderStatus from './component/MarketPlace/order/orderStatus'
 import Landing from "./pages/landing/Landing";
 import Login from './component/MarketPlace/login'
 import Nav from "./component/nav/Nav";
