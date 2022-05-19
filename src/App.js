@@ -15,8 +15,9 @@ import Register from './component/MarketPlace/register'
 import Rfq from './component/MarketPlace/rfq'
 import Seller from './component/MarketPlace/seller';
 import TofaAcademy from "./pages/tofaacademy/TofaAcademy";
-import ViewProduct from './component/MarketPlace/viewProduct'
-
+import AcademyForm from "./pages/academyform/AcademyForm";
+import AllBlogs from "./pages/allblogs/AllBlogs";
+import BlogDetails from "./pages/blogdetails/BlogDetails";
 function App() {
   return (
       <BrowserRouter>
@@ -36,7 +37,9 @@ function App() {
         <Route exact path='/nav' element={<Nav/>} />
         <Route exact path='/prodsourcing' element={<ProdSourcing/>} />
         <Route exact path='/tofaacademy' element={<TofaAcademy/>} />
-        <Route exact path= 'academyform' element={<AcademyForm/>} />
+        <Route exact path= '/academyform' element={<AcademyForm/>} />
+        <Route exact path='/allblogs' element={<AllBlogs/>} />
+        <Route exact path='/blogdetails' element={<BlogDetails/>} />
         
       </Routes>
     </BrowserRouter>

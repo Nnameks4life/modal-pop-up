@@ -126,8 +126,8 @@ const ProdSourcing = () => {
         <h5 className="text-center">
           Get to Know Where our Products are Sourced
         </h5>
-        <div className="mx-5 my-5 col-3 text-right">
           <h6>Crops</h6>
+        <div className="mx-5 my-5 col-3 text-right">
           <label>Maize</label>
           <input type="radio" className="itemcolor my-3" />
           <br />
