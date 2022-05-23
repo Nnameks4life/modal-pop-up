@@ -11,6 +11,8 @@ import Maps from "./Maps";
 
 
 const ProdSourcing = () => {
+
+
   const note1 = `
   You can buy our African sourced and Manufactured Products from the comfort of your home
   `;
@@ -24,7 +26,28 @@ const ProdSourcing = () => {
   nam no suscipit please check again. At nam minimum pondeum. Est audiam
   animal molestiae te`;
 
+  const position1 = { lat: 17.570692, lng: -3.996166 }
+  const position2 = { lat: 7.946527, lng: -1.023194 }
+  const position3 = { lat: 9.081999, lng: 8.675277}
+  const position4 = { lat: 8.619543, lng: 0.824782 }
+  const position5 = { lat: 7.369722, lng: 12.354722 }
+  
+
   const [text, setText] = useState([note1]);
+
+  const [location, setLocation] = useState([
+    position1,
+    position3,
+    position3,
+    position4,
+    position5 
+  ]);
+
+  const handleChange = () => {
+    setLocation (location)
+  }
+
+
 
   return (
     <div className="containe">
@@ -131,27 +154,27 @@ const ProdSourcing = () => {
         <h5 className="text-center my-5">
           Get to Know Where our Products are Sourced
         </h5>
-      <div className="my-3">
-        <div className="mx-5">
+      <div className="row my-3 mx-auto">
+        <div className="col-3 croptop">
           <h6 className="py-2">Crops</h6>
-          <input type="radio" className="itemcolor my-1 radioitem mx-2" />
+          <input type="radio" className="itemcolor my-1 radioitem mx-2" onChange={handleChange} onClick={()=>setLocation(position1)}/>
           <label className="py-2">Maize</label>
           <br />
           <div className="radioitem">
-          <input type="radio" className="itemcolor radioitem my-1 mx-2" />
+          <input type="radio" className="itemcolor radioitem my-1 mx-2" onChange={handleChange} onClick={()=>setLocation(position2)}/>
           <label className="py-2">Sesame</label>
           </div>
           <br />
-          <input type="radio" className="itemcolor mt-1 radioitem my-1 mx-2" />
+          <input type="radio" className="itemcolor mt-1 radioitem my-1 mx-2" onChange={handleChange} onClick={()=>setLocation(position3)}/>
           <label className="py-2">Charcoal</label>
           <br />
-          <input type="radio" className="itemcolor radioitem my-1 mx-2" />
+          <input type="radio" className="itemcolor radioitem my-1 mx-2" onChange={handleChange} onClick={()=>setLocation(position4)}/>
           <label className="py-2">Cashew Nuts</label>
           <br />
-          <input type="radio" className="itemcolor my-1 radioitem my-1 mx-2" />
+          <input type="radio" className="itemcolor my-1 radioitem my-1 mx-2" onChange={handleChange} onClick={()=>setLocation(position5)}/>
           <label className="py-2">Crude Palm Oil</label>
         </div>
-        <div className="">
+        <div className="col-9 mb-3 ">
           
           <Maps/>
 

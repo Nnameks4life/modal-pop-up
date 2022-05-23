@@ -6,7 +6,7 @@ import {
   } from "react-google-maps";
   
 
-  const Maps = () => {
+  const Maps = ({ location,position2}) => {
   
   const MapWithAMarker = withScriptjs(withGoogleMap(props =>
     <GoogleMap
@@ -14,9 +14,11 @@ import {
       defaultCenter={{ lat: -8.783195, lng: 34.508522 }}
       
     >
-      <Marker
+      {location ===  <Marker/> && position2}
+      {/* <Marker
+      
         position={{ lat: 17.570692, lng: -3.996166 }}
-      />
+      /> */}
     </GoogleMap>
   ));
 

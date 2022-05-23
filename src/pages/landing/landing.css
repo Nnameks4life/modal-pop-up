@@ -1,201 +1,220 @@
 .menuitems {
-    display: flex;
-    list-style-type: none;
-  }
+  display: flex;
+  list-style-type: none;
+}
+
+.li {
+  text-decoration: none;
+  color: white;
+}
+
+.btncolor {
+  background-color: #dd4f05;
+}
+
+.content {
+  position: relative;
+}
+
+.bgbody {
+  position: absolute;
+}
+
+.arrange {
+  justify-content: center;
+}
+
+.centerr {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.descrip {
+  top: 0%;
+  bottom: 12.5%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: white;
+}
+
+.btnlight {
+  border: #dd4f05 2px solid;
+}
+
+.textss {
+  text-align: center;
+  padding: 200px 0;
+}
+.tractortexts {
+  text-align: left;
+  height: 149.75px;
+  left: 718px;
+  right: 182px;
+  top: calc(50% - 149.75px / 2 - 2096.38px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #000000;
+}
+
+.productt-section {
+  margin-top: 5rem;
+}
+.products {
+  font-family: "Mulish";
+  color: #000000;
+  text-align: center;
+}
+
+.productt {
+  font-family: "Mulish";
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #282828;
+}
+
+.sourcing {
+  height: 144px;
+  width: 481px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #282828;
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+.finance {
+  height: 144px;
+  width: 481px;
+  left: 817px;
+  right: 192px;
+  top: 3695px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #282828;
+}
+.psourcing {
+  text-align: left;
+  width: 481px;
+  height: 40px;
+  left: 174px;
+  right: 991px;
+  top: calc(50% - 40px / 2 + 390px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+.tfinance {
+  text-align: left;
+  width: 481px;
+  height: 40px;
+  left: 817px;
+  right: 372px;
+  top: calc(50% - 40px / 2 + 393px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
+.sourcing-financ {
+  width: 1075px;
+  height: 317px;
+  left: 173px;
+  top: 3569px;
+}
+
+.center {
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 50%;
+}
+
+.cereals {
+  width: 100%;
+}
+
+.cereal {
+  margin-top: 23px;
+  width: 100%;
+}
+
+.event-container {
+  margin-top: 10%;
+}
+
+.event-img-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  border-radius: 5px;
+}
+.a {
+  grid-column: 1;
+}
+.b {
+  grid-column: 3;
+  grid-row: 1;
+}
+.c {
+  grid-column: 1;
+  grid-row: 2;
+}
+.d {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.space {
+  padding: 7rem 0 7rem 0;
+}
+
+.partners {
+  background: linear-gradient(180deg, #e8e8e8 0%, #ffffff 28.54%);
+  height: 100vh;
   
-  .li {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .btncolor {
-    background-color: #dd4f05;
-  }
-  
-  .content {
-    position: relative;
-  }
-  
-  .bgbody {
-    position: absolute;
-  }
-  
-  .arrange {
-    justify-content: center;
-  }
-  
-  .descrip {
-    left: -15.12%;
-    right: -15.12%;
-    top: 0%;
-    bottom: 12.5%;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 63px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: white;
-  }
-  
-  .btnlight {
-    border: #dd4f05 2px solid;
-  }
-  
-  .textss {
-    text-align: center;
-    padding: 200px 0;
-  }
-  .tractortexts {
-    height: 149.75px;
-    left: 718px;
-    right: 182px;
-    top: calc(50% - 149.75px / 2 - 2096.38px);
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.3px;
-    color: #000000;
-  }
-  .products {
-    font-family: "Mulish";
-    font-style: normal;
-    color: #000000;
-    text-align: center;
-  }
-  
-  .product {
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: -100%;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.3px;
-    color: #282828;
-  }
-  
-  .sourcing {
-    height: 144px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    color: #282828;
-    flex: none;
-    order: 0;
-    align-self: center;
-    flex-grow: 0;
-    margin: 16px 0px;
-  }
-  .finance {
-    height: 144px;
-    left: 817px;
-    right: 192px;
-    top: 3695px;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    color: #282828;
-  }
-  .psourcing {
-    height: 40px;
-    left: 174px;
-    right: 991px;
-    top: calc(50% - 40px / 2 + 390px);
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 0.1px;
-  }
-  .tfinance {
-    height: 40px;
-    left: 817px;
-    right: 372px;
-    top: calc(50% - 40px / 2 + 393px);
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 0.1px;
-  }
-  
-  .center {
-    display: block;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 50%;
-  }
-  
-  
-  .cereals {
-    width: 100%;
-  }
-  
-  .cereal{
-    margin-top: 23px;
-    width: 90%;
-  }
-  
-  .event-container {
-    margin-top: 10%;
-  }
-  
-  .event-img-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .box {
-    border-radius: 5px;
-  }
-  .a {
-    grid-column: 1;
-  }
-  .b {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .c {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .d {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .partners {
-    background: linear-gradient(180deg, #e8e8e8 0%, #ffffff 28.54%);
-    height: 100vh;
-    width: 100vw;
-  }
-  .partner {
-    background: linear-gradient(
-      90deg,
-      rgba(192, 204, 218, 0.1) 0%,
-      rgba(192, 204, 218, 0.6) 50.38%,
-      rgba(192, 204, 218, 0.1) 100%
-    );
-    width: 1110px;
+  margin-top: 5rem;
+}
+.partner {
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  width: 1110px;
   left: -28.5px;
   top: 0px;
   flex: none;
@@ -203,40 +222,38 @@
   flex-grow: 0;
   margin: 24px 0px;
   padding: 20px 100px;
-  }
-  
-  .story{
-      padding-left: 8rem;
-      padding-right: 8rem;
-  }
-  .date{
+}
+
+.story {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+.date {
   font-family: Mulish;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  }
-  .mali{
+}
+.mali {
   font-family: Inter;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
-  
-  }
-  
-  .para{
+}
+
+.para {
   font-family: Mulish;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  
-  }
-  .readmore{
+}
+.readmore {
   font-family: Mulish;
   font-size: 14px;
   font-weight: 600;
@@ -244,33 +261,64 @@
   letter-spacing: 0em;
   text-align: left;
   color: #dd4f05;
-  
+}
+
+.blogbtn {
+  width: 170px;
+  height: 60px;
+  background: #dd4f05;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.inputstyle {
+  left: 52.29%;
+  right: 18.12%;
+  top: 23.9%;
+  bottom: 72.25%;
+
+  background: #ffffff;
+  border: 1px solid #282828;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 62px;
+  width: 426px;
+}
+
+.tofa-image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.itemone {
+  display: grid;
+  grid-column: 1 / span 3;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 10px;
+  margin: 0px 15px 0px 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+  .grid_items {
+    display: grid;
+    grid-template-columns: 100%;
   }
 
-  .blogbtn{
-    width: 170px;
-    height: 60px;
-    background: #DD4F05;
-    border-radius: 4px;
-    color: #ffffff;
-    }
 
-    .inputstyle{
-        left: 52.29%;
-      right: 18.12%;
-      top: 23.9%;
-      bottom: 72.25%;
-      
-      background: #FFFFFF;
-      border: 1px solid #282828;
-      box-sizing: border-box;
-      border-radius: 6px;
-      height: 62px;
-      width: 426px;
-      }
+@media only screen and (min-width: 640px) {
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+  }
+}
 
-      .tofa-image{
-        width: 100vw;
-        height: 100vh;
-
-      }
+@media only screen and (min-width: 981px) {
+  .grid_items {
+    grid-template-columns: 30% 30% 30%;
+  }
+}

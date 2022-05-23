@@ -45,8 +45,8 @@ const ContactUs = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-6 contactus py-5">
-          <h3 className="mx-5">Contact Us</h3>
+        <div className="col-12 col-md-12 col-lg-6 contactus py-5">
+          <h3 className="mx">Contact Us</h3>
           <div className="text-center">
             <img src={contact} alt="contact us" style={{width:'100%'}} />
             <p className="contact" >
@@ -56,7 +56,7 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className="col-6 contactus py-5 forms ">
+        <div className="col-12 col-md-12 col-lg-6 contactus py-5 forms ">
           <form className="form py-4" onSubmit={handleSubmit}>
             <select
               className="form-select inputpartner"

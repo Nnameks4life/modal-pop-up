@@ -184,6 +184,10 @@ background: #DD4F05;
     height: 13px !important;
 }
 
+.croptop{
+    margin-top: 5rem;
+}
+
     /* .scndimg{
         position: relative;
         width: 360px;
