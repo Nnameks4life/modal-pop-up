@@ -54,6 +54,17 @@ button {
   	background-size: cover;
 }
 
+.map-img {
+	height: 100vh;
+	background-image: url(../../../photos/grainMap.jpeg);
+	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding: 30px;
+}
+
 #form-page{
 	height: 100vh;
 	overflow: scroll;
