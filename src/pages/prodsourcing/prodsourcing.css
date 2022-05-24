@@ -36,7 +36,6 @@ letter-spacing: 0.2px;
     font-weight: 800;
     font-size: 44px;
     line-height: 56px;
-    text-align: center;
     letter-spacing: 0.2px;  
 }
 
@@ -49,8 +48,16 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.3px;
-text-align: center;
+margin-left: 3rem;
 
+}
+
+.positionitems{
+    margin-left: 3rem;
+}
+
+.svgitems{
+    margin-left: 5.5rem;
 }
 
 .firstimg{
@@ -89,10 +96,10 @@ background: rgba(221, 79, 5, 0.06);
 }
 
 .boxx{
-width: 769px;
+margin: auto;
 height: 373px;
-left: 485px;
-top: 804px;
+margin-bottom: 3rem;
+
 background: #FFFFFF;
 }
 

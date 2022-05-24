@@ -1,77 +1,85 @@
-.fullname{
+.formbody{
+
+left: 163px;
+top: 158px;
 background: #FFFFFF;
-box-sizing: border-box;
-box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.11);
-border-radius: 6px;
-padding: 8px 10rem 8px 10rem;
+box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.08);
+margin: auto;
+padding: 0 30px 0 30px;
 }
 
-.desired-products{
-    width: 896px;
-height: 56px;
-left: 267px;
-top: 332px;
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-
-}
-.first-parag{
-    margin-left: 65px;
+.fullname {
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.11);
+  border-radius: 6px;
 }
 
-.label{
-    display: inline-block;
+
+@media only screen and (min-width: 981px) {
+    .heading-text {
+      padding: 5rem;
+    }
+  }
+
+.desired-products {
+  
+  left: 267px;
+  top: 332px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+.first-parag {
+  margin-left: 65px;
 }
 
-.names{
-left: 18.54%;
-right: 51.74%;
-top: 17.75%;
-bottom: 79.76%;
-width: 100%;
-padding: 12px 0 12px 0;
-background: #FFFFFF;
-
-box-sizing: border-box;
-box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.11);
-border-radius: 6px;
+.hausa{
+    margin-right: 10px;
 }
 
-.firstname{
-   padding-left: 5rem;
-   align-items: center;
-    margin: auto;
+.radioitem{
+    display: inline !important;
+    height: 13px !important;
 }
 
-.attend{
-    padding-left: 4rem;
+.names {
+  bottom: 79.76%;
+
+  height: 64px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.11);
+  border-radius: 6px;
 }
 
-.lastname{
-    align-items: center;
-    margin: auto;
-    padding-right: 5rem;
-}
-.homeaddress{
-    align-items: center;
-    margin: auto;
-    padding-right: 4rem;
-    padding-left: 4rem;
+.firstname {
+  align-items: center;
+  margin: auto;
 }
 
-.upload{
-    width: 645px;
-height: 48px;
-left: 267px;
-top: 1620px;
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
+.lastname {
+  align-items: center;
+  margin: auto;
+}
+.homeaddress {
+  align-items: center;
+  margin: auto;
+}
+
+.upload {
+  
+  left: 267px;
+  top: 1620px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
 }

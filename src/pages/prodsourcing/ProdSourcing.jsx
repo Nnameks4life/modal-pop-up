@@ -53,20 +53,20 @@ const ProdSourcing = () => {
     <div className="containe">
       <div className="body">
         <div className="row container px-5">
-          <div className="col-6 px-5">
-            <h3 className="heading">Product Sourcing</h3>
+          <div className="col-12 col-lg-6 col-sm-12 col-md-6 px-5">
+            <h3 className="heading positionitems">Product Sourcing</h3>
             <p className="writeup">
               Our representatives are strategically placed around the African
               continent, making sourcing for the right products easy. Get to
               also see <span className="itemcolor">BLACKLISTED</span> fraudulent
               suppliers.
             </p>
-            <div className="text-center">
-              <button className="btn btncolor mx-3">Get started</button>
-              <button className="btn btnlight itemcolor">See blacklist</button>
+            <div className="positionitems">
+              <button className="btn btncolor text-light">Get started</button>
+              <button className="btn btnlight itemcolor mx-3">See blacklist</button>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-lg-6 col-sm-12 col-md-6">
             <div className="firstimg">
               <img src={cornn} alt="man with a corn" className="scndimg" />
             </div>
@@ -89,8 +89,8 @@ const ProdSourcing = () => {
             </div>
           </div>
         </div>
-        <div className="row my-5">
-          <div className="col-4 headeralign">
+        <div className="row my-5 container svgitems">
+          <div className="col-md-12 col-lg-6 col-12 headeralig">
             <h3>Our Services</h3>
             <p onClick={() => setText(note1)} style={{ cursor: "pointer" }}>
               <img src={cart} alt=''/>Product
@@ -106,8 +106,8 @@ const ProdSourcing = () => {
               <img src={easybuy} alt=''/>Easy Buy
             </p>
           </div>
-          <div className="col-8 boxx mx-auto">
-            <h6 className="header1">
+          <div className="col-md-12 col-lg-6 col-12 boxx mx-auto">
+            <h6 className="header1 text-center">
               Technology has helped In easy Product Sourcing
             </h6>
             <p className="boxtext">{text === note1 && [note1]}</p>
@@ -154,7 +154,7 @@ const ProdSourcing = () => {
         <h5 className="text-center my-5">
           Get to Know Where our Products are Sourced
         </h5>
-      <div className="row my-3 mx-auto">
+      <div className="row my-3 mx-auto container">
         <div className="col-3 croptop">
           <h6 className="py-2">Crops</h6>
           <input type="radio" className="itemcolor my-1 radioitem mx-2" onChange={handleChange} onClick={()=>setLocation(position1)}/>
@@ -174,7 +174,7 @@ const ProdSourcing = () => {
           <input type="radio" className="itemcolor my-1 radioitem my-1 mx-2" onChange={handleChange} onClick={()=>setLocation(position5)}/>
           <label className="py-2">Crude Palm Oil</label>
         </div>
-        <div className="col-9 mb-3 ">
+        <div className="col-9 mb-3 mx-auto text-center">
           
           <Maps/>
 

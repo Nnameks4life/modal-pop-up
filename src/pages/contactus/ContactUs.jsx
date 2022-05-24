@@ -46,7 +46,7 @@ const ContactUs = () => {
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-12 col-lg-6 contactus py-5">
-          <h3 className="mx">Contact Us</h3>
+          <h3 className="mx-5">Contact Us</h3>
           <div className="text-center">
             <img src={contact} alt="contact us" style={{width:'100%'}} />
             <p className="contact" >
@@ -56,10 +56,10 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-md-12 col-lg-6 contactus py-5 forms ">
+        <div className="col-12 col-md-12 col-lg-6 contactus py-5 forms">
           <form className="form py-4" onSubmit={handleSubmit}>
             <select
-              className="form-select inputpartner"
+              className="form-control inputpartner"
               aria-label="Default select example"
             >
               <option>For Partnership</option>
@@ -73,13 +73,13 @@ const ContactUs = () => {
               type="text"
               value={contacts.fullName}
               name='fullName'
-              className="form-control inputstyle"
+              className="form-control formfield"
               onChange={handleChange}
             />
             <label className="form-label">Email Address*</label>
             <input
               type="text"
-              className="form-control inputstyle"
+              className="form-control formfield"
               value={contacts.emailAddress}
               name='emailAddress'
               onChange={handleChange}
@@ -88,25 +88,25 @@ const ContactUs = () => {
             <select
               id="countries"
               name="countries"
-              className="form-control inputstyle"
+              className="form-control formfield"
               placeholder="Please select country"
               onChange={handleChange}
             >
-              <option>Please Select Country</option>
+              <option >Please Select Country</option>
 
               {countries.length > 0 ?  countries.map((country, index)=><option key={index} value={country.name}>{country.name}</option>): <option>fetching countries...</option>}
               
             </select>
             <br />
-            <label className="form-label">Phone No</label>
+            <label className="form-label">Phone No*</label>
             <input
               type="number"
               value={contacts.phoneNumber}
-              className="form-control inputstyle"
+              className="form-control formfield"
               name='phoneNumber'
               onChange={handleChange}
             />
-            <button className="btnsubmit mt-3 btn" type="submit">Submit</button>
+            <button className="btnsubmit mt-3 btn formfield text-light fw-bold" type="submit">Submit</button>
           </form>
         </div>
       </div>

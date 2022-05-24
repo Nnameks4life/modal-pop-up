@@ -47,33 +47,35 @@ const AcademyForm = () => {
 
   return (
     <div className="container">
-      <form onSubmit={handleSubmit}>
-        <div className="first-parag">
+      <form onSubmit={handleSubmit} className='formbody'>
+        <div className="row first-para">
+          <div className="col-12 col-sm-12 col-lg-9 col-md-12">
           <h3>Apply For Tofa Academy</h3>
           <p className="desired-products">
             Fill in desired product specification below, so our sourcing agents
             can get you your specific needs. Please note that all fields are
             required.
           </p>
+          </div>
         </div>
         <div className="row">
-          <div className="col-6 firstname">
+          <div className="col-12 col-md-12 col-lg-6 firstname">
             <label className="label">First Name*</label>
             <br />
             <input
               type="text"
-              className="names form-control"
+              className=" form-control"
               onChange={handleChange}
               value={data.firstName}
               name="firstName"
             />
           </div>
-          <div className="col-6 lastname">
+          <div className="col-12 col-md-12 col-lg-6 lastname">
             <label>Last Name*</label>
             <br />
             <input
               type="text"
-              className="names form-control"
+              className=" form-control"
               onChange={handleChange}
               value={data.lastName}
               name="lastName"
@@ -81,7 +83,7 @@ const AcademyForm = () => {
           </div>
         </div>
         <div className="row my-5">
-          <div className="col-6 firstname">
+          <div className="col-12 col-md-12 col-lg-6 firstname">
             <label>Country*</label>
             <select
               className="form-control names"
@@ -101,7 +103,7 @@ const AcademyForm = () => {
               )}
             </select>
           </div>
-          <div className="col-6 lastname">
+          <div className="col-12 col-md-12 col-lg-6 lastname">
             <label>State*</label>
             <select
               className="form-control names"
@@ -133,7 +135,7 @@ const AcademyForm = () => {
           />
         </div>
         <div className="row my-5">
-          <div className="col-6 firstname">
+          <div className="col-12 col-md-12 col-lg-6 firstname">
             <label>Gender*</label>
             <select
               className="form-select names"
@@ -149,7 +151,7 @@ const AcademyForm = () => {
               <option>Other</option>
             </select>
           </div>
-          <div className="col-6 lastname">
+          <div className="col-12 col-md-12 col-lg-6 lastname">
             <label>Age*</label>
             <input
               type="number"
@@ -160,74 +162,87 @@ const AcademyForm = () => {
             />
           </div>
         </div>
-        <p className="px-5">Select Languages You Understand</p>
-        <div className="d-flex text-center mx-auto">
+        <p className="">Select Languages You Understand</p>
+        <div className="row">
+          <div className="col-2 ">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem hausa"
             onChange={handleChange}
             value="Hausa"
             name="radio"
-          />{" "}
-          <p>Hausa</p>
+          />
+          <label>Hausa</label>
+          </div>
+          <div className="col-2">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem mx-4"
             onChange={handleChange}
             value="Igbo"
             name="radio"
-          />{" "}
-          <p>Igbo</p>
+          />
+          <label>Igbo</label>
+          </div>
+          <div className="col-2">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem mx-4"
             onChange={handleChange}
             value="Yoruba"
             name="radio"
-          />{" "}
-          <p>Yoruba</p>
+          />
+          <label>Yoruba</label>
+          </div>
+          <div className="col-2">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem mx-4"
             onChange={handleChange}
             value="English"
             name="radio"
-          />{" "}
-          <p>English</p>
+          />
+          <label>English</label>
+          </div>
+          <div className="col-2">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem mx-4"
             onChange={handleChange}
             value="French"
             name="radio"
-          />{" "}
-          <p>French</p>
+          />
+          <label>French</label>
+          </div>
+          <div className="col-2">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem mx-4"
             onChange={handleChange}
             value="Swahili"
             name="radio"
-          />{" "}
-          <p>Swahili</p>
-          <br />
+          />
+          <label>Swahili</label>
+          </div>
         </div>
 
-        <div className="d-flex">
+        <div className="row mb-4 mt-3">
+          <div className="col-6">
           <input
             type="radio"
-            className="mx-5"
+            className="radioitem hausa"
             onChange={handleChange}
             value="Other"
             name="radio"
           />{" "}
-          <p>Other</p>
+          <label>Other</label>
+          </div>
         </div>
         <div className="row">
-          <div className="col-6 attend">
+          <div className="col-12 col-md-12 col-lg-6 attend">
             <label>How would you attend the training</label>
             <select
-              className="form-select names"
+              className="form-select names focus-none"
               aria-label="Default select example"
               placeholder="please select your gender"
               onChange={handleChange}
@@ -240,7 +255,7 @@ const AcademyForm = () => {
           </div>
         </div>
         <div className="row my-5">
-          <div className="col-6 attend">
+          <div className="col-12 col-md-12 col-lg-6 attend">
             <label>Do you currently trade in any product?</label>
             <select
               className="form-select names"
@@ -254,7 +269,7 @@ const AcademyForm = () => {
               <option value="No">No</option>
             </select>
           </div>
-          <div className="col-6 lastname">
+          <div className="col-12 col-md-12 col-lg-6 lastname">
             <label>State the products you trade on</label>
             <input
               type="text"
@@ -267,7 +282,7 @@ const AcademyForm = () => {
         </div>
 
         <div className="row my-5">
-          <div className="col-6 attend">
+          <div className="col-12 col-md-12 col-lg-6 attend">
             <label htmlFor="name" className="label">
               Phone Number*
             </label>
@@ -279,7 +294,7 @@ const AcademyForm = () => {
               name={data.phoneNumber}
             />
           </div>
-          <div className="col-6 lastname">
+          <div className="col-12 col-md-12 col-lg-6 lastname">
             <label htmlFor="email">Email Address*</label>
             <br />
             <input
@@ -291,7 +306,7 @@ const AcademyForm = () => {
             />
           </div>
         </div>
-        <div className="mx-5">
+        <div className="">
           <p>Upload a Pic of yourself*</p>
           <input
             type="file"
@@ -302,7 +317,8 @@ const AcademyForm = () => {
           />
         </div>
 
-        <div className="mx-5 my-5">
+        <div className="row my-5">
+          <div className="col-12 col-sm-12 col-lg-9 col-md-12">
           <p className="upload">
             Upload a 2 minutes video of you telling us about yourself, your
             dreams, your challenges and where you see yourself in 5 years
@@ -313,8 +329,9 @@ const AcademyForm = () => {
             name="fileName"
             onChange={handleChange}
           />
+          </div>
         </div>
-        <button className="btn btncolor px-5 text-light mx-5" type="submit">
+        <button className="btn btncolor px-5 text-light mb-5" type="submit">
           Submit
         </button>
       </form>
