@@ -1,9 +1,9 @@
 .top{
-    width: 100%;
+    width: 100vw;
     height: 509px;
-    left: -2px;
-    top: 0px;
     background: rgba(221, 79, 5, 0.07);
+    left: 0%;
+    right: 0%;
     }
   
   .faqss{
@@ -53,3 +53,28 @@
   height: 62px;
   width: 426px;
   } 
+
+  .text-color{
+    color: #DD4F05;
+  }
+
+  .searchboxx{
+    background-color: rgba(221, 79, 5, 0.2) !important;
+  }
+
+  .headerr{
+    width: 1028.03px;
+left: 165px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+  }
+
+  .borderliner{
+    width: 350px;
+height: 0px;
+left: 31px;
+top: 70px;
+border: 1px solid #D9E3E9;
+  }

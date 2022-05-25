@@ -47,7 +47,7 @@ const Carousel = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={farmer} className="d-block w-100" alt="grainMap" />
+            <img src={farmer} className="" alt="grainMap" style={{width:'100vw'}} />
           </div>
           <div className="carousel-item">
             <img src={farmer} className="d-block w-100" alt="grainMap" />
@@ -172,10 +172,10 @@ const Carousel = () => {
           <button className="blogbtn">See more</button>
         </div>
         <div className="col-7">
-          <div className="position-relative">
+          <div className="position">
           <img src={peeps} alt="academy" className="leftpics"/>
-          <div className="position-absolute">
-          <div className="leftpic"/>
+          <div className="position">
+          {/* <div className="leftpic"/> */}
           </div>
           </div>
         </div>

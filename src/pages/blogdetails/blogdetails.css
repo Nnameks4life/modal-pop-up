@@ -1,0 +1,107 @@
+.headd{
+left: 0%;
+right: 0%;
+top: 2.22%;
+bottom: 83.27%;
+background: url('../../photos/bgblog.png');
+background-repeat: no-repeat;
+height: 372px;
+width: 1440px;
+}
+
+.itemone{
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-template-columns: auto auto auto;
+  padding: 0px;
+  
+
+}
+
+.grid-item{
+
+  padding: 20px;
+  font-size: 10px;
+  margin: 0px 15px 0px 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+.paragraphx{
+left: 14.65%;
+right: 63.12%;
+top: 21.8%;
+bottom: 73.52%;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+font-feature-settings: 'salt' on, 'liga' off;
+color: #18191F;
+}
+
+.textxx{
+    width: 778px;
+height: 210px;
+left: 331px;
+top: 742px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+text-align: justify;
+color: #000000;
+margin: auto;
+}
+
+.subhead{
+    width: 778px;
+height: 28px;
+left: 331px;
+top: 480px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+text-align: justify;
+color: #000000;
+margin: auto;
+}
+
+.subheadd{
+    width: 778px;
+    height: 28px;
+    left: 331px;
+    top: 480px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    color: #000000;
+    margin: auto; 
+}
+
+.info{
+    border: 1.5px solid #F3F3F3;
+box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.06);
+width: 1120px;
+}
+.subheadbg{
+    width: 1120px;
+    border: 1.5px solid #F3F3F3;
+box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.06);
+margin: auto;
+}
+
+.elipse {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: #C4C4C4;
+    margin-left: 10rem;
+  }
