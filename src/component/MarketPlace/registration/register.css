@@ -44,6 +44,12 @@
 	height: 65px;
 	padding: 5px ;
 	margin-right:20px;
+	display: none;
+}
+.register-content span{
+	font-size: 50px;
+	padding: 5px ;
+	margin-right:20px;
 }
 .register-content a{
     text-decoration: none;
@@ -81,7 +87,7 @@
 	font-weight: 700;
 	margin-bottom: 15px;
 }
-.register-content:hover{
+.register-content:hover {
 	border:1px solid #DD4F05;
 }
 .register-options{
@@ -93,18 +99,10 @@
 }
 @media (max-width: 768px) {
 
-	.user-auth-wrap {
-	    width: 100%;
-	    padding:0px;
-	}
-
-	.user-auth-rhs {
-    padding: 25px;
-	}
-	.all-content{
+	.registration-content{
 		padding: 2rem;
-		margin-top: 5rem;
-	 }
+		margin-top: 1rem;
+	}
 
 }
 

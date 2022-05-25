@@ -39,7 +39,7 @@ export default function Buyer() {
             </div>
             <div className="col-lg-6 col-9" id="header-text">
               <p className="info-txt">
-                Don't have an account? <a href="/register">Join for free</a>
+                Don't have an account? <a href="/register">Signup</a>
               </p>
             </div>
           </main>
@@ -72,13 +72,22 @@ export default function Buyer() {
                   onChange={handleChange}
                 />
               </div>
-              <div>
-                <div className="mt-4 d-flex">
-                  <input id="remember_me" type="checkbox" />
-                  <label for="remember_me" className="checkbox-label">
-                    {" "}
-                    I agree to terms & condition{" "}
-                  </label>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="mt-4 d-flex">
+                    <input id="remember_me" type="checkbox" />
+                    <label for="remember_me" className="checkbox-label">
+                      {" "}
+                      I agree to terms & condition{" "}
+                    </label>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="mt-4">
+                    <p className="forgot-pwd">
+                      <a href="#">Forgot Password?</a>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="mt-3">

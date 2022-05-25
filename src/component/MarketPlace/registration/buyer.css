@@ -88,15 +88,7 @@
 }
 
 @media (max-width: 768px) {
-
-	.user-auth-wrap {
-	    width: 100%;
-	    padding:0px;
-	}
-
-	.user-auth-rhs {
-    padding: 25px;
-	}
+	
 	.all-content{
 		padding: 2rem;
 		margin-top: 1rem;
