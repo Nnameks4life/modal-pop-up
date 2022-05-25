@@ -52,8 +52,8 @@ const ProdSourcing = () => {
   return (
     <div className="containe">
       <div className="body">
-        <div className="row container px-5">
-          <div className="col-12 col-lg-6 col-sm-12 col-md-6 px-5">
+        <div className="row container header-box">
+          <div className="col-4 col-lg-6 col-sm-6 col-md-10 ">
             <h3 className="heading positionitems">Product Sourcing</h3>
             <p className="writeup">
               Our representatives are strategically placed around the African
@@ -66,7 +66,7 @@ const ProdSourcing = () => {
               <button className="btn btnlight itemcolor mx-3">See blacklist</button>
             </div>
           </div>
-          <div className="col-12 col-lg-6 col-sm-12 col-md-6">
+          <div className="col-6 col-lg-6 col-sm-12 col-md-6">
             <div className="firstimg">
               <img src={cornn} alt="man with a corn" className="scndimg" />
             </div>
@@ -89,8 +89,8 @@ const ProdSourcing = () => {
             </div>
           </div>
         </div>
-        <div className="row my-5 container svgitems">
-          <div className="col-md-12 col-lg-6 col-12 headeralig">
+        <div className="row container svgitems">
+          <div className="col-md-12 col-lg-6 col-12">
             <h3>Our Services</h3>
             <p onClick={() => setText(note1)} style={{ cursor: "pointer" }}>
               <img src={cart} alt=''/>Product
@@ -106,7 +106,7 @@ const ProdSourcing = () => {
               <img src={easybuy} alt=''/>Easy Buy
             </p>
           </div>
-          <div className="col-md-12 col-lg-6 col-12 boxx mx-auto">
+          <div className="col-md-12 col-lg-6 col-12 boxx">
             <h6 className="header1 text-center">
               Technology has helped In easy Product Sourcing
             </h6>
@@ -117,15 +117,15 @@ const ProdSourcing = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mx-auto sourcebox my-5">
+      <div className="text-center sourcebox">
         <h3>How to Use SourcePro</h3>
         <p>
           Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam
           sem tellus erat.
         </p>
 
-        <div className="row mx-auto text-center">
-          <div className="col-4 formbox box1">
+        <div className="row box-shape text-center mx-auto">
+          <div className="col-4 col-lg-4 col-md-8 col-sm-12 formbox box1 mx-auto">
             <i className="fa-brands fa-accusoft itemcolor"></i>
             <h5>Complete the Form</h5>
             <p>
@@ -133,7 +133,7 @@ const ProdSourcing = () => {
               nam sem tellus erat.
             </p>
           </div>
-          <div className="col-4 formbox box2 mx-3">
+          <div className="col-4 col-lg-4 col-md-8 col-sm-12 formbox box2 mx-auto">
             <i className="fa-brands fa-accusoft itemcolor"></i>
             <h5>Agree on Specifics</h5>
             <p>
@@ -141,7 +141,7 @@ const ProdSourcing = () => {
               nam sem tellus erat.
             </p>
           </div>
-          <div className="col-4 formbox box3 sourceproapp">
+          <div className="col-4 col-lg-4 col-md-8 col-sm-12 formbox box3 mx-auto">
             <i className="fa-brands fa-accusoft itemcolor"></i>
             <h5>Get Desired Products</h5>
             <p>
@@ -151,11 +151,12 @@ const ProdSourcing = () => {
           </div>
         </div>
       </div>
+      <div className="croptop">
         <h5 className="text-center my-5">
           Get to Know Where our Products are Sourced
         </h5>
-      <div className="row my-3 mx-auto container">
-        <div className="col-3 croptop">
+      <div className="row mx-auto container">
+        <div className="col-12 col-sm-12 col-lg-3 ">
           <h6 className="py-2">Crops</h6>
           <input type="radio" className="itemcolor my-1 radioitem mx-2" onChange={handleChange} onClick={()=>setLocation(position1)}/>
           <label className="py-2">Maize</label>
@@ -174,13 +175,15 @@ const ProdSourcing = () => {
           <input type="radio" className="itemcolor my-1 radioitem my-1 mx-2" onChange={handleChange} onClick={()=>setLocation(position5)}/>
           <label className="py-2">Crude Palm Oil</label>
         </div>
-        <div className="col-9 mb-3 mx-auto text-center">
+        <div className="col-12 col-sm-12 col-lg-9 mb-3 mx-auto text-center">
           
           <Maps/>
 
 
         </div>
       </div>
+      </div>
+
     </div>
   );
 };

@@ -19,6 +19,7 @@ import Seller from './component/MarketPlace/registration/seller';
 import TofaAcademy from "./pages/tofaacademy/TofaAcademy";
 import ViewProduct from './component/MarketPlace/homepage/viewProduct'
 import SecondLanding from "./pages/landing/SecondLanding";
+import ScndProdSource from "./pages/prodsourcing/ScndProdSource";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route exact path='/allblogs' element={<AllBlogs/>} />
         <Route exact path='/blogdetails' element={<BlogDetails/>} />
         <Route exact path='/' element={<SecondLanding/>} />
+        <Route exact path='/prodsource' element={<ScndProdSource/>} />
       </Routes>
     </BrowserRouter>
       
