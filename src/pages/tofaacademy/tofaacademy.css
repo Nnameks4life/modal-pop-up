@@ -1,12 +1,10 @@
-.headacademy {
-  margin-top: 12rem;
+.headacademy{
+  margin-top: 10rem;
 }
 
 .academy {
   width: 482px;
-  height: 72px;
-  left: calc(50% - 482px / 2 - 294px);
-  top: 372px;
+ 
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
@@ -51,46 +49,45 @@
 .point1 {
   position: absolute;
   height: 63px;
-  left: 922px;
-  top: 34px;
+  margin-left: 190px;
+  margin-top: 35px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
-  margin: auto;
+  
 }
 
 .point2 {
   position: absolute;
   height: 63px;
-  left: 922px;
-  top: 474px;
+  margin-left: 190px;
+  margin-top: 474px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 .point3 {
   position: absolute;
   height: 63px;
-  left: 730px;
-  top: 354px;
+  margin-top: 354px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 .point4 {
   position: absolute;
   height: 63px;
-  left: 1125px;
-  top: 354px;
+  margin-left: 390px;
+  margin-top: 354px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 .point5 {
   position: absolute;
   height: 63px;
-  left: 745px;
-  top: 124px;
+  margin-left: 10px;
+  margin-top: 124px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 
 .point6 {
   position: absolute;
   height: 63px;
-  left: 1105px;
-  top: 124px;
+  margin-left: 375px;
+  margin-top: 124px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 
@@ -99,32 +96,31 @@
   height: 22rem;
   width: 22rem;
   border-radius: 50%;
-  top: 50px;
-  left: 780px;
+  margin-left: 50px;
   display: inline-block;
   border: 60px solid rgba(0, 131, 211, 0.5);
-  margin-top: 55px;
+  margin-top: 95px;
 }
 
 .point7 {
   position: absolute;
   height: 63px;
-  left: 815px;
-  top: 254px;
+  margin-left: 85px;
+  margin-top: 254px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 .point8 {
   position: absolute;
   height: 63px;
-  left: 915px;
-  top: 135px;
+  margin-left: 195px;
+  margin-top: 135px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 .point9 {
   position: absolute;
   height: 63px;
-  left: 1035px;
-  top: 254px;
+  margin-left: 310px;
+  margin-top: 254px;
   filter: drop-shadow(3px 4px 20px rgba(0, 0, 0, 0.11));
 }
 
@@ -137,7 +133,22 @@
 }
 
 .goals{
-    margin-top: 150px;
+    margin-top: 10rem;
+}
+
+.box-header{
+  width: 1440px;
+height: 200px;
+margin-bottom: 38rem;
+left: 0px;
+top: 0px;
+}
+
+@media screen and (max-width:400px) {
+  .goals{
+    margin-top: 25rem;
+  }
+  
 }
 .goalstext{
 height: 1161px;

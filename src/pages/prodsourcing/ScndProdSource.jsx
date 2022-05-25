@@ -1,5 +1,5 @@
-import React from 'react'
-import './prodsourcing.css'
+import React from "react";
+import "./prodsourcing.css";
 import floodrice from "../../photos/flood.png";
 import cornn from "../../photos/smilingcorn.png";
 import calling from "../../photos/call.png";
@@ -10,53 +10,48 @@ import easybuy from "../../photos/easybuy.png";
 
 const ScndProdSource = () => {
   return (
-
-
     <div>
-        <div className="body">
-            <div className="row header-box">
-                <div className="col-6">
-                <h3 className="heading positionitems">Product Sourcing</h3>
-                <p className="writeup">
+      <div className="body">
+        <div className="row header-box">
+          <div className="col-6">
+            <h3 className="heading positionitems">Product Sourcing</h3>
+            <p className="writeup">
               Our representatives are strategically placed around the African
               continent, making sourcing for the right products easy. Get to
               also see <span className="itemcolor">BLACKLISTED</span> fraudulent
               suppliers.
             </p>
             <button className="btn btncolor text-light">Get started</button>
-              <button className="btn btnlight itemcolor mx-3">See blacklist</button>
-
-                </div>
-                <div className="col-6 col-lg-6 col-sm-12 col-md-6">
+            <button className="btn btnlight itemcolor mx-3">
+              See blacklist
+            </button>
+          </div>
+          <div className="col-6 col-lg-6 col-sm-12 col-md-6 imgholder">
             <div className="firstimg">
               <img src={cornn} alt="man with a corn" className="scndimg" />
             </div>
             <div>
-              <div className="middleimg">
+              <div className="middleim">
                 <img
                   src={floodrice}
                   alt="rice planted in flood"
-                  className="middleimg"
+                  className="middleimgg"
                 />
               </div>
-              <div className="topimg">
+              <div className="opimgg">
                 <img
                   src={calling}
                   alt="lady making a call"
-                  className="my-5"
-                  style={{ height: "100%", width: "100%" }}
+                  className="topimgg"
+                  
                 />
               </div>
             </div>
           </div>
-
-            </div>
-
         </div>
-
-
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default ScndProdSource;

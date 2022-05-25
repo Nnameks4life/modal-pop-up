@@ -52,7 +52,7 @@ const ProdSourcing = () => {
   return (
     <div className="containe">
       <div className="body">
-        <div className="row container header-box">
+        <div className="row container">
           <div className="col-4 col-lg-6 col-sm-6 col-md-10 ">
             <h3 className="heading positionitems">Product Sourcing</h3>
             <p className="writeup">
@@ -66,9 +66,10 @@ const ProdSourcing = () => {
               <button className="btn btnlight itemcolor mx-3">See blacklist</button>
             </div>
           </div>
-          <div className="col-6 col-lg-6 col-sm-12 col-md-6">
+
+          <div className="col-12 col-lg-6 col-sm-12 col-md-6 header-box">
             <div className="firstimg">
-              <img src={cornn} alt="man with a corn" className="scndimg" />
+              <img src={cornn} alt="man with a corn" className="scndimg" style={{ height: "100%", width: "100%" }} />
             </div>
             <div>
               <div className="middleimg">
@@ -78,12 +79,12 @@ const ProdSourcing = () => {
                   className="middleimg"
                 />
               </div>
-              <div className="topimg">
+              <div className="topim">
                 <img
                   src={calling}
                   alt="lady making a call"
-                  className="my-5"
-                  style={{ height: "100%", width: "100%" }}
+                  className="my-5 topimg"
+                  
                 />
               </div>
             </div>

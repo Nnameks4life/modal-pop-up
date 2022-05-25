@@ -9,7 +9,7 @@ import point6 from "../../photos/point6.png";
 import point7 from "../../photos/point7.png";
 import point8 from "../../photos/point8.png";
 import point9 from "../../photos/point9.png";
-// import testv from "../../photos/testv.mp4";
+import testv from "../../photos/testv.mp4";
 import pinklady from "../../photos/pinklady.png";
 import tofaacademy from "../../photos/tofaacademy.png";
 import academy1 from "../../photos/academy1.png";
@@ -33,8 +33,8 @@ import fed from "../../photos/fedex.png";
 const TofaAcademy = () => {
   return (
     <div className="container-fluid">
-      <div className="row mx-auto">
-        <div className="col-6 headacademy">
+      <div className="row mx-auto box-header">
+        <div className="col-12 col-lg-6 col-md-12 headacademy">
           <h1 className="font-mulish">TOFA Academy</h1>
           <p className="academy">
             Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
@@ -43,7 +43,7 @@ const TofaAcademy = () => {
           </p>
           <a href="">Learn more</a>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-lg-6 col-md-12">
           <span className="dot"></span>
           {/* <span className="dot2"></span> */}
           <span className="dot3"></span>
@@ -59,13 +59,13 @@ const TofaAcademy = () => {
         </div>
       </div>
       <div className="row goals">
-        <div className="col-6">
-          {/* <video width="100%" height="240" controls>
+        <div className="col-12 col-lg-6 col-md-12 my-5">
+          <video width="100%" height="240" controls>
             <source src={testv} type="video/mp4" className="video" />
             Your browser does not support the video tag.
-          </video> */}
+          </video>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-lg-6 col-md-12">
           <h4 className="itemcolor">Our Goals and Mission</h4>
           <p className="paragraphs">
             Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam
@@ -131,7 +131,7 @@ const TofaAcademy = () => {
             automatically makes him a member of TOFA TRIBE.
           </p>
         </div>
-        <div className="col-7 orange orangee">
+        <div className="col-12 col-md-7 col-lg-7 orange orangee">
           <img
             src={pinklady}
             alt="woman in orange dress smiling"
@@ -139,7 +139,8 @@ const TofaAcademy = () => {
           />
         </div>
       </div>
-      <div className="applytofa position-relative">
+      <div className="row applytofa position-relative">
+        <div className="col-12 col-lg-12 col-md-12">
         <img src={tofaacademy} alt="tofaacademy" className="imgstyle" />
         <div className="apply">
           <h2 className="$font-family-mulish">Apply For TOFA Academy</h2>
@@ -149,15 +150,17 @@ const TofaAcademy = () => {
           </p>
           <button className="btn btn-light itemcolor">Apply Now</button>
         </div>
+        </div>
       </div>
-      </div>
-
+      </div>     
+      
       <div className="headacademy mx-auto image-container">
         <img src={academy1} alt="" className="mx-4" />
         <img src={academy2} alt="" className="mx-4" />
         <img src={academy4} alt="" className="mx-4" />
         <img src={academy3} alt="" className="mx-4" />
-      </div>
+        </div>
+      
       <div className="my-5 mx-auto image-container">
         <img src={academy6} alt="" />
         <img src={academy7} alt="" />
