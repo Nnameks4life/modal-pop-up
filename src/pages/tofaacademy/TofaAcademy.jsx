@@ -9,7 +9,7 @@ import point6 from "../../photos/point6.png";
 import point7 from "../../photos/point7.png";
 import point8 from "../../photos/point8.png";
 import point9 from "../../photos/point9.png";
-import testv from "../../photos/testv.mp4";
+// import testv from "../../photos/testv.mp4";
 import pinklady from "../../photos/pinklady.png";
 import tofaacademy from "../../photos/tofaacademy.png";
 import academy1 from "../../photos/academy1.png";
@@ -27,8 +27,6 @@ import goog from "../../photos/google.png";
 import wal from "../../photos/walmart.png";
 import fed from "../../photos/fedex.png";
 // import dotted from "../../photos/dotted.png";
-
-
 
 const TofaAcademy = () => {
   return (
@@ -61,7 +59,7 @@ const TofaAcademy = () => {
       <div className="row goals">
         <div className="col-6">
           <video width="100%" height="240" controls>
-            <source src={testv} type="video/mp4" className="video" />
+            {/* <source src={testv} type="video/mp4" className="video" /> */}
             Your browser does not support the video tag.
           </video>
         </div>
@@ -77,7 +75,6 @@ const TofaAcademy = () => {
           </p>
         </div>
       </div>
-      
       <div className="row goals text-center">
         <div className="col-3 border-start border-danger numbers">
           <h3 className="mt-3">562</h3>
@@ -97,61 +94,60 @@ const TofaAcademy = () => {
         </div>
       </div>
       <div className="goalstext">
-      <div className="row my-5">
-        <div className="col-7 textstart">
-          <h5>How To Get Started</h5>
-          <p className="paragraphs">
-            Simple and easy way to start your application with TOFA academy, you
-            get to understand our unique processes
-          </p>
-          <h6>APPLICATION</h6>
-          <p className="paragraphs">
-            Application link- out on all TOFA social media platforms, which
-            closes after two weeks of its opening. Graphics and ads are made to
-            create awareness. After the close of application, applicants are
-            screened and those whose product aligns with the business TOFA is in
-            or who are eligible are selected and moved to the next stage of the
-            application process.
-          </p>
-          <h6>TRAINING</h6>
-          <p className="paragraphs">
-            The eligible applicants are invited for an intensive 3 days training
-            program. They get to learn all they need to know as an academician
-            of TOFA ACADEMY. They have an interview and one-on-one discussion
-            with our professionals giving in depth explanation of what they do
-            or hope to do. Another screening is done amongst the trainees and
-            selected applicants are sent the TOFA TRIBE documents to fill in
-            their details for verification.
-          </p>
-          <h6>FUNDING</h6>
-          <p className="paragraphs">
-            After the verification, if the applicant and the guarantor are
-            cleared; they meet up with our verification criteria, which means
-            they qualify to be funded. We proceed to fund the Cohort which
-            automatically makes him a member of TOFA TRIBE.
-          </p>
+        <div className="row my-5">
+          <div className="col-7 textstart">
+            <h5>How To Get Started</h5>
+            <p className="paragraphs">
+              Simple and easy way to start your application with TOFA academy,
+              you get to understand our unique processes
+            </p>
+            <h6>APPLICATION</h6>
+            <p className="paragraphs">
+              Application link- out on all TOFA social media platforms, which
+              closes after two weeks of its opening. Graphics and ads are made
+              to create awareness. After the close of application, applicants
+              are screened and those whose product aligns with the business TOFA
+              is in or who are eligible are selected and moved to the next stage
+              of the application process.
+            </p>
+            <h6>TRAINING</h6>
+            <p className="paragraphs">
+              The eligible applicants are invited for an intensive 3 days
+              training program. They get to learn all they need to know as an
+              academician of TOFA ACADEMY. They have an interview and one-on-one
+              discussion with our professionals giving in depth explanation of
+              what they do or hope to do. Another screening is done amongst the
+              trainees and selected applicants are sent the TOFA TRIBE documents
+              to fill in their details for verification.
+            </p>
+            <h6>FUNDING</h6>
+            <p className="paragraphs">
+              After the verification, if the applicant and the guarantor are
+              cleared; they meet up with our verification criteria, which means
+              they qualify to be funded. We proceed to fund the Cohort which
+              automatically makes him a member of TOFA TRIBE.
+            </p>
+          </div>
+          <div className="col-7 orange orangee">
+            <img
+              src={pinklady}
+              alt="woman in orange dress smiling"
+              className="orangee"
+            />
+          </div>
         </div>
-        <div className="col-7 orange orangee">
-          <img
-            src={pinklady}
-            alt="woman in orange dress smiling"
-            className="orangee"
-          />
+        <div className="applytofa position-relative">
+          <img src={tofaacademy} alt="tofaacademy" className="imgstyle" />
+          <div className="apply">
+            <h2 className="$font-family-mulish">Apply For TOFA Academy</h2>
+            <p className="$font-family-mulish subtext">
+              Get the best from this opportunity, Apply now to jion the next
+              training
+            </p>
+            <button className="btn btn-light itemcolor">Apply Now</button>
+          </div>
         </div>
       </div>
-      <div className="applytofa position-relative">
-        <img src={tofaacademy} alt="tofaacademy" className="imgstyle" />
-        <div className="apply">
-          <h2 className="$font-family-mulish">Apply For TOFA Academy</h2>
-          <p className="$font-family-mulish subtext">
-            Get the best from this opportunity, Apply now to jion the next
-            training
-          </p>
-          <button className="btn btn-light itemcolor">Apply Now</button>
-        </div>
-      </div>
-      </div>
-
       <div className="headacademy mx-auto image-container">
         <img src={academy1} alt="" className="mx-4" />
         <img src={academy2} alt="" className="mx-4" />
@@ -164,14 +160,16 @@ const TofaAcademy = () => {
         <img src={academy10} alt="" />
         {/* <div className="dotted-img"> */}
         {/* <img src={dotted} alt="" className="dott" /> */}
-          {/* <div className="academyy"> */}
+        {/* <div className="academyy"> */}
         <img src={academy8} alt="" />
         {/* </div> */}
         {/* </div> */}
       </div>
       <div>
         <h6 className="text-center partnerheading">Our partners</h6>
-        <p className="partnersub">People and Organoizations we have been working with for years</p>
+        <p className="partnersub">
+          People and Organoizations we have been working with for years
+        </p>
         <div className="row mx-auto mb-5 tofapartner">
           <div className="col-2">
             <img src={air} alt="airbnb logo" />
@@ -192,7 +190,8 @@ const TofaAcademy = () => {
             <img src={fed} alt="fedex logo" />
           </div>
         </div>
-        </div>`
+      </div>
+      `
     </div>
   );
 };
