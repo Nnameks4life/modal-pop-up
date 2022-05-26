@@ -1,0 +1,10 @@
+#nav-options{
+    margin-left: 6rem;
+}
+.market-button{
+    background: #DD4F05;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    width: 10em;
+}

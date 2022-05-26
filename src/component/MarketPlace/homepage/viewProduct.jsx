@@ -13,21 +13,21 @@ export default function ViewProduct() {
   return (
     <section>
       <MarketNav/>
-      <main className="flex justify-between p-16 h-[35rem]">
-        <div className="flex bg-dull-white ">
+      <main className="d-flex justify-between p-16 h-[35rem]">
+        <div className="d-flex bg-dull-white ">
           <img className="pt-3 mr-28 ml-10 h-auto" src={Test} alt="text" />
           <div>
-            <h2 className="font-Mulish font-xbold pt-6 text-4tl">
+            <h2 className="pt-6 text-4tl">
               Bag of Dried Yellow Maize
             </h2>
-            <p className="font-Mulish text-2tl font-light pt-5">
+            <p className="">
               Crafted from ultra soft and shiny lamb shearling, this
               eye-catching piece showcases the season’s rope motif. Here, they
               attach the removable front pocket and hood on a loose-fitting
               shape ins
             </p>
-            <p className="pt-3">
-              <span className="font-xbold">$350</span>/tonne
+            <p className="">
+              <span className="">$350</span>/tonne
             </p>
             <div className='flex flex-col pt-3 '>
               <label

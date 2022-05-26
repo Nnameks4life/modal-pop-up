@@ -1,0 +1,31 @@
+.rfq-page{
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 8rem;
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #ffff;
+    border: 1px solid #F5F5F5;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08)!important;
+}
+.rfq-column{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:13px;
+}
+#text-area{
+    height: 25vh;
+}
+.rfq-button{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .rfq-page{
+        padding: 7px;
+        margin: 5px;
+    }
+    
+}
