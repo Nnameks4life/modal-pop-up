@@ -34,10 +34,9 @@ export default function Seller() {
     setstep(step - 1);
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(registerDetail)
+    console.log(registerDetail);
     // setError(validate(registerDetail));
     // setSubmit(true);
     // if (Object.keys(error).length === 0 && isSubmit) {
@@ -50,25 +49,22 @@ export default function Seller() {
     case 1:
       return (
         <>
-         
-              <FirstRegisterPage
-                handleChange={handleChange}
-                registerDetail={registerDetail}
-                nextStep={nextStep}
-              />
-            
-            
+          <FirstRegisterPage
+            handleChange={handleChange}
+            registerDetail={registerDetail}
+            nextStep={nextStep}
+          />
         </>
       );
     case 2:
       return (
         <>
-         <SecondResgisterPage
-         prevStep={prevStep}
-                handleChange={handleChange}
-                registerDetail={registerDetail}
-                handleSubmit={handleSubmit}
-              />
+          <SecondResgisterPage
+            prevStep={prevStep}
+            handleChange={handleChange}
+            registerDetail={registerDetail}
+            handleSubmit={handleSubmit}
+          />
         </>
       );
   }
