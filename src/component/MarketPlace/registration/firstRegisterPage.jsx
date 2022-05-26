@@ -88,7 +88,7 @@ export default function FirstRegisterPage({
                 </label>
                 <input
                   className="form-control input"
-                  type="text"
+                  type="tel"
                   name="phoneNumber"
                   value={registerDetail.phoneNumber}
                   onChange={handleChange}
