@@ -11,7 +11,6 @@ import HomePage from './component/MarketPlace/homepage/homePage'
 import Landing from "./pages/landing/Landing";
 import Login from './component/MarketPlace/login/login'
 import Nav from "./component/nav/Nav";
-import OrderStatus from './component/MarketPlace/order/orderStatus'
 import ProdSourcing from "./pages/prodsourcing/ProdSourcing";
 import Register from './component/MarketPlace/registration/register'
 import Rfq from './component/MarketPlace/order/rfq'
@@ -31,7 +30,6 @@ function App() {
         <Route exact path="/market" element={<HomePage/>} />
         <Route exact path="/rfq" element={<Rfq/>} />
         <Route exact path="/products" element={<ViewProduct/>} />
-        <Route exact path="/order" element={<OrderStatus/>} />
         <Route exact path='/' element={<Landing/>} />
         <Route exact path='/contactus' element={<ContactUs/>} />
         <Route exact path='/faq' element={<Faq/>} />
