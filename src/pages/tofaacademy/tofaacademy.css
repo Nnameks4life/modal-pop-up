@@ -2,7 +2,9 @@
 
 .headacademy{
   margin-top: 10rem;
+  align-items: center;
 }
+
 
 .academy {
   width: 482px;
@@ -15,14 +17,14 @@
   letter-spacing: 0.3px;
 }
 
-.circle {
+/* .circle {
   width: 486px;
   height: 486px;
   right: 183px;
   top: calc(50% - 486px / 2 - 2063.5px);
   border: 3px solid rgba(0, 131, 211, 0.5);
   box-sizing: border-box;
-}
+} */
 
 .dot {
   position: absolute;
@@ -135,13 +137,13 @@
 }
 
 .goals{
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .box-header{
   width: 1440px;
-height: 200px;
-margin-bottom: 25rem;
+
+margin-bottom: 15rem;
 left: 0px;
 top: 0px;
 }
@@ -154,22 +156,13 @@ top: 0px;
   }
 }
 
-@media screen and (min-width:488px) {
+@media screen  and (max-width:688px) {
   .box-header{
-    margin-bottom: 45rem;
+    margin-bottom: 35rem;
   }
-
-  .part{
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  
 }
 
-.part{
-  display: flex;
-  justify-content: space-evenly;
-}
+
 .goalstext{
 height: 1161px;
 left: 0px;
@@ -197,15 +190,10 @@ line-height: 28px;
     
 }
 
-.orange{
-    position: absolute;
-    float: right;
-    right: 350px;
-    top: 66rem;
-    
-}
+
+
 .applytofa{
-  margin-top: 20rem;
+  margin-top: 5rem;
   display: grid;
 
 }
@@ -243,7 +231,7 @@ top: 2597px;
 .tofapartner {
   
     background: linear-gradient(90deg, rgba(239, 240, 241, 0.1) 0%, rgba(240, 241, 242, 0.6), rgba(192, 204, 218, 0.1) );
-  width: 1110px;
+  max-width: 1110px;
 left: -28.5px;
 top: 0px;
 flex: none;
@@ -251,6 +239,15 @@ order: 0;
 flex-grow: 0;
 margin: 24px 0px;
 padding: 20px 100px;
+}
+
+@media screen and (max-width:688px) {
+  .tofapartner{
+    max-width: 688px;
+    padding: 0;
+    align-items: center ;
+  }
+  
 }
 
 

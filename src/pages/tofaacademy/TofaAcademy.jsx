@@ -43,7 +43,7 @@ const TofaAcademy = () => {
           </p>
           <a href="">Learn more</a>
         </div>
-        <div className="col-12 col-lg-6 col-md-12">
+        <div className="col-12 col-lg-6 col-md-12 ">
           <span className="dot"></span>
           {/* <span className="dot2"></span> */}
           <span className="dot3"></span>
@@ -59,7 +59,7 @@ const TofaAcademy = () => {
         </div>
       </div>
       <div className="row goals">
-        <div className="col-12 col-lg-6 col-md-12 my-5">
+        <div className="col-12 col-lg-6 col-md-12">
           <video width="100%" height="240" controls>
             <source src={testv} type="video/mp4" className="video" />
             Your browser does not support the video tag.
@@ -97,14 +97,14 @@ const TofaAcademy = () => {
         </div>
       </div>
       <div className="goalstext">
-      <div className="row my-5">
+      <div className="row my-5 px-3">
         <div className="col-7 textstart">
           <h5>How To Get Started</h5>
           <p className="paragraphs">
             Simple and easy way to start your application with TOFA academy, you
             get to understand our unique processes
           </p>
-          <h6>APPLICATION</h6>
+          <h6 className="fw-bold">APPLICATION</h6>
           <p className="paragraphs">
             Application link- out on all TOFA social media platforms, which
             closes after two weeks of its opening. Graphics and ads are made to
@@ -113,7 +113,7 @@ const TofaAcademy = () => {
             or who are eligible are selected and moved to the next stage of the
             application process.
           </p>
-          <h6>TRAINING</h6>
+          <h6 className="fw-bold">TRAINING</h6>
           <p className="paragraphs">
             The eligible applicants are invited for an intensive 3 days training
             program. They get to learn all they need to know as an academician
@@ -123,7 +123,7 @@ const TofaAcademy = () => {
             selected applicants are sent the TOFA TRIBE documents to fill in
             their details for verification.
           </p>
-          <h6>FUNDING</h6>
+          <h6 className="fw-bold">FUNDING</h6>
           <p className="paragraphs">
             After the verification, if the applicant and the guarantor are
             cleared; they meet up with our verification criteria, which means
@@ -131,11 +131,12 @@ const TofaAcademy = () => {
             automatically makes him a member of TOFA TRIBE.
           </p>
         </div>
-        <div className="col-12 col-md-5 col-lg-5 orange orangee">
+        <div className="col-5 orange ">
           <img
             src={pinklady}
             alt="woman in orange dress smiling"
-            className="orangee"
+            className=""
+            style={{width:'100%'}}
           />
         </div>
       </div>
@@ -178,7 +179,7 @@ const TofaAcademy = () => {
       <div>
         <h6 className="text-center partnerheading">Our partners</h6>
         <p className="partnersub">People and Organoizations we have been working with for years</p>
-        <div className="d-flex mx-auto mb-5 tofapartner part">
+        <div className="d-flex mx-auto mb-5 tofapartner image-container">
           <div className="">
             <img src={air} alt="airbnb logo" />
           </div>
