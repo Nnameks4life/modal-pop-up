@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import TofaImg from "../../../photos/tofaLogo.png";
-import './nav.css'
+import TofaImg from "../../photos/tofaLogo.png";
+import './marketNav.css'
 
-function Nav() {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [search, setSearch] = useState('');
-
-  // const handleChange = (e) =>{
-  // setSearch(e.target.value)
-  // }
+function MarketNav() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -49,7 +43,7 @@ function Nav() {
 
 }
 
-export default Nav;
+export default MarketNav;
 
 
 

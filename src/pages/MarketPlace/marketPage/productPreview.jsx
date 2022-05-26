@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import MarketNav from "./marketNav";
+
 import { useEffect, useState } from "react";
 import Test from "../../../photos/test.png";
 
-export default function ViewProduct() {
+export default function ProductPreview() {
   const [tonne, setTonne] = useState("");
 
   const handleChange = (e) => {
@@ -12,8 +12,8 @@ export default function ViewProduct() {
   };
   return (
     <section>
-      <MarketNav/>
-      <main className="d-flex justify-between p-16 h-[35rem]">
+      
+      <main className="d-flex justify-between">
         <div className="d-flex bg-dull-white ">
           <img className="pt-3 mr-28 ml-10 h-auto" src={Test} alt="text" />
           <div>

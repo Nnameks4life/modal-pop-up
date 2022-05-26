@@ -1,6 +1,6 @@
 import React from "react";
 
-import MarketNav from "./marketNav";
+
 import { useState } from "react";
 import Test from "../../../photos/test.png";
 import vector from "../../../photos/vector.png";
@@ -9,7 +9,7 @@ import productSourcing from "../../../photos/productSourcing.jpg";
 import tradeBanner from "../../../photos/tradeBanner.jpg";
 import "./marketPlace.css";
 
-export default function HomePage() {
+export default function MarketPlace() {
   const [image, setImage] = useState(null);
   const [isOpened, setIsOpened] = useState(true);
   const [lists, setList] = React.useState(false);

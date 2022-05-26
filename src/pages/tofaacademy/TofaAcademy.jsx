@@ -57,12 +57,12 @@ const TofaAcademy = () => {
         </div>
       </div>
       <div className="row goals">
-        {/* <div className="col-6">
+         {/* <div className="col-6">
           <video width="100%" height="240" controls>
-            {/* <source src={testv} type="video/mp4" className="video" /> */}
+             <source src={testv} type="video/mp4" className="video" />
             Your browser does not support the video tag.
           </video>
-        </div> */}
+        </div>  */}
         <div className="col-6">
           <h4 className="itemcolor">Our Goals and Mission</h4>
           <p className="paragraphs">

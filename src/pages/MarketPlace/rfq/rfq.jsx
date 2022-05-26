@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './rfq.css'
-import MarketNav from '../homepage/marketNav'
+import MarketNav from "../../../component/marketNav/marketNav";
 
 
 export default function Rfq() {
