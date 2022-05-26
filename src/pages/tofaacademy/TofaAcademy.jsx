@@ -131,7 +131,7 @@ const TofaAcademy = () => {
             automatically makes him a member of TOFA TRIBE.
           </p>
         </div>
-        <div className="col-12 col-md-7 col-lg-7 orange orangee">
+        <div className="col-12 col-md-5 col-lg-5 orange orangee">
           <img
             src={pinklady}
             alt="woman in orange dress smiling"
@@ -143,8 +143,8 @@ const TofaAcademy = () => {
         <div className="col-12 col-lg-12 col-md-12">
         <img src={tofaacademy} alt="tofaacademy" className="imgstyle" />
         <div className="apply">
-          <h2 className="$font-family-mulish">Apply For TOFA Academy</h2>
-          <p className="$font-family-mulish subtext">
+          <h2 className="$font-family-mulish text-light fw-bold">Apply For TOFA Academy</h2>
+          <p className="$font-family-mulish subtext text-light fw-bold">
             Get the best from this opportunity, Apply now to jion the next
             training
           </p>
@@ -154,44 +154,47 @@ const TofaAcademy = () => {
       </div>
       </div>     
       
-      <div className="headacademy mx-auto image-container">
+      <section className="headacademy mx-auto image-container" >
+        <div>
         <img src={academy1} alt="" className="mx-4" />
-        <img src={academy2} alt="" className="mx-4" />
+        </div>
+        <div>
+        <img src={academy2} alt="" className="mx-4"  />
+        </div>
+        <div>
         <img src={academy4} alt="" className="mx-4" />
+        </div>
+        <div>
         <img src={academy3} alt="" className="mx-4" />
         </div>
+        </section>
       
       <div className="my-5 mx-auto image-container">
-        <img src={academy6} alt="" />
+        <img src={academy6} alt=""/>
         <img src={academy7} alt="" />
         <img src={academy10} alt="" />
-        {/* <div className="dotted-img"> */}
-        {/* <img src={dotted} alt="" className="dott" /> */}
-          {/* <div className="academyy"> */}
         <img src={academy8} alt="" />
-        {/* </div> */}
-        {/* </div> */}
       </div>
       <div>
         <h6 className="text-center partnerheading">Our partners</h6>
         <p className="partnersub">People and Organoizations we have been working with for years</p>
-        <div className="row mx-auto mb-5 tofapartner">
-          <div className="col-2">
+        <div className="d-flex mx-auto mb-5 tofapartner part">
+          <div className="">
             <img src={air} alt="airbnb logo" />
           </div>
-          <div className="col-2">
+          <div className="">
             <img src={hub} alt="hubspot logo" />
           </div>
-          <div className="col-2">
+          <div className="">
             <img src={goog} alt="google logo" />
           </div>
-          <div className="col-2">
+          <div className="">
             <img src={micro} alt="microsoft logo" />
           </div>
-          <div className="col-2">
+          <div className="">
             <img src={wal} alt="walmartlogo" />
           </div>
-          <div className="col-2">
+          <div className="">
             <img src={fed} alt="fedex logo" />
           </div>
         </div>

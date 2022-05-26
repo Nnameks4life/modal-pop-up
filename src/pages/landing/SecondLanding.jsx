@@ -222,22 +222,22 @@ const SecondLanding = () => {
         <div className="space">
           <h5 className="text-center">Our Partners</h5>
           <div className="row mx-auto mb-5 partner">
-            <div className="col-2 col-md-2 col-sm-2 col-lg-2">
+            <div className=" col-sm-2 ">
               <img src={air} alt="airbnb logo" />
             </div>
-            <div className="col-2 col-md-2 col-sm-2 col-lg-2">
+            <div className=" col-sm-2">
               <img src={hub} alt="hubspot logo" />
             </div>
-            <div className="col-2 col-md-2 col-sm-2 col-lg-2">
+            <div className=" col-sm-2">
               <img src={goog} alt="google logo" />
             </div>
-            <div className="col-2 col-md-2 col-sm-2 col-lg-2">
+            <div className=" col-sm-2">
               <img src={micro} alt="microsoft logo" />
             </div>
-            <div className="col-2 col-md-2 col-sm-2 col-lg-2">
+            <div className=" col-sm-2">
               <img src={wal} alt="walmartlogo" />
             </div>
-            <div className="col-2 col-md-2 col-sm-2 col-lg-2">
+            <div className=" col-sm-2">
               <img src={fed} alt="fedex logo" />
             </div>
           </div>

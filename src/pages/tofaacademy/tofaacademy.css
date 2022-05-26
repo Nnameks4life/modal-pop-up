@@ -1,3 +1,5 @@
+
+
 .headacademy{
   margin-top: 10rem;
 }
@@ -139,16 +141,34 @@
 .box-header{
   width: 1440px;
 height: 200px;
-margin-bottom: 38rem;
+margin-bottom: 25rem;
 left: 0px;
 top: 0px;
 }
 
-@media screen and (max-width:400px) {
-  .goals{
-    margin-top: 25rem;
+@media screen and (max-width:688px) {
+  .image-container{
+    display: flex;
+  flex-direction: column;
+  margin-top: 42rem;
+  }
+}
+
+@media screen and (min-width:488px) {
+  .box-header{
+    margin-bottom: 45rem;
+  }
+
+  .part{
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
   
+}
+
+.part{
+  display: flex;
+  justify-content: space-evenly;
 }
 .goalstext{
 height: 1161px;
@@ -180,8 +200,8 @@ line-height: 28px;
 .orange{
     position: absolute;
     float: right;
-    right: 90px;
-    top: 63rem;
+    right: 350px;
+    top: 66rem;
     
 }
 .applytofa{
@@ -232,6 +252,8 @@ flex-grow: 0;
 margin: 24px 0px;
 padding: 20px 100px;
 }
+
+
 .partnerheading{
   font-family: 'Mulish';
 font-style: normal;
