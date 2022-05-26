@@ -9,7 +9,7 @@ import point6 from "../../photos/point6.png";
 import point7 from "../../photos/point7.png";
 import point8 from "../../photos/point8.png";
 import point9 from "../../photos/point9.png";
-import testv from "../../photos/testv.mp4";
+// import testv from "../../photos/testv.mp4";
 import pinklady from "../../photos/pinklady.png";
 import tofaacademy from "../../photos/tofaacademy.png";
 import academy1 from "../../photos/academy1.png";
@@ -59,12 +59,12 @@ const TofaAcademy = () => {
         </div>
       </div>
       <div className="row goals">
-        <div className="col-6">
+        {/* <div className="col-6">
           <video width="100%" height="240" controls>
             <source src={testv} type="video/mp4" className="video" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
         <div className="col-6">
           <h4 className="itemcolor">Our Goals and Mission</h4>
           <p className="paragraphs">
