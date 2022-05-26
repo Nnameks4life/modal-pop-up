@@ -2,6 +2,7 @@ import React from "react";
 import buyerIcon from "../../../photos/buyerIcon.png";
 import sellerIcon from "../../../photos/sellerIcon.png";
 import backIcon from "../../../photos/back-icon.svg";
+import actionIcon from "../../../photos/icons/arrow-right.svg";
 import LogoWhite from "../../../photos/logo-white.png";
 import "./register.css";
 
@@ -39,16 +40,15 @@ export default function Register() {
             <section className="register-options">
               <div className="register-content">
                 <a href="/buyer" className="d-flex">
-                  {/* <img className="" src={buyerIcon} alt="buyer icon" /> */}
-                  <span className="icon-user-icon"></span>
-                  <svg width="50px" height="48px" viewBox="0 0 50 48" version="1.1">
-                      <g id="" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="" transform="translate(-281.000000, -161.000000)">
-                              <rect id="Rectangle-Copy-2" fill="" x="276" y="155" width="60" height="60"></rect>
-                              <g id="user-icon" transform="translate(282.000000, 162.000000)" fill="#DD4F05">
-                                  <path d="M48.7274703,16.9655332 L24,-0.999997305 L-0.727470295,16.9655332 L8.71755699,46.0344 L39.282443,46.0344 L48.7274703,16.9655332 Z M24,1.472 L46.376,17.729 L37.829,44.034 L10.17,44.034 L1.623,17.729 L24,1.472 Z" id="Path" fill-rule="nonzero"></path>
-                                  <path d="M17.7204,27.8869 C18.5018,27.1055 19.5616,26.6665 20.6667,26.6665 L27.3333,26.6665 C28.4384,26.6665 29.4982,27.1055 30.2796,27.8869 C31.061,28.6683 31.5,29.7281 31.5,30.8332 L31.5,32.4998 C31.5,32.9601 31.1269,33.3332 30.6667,33.3332 C30.2064,33.3332 29.8333,32.9601 29.8333,32.4998 L29.8333,30.8332 C29.8333,30.1701 29.5699,29.5342 29.1011,29.0654 C28.6323,28.5966 27.9964,28.3332 27.3333,28.3332 L20.6667,28.3332 C20.0036,28.3332 19.3677,28.5966 18.8989,29.0654 C18.4301,29.5342 18.1667,30.1701 18.1667,30.8332 L18.1667,32.4998 C18.1667,32.9601 17.7936,33.3332 17.3333,33.3332 C16.8731,33.3332 16.5,32.9601 16.5,32.4998 L16.5,30.8332 C16.5,29.7281 16.939,28.6683 17.7204,27.8869 Z" id="Path"></path>
-                                  <path d="M24,18.3332 C22.6193,18.3332 21.5,19.4525 21.5,20.8332 C21.5,22.2139 22.6193,23.3332 24,23.3332 C25.3807,23.3332 26.5,22.2139 26.5,20.8332 C26.5,19.4525 25.3807,18.3332 24,18.3332 Z M19.8333,20.8332 C19.8333,18.532 21.6988,16.6665 24,16.6665 C26.3012,16.6665 28.1666,18.532 28.1666,20.8332 C28.1666,23.1344 26.3012,24.9998 24,24.9998 C21.6988,24.9998 19.8333,23.1344 19.8333,20.8332 Z" id="Shape"></path>
+                  <svg viewBox="0 0 50 48" version="1.1">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="shape" transform="translate(-687.000000, -235.000000)" stroke="#DD4F05" stroke-width="2">
+                              <g id="Group" transform="translate(625.000000, 178.000000)">
+                                  <g id="user-icon" transform="translate(63.000000, 58.000000)">
+                                      <polygon id="Path" fill="#FFFFFF" points="0.4481 17.3475 24 0.23607 47.5519 17.3475 38.5559 45.0344 9.4441 45.0344"></polygon>
+                                      <path d="M18,33 C18,30.7909 20.6863,29 24,29 C27.3137,29 30,30.7909 30,33" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M24,26 C26.2091,26 28,24.2091 28,22 C28,19.7909 26.2091,18 24,18 C21.7909,18 20,19.7909 20,22 C20,24.2091 21.7909,26 24,26 Z" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </g>
                               </g>
                           </g>
                       </g>
@@ -58,17 +58,30 @@ export default function Register() {
                     <h4>Register as Buyer</h4>
                     <p>Access over 16,000 suppliers across Africa</p>
                   </div>
+                  <img className="action-icon align-center" src={actionIcon} />
                 </a>
               </div>
 
               <div className="register-content">
                 <a href="/seller" className="d-flex">
-                  {/* <img src={sellerIcon} alt="seller icon" className="h-3" /> */}
-                  <span className="icon-biz-icon"></span>
+                <svg viewBox="0 0 50 48" version="1.1">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="" transform="translate(-624.000000, -177.000000)">
+                            <g id="Group" transform="translate(625.000000, 178.000000)">
+                                <g id="biz-icon">
+                                    <polygon id="Path" stroke="#DD4F05" stroke-width="2" fill="#FFFFFF" points="0.4481 17.3475 24 0.23607 47.5519 17.3475 38.5559 45.0344 9.4441 45.0344"></polygon>
+                                    <path class="shape" d="M17.3333,21.6665 C16.8731,21.6665 16.5,22.0396 16.5,22.4998 L16.5,30.8332 C16.5,31.2934 16.8731,31.6665 17.3333,31.6665 L30.6666,31.6665 C31.1269,31.6665 31.5,31.2934 31.5,30.8332 L31.5,22.4998 C31.5,22.0396 31.1269,21.6665 30.6666,21.6665 L17.3333,21.6665 Z M14.8333,22.4998 C14.8333,21.1191 15.9526,19.9998 17.3333,19.9998 L30.6666,19.9998 C32.0474,19.9998 33.1666,21.1191 33.1666,22.4998 L33.1666,30.8332 C33.1666,32.2139 32.0474,33.3332 30.6666,33.3332 L17.3333,33.3332 C15.9526,33.3332 14.8333,32.2139 14.8333,30.8332 L14.8333,22.4998 Z" id="Shape" fill="#DD4F05"></path>
+                                    <path class="shape" d="M20.5655,17.3987 C21.0344,16.9299 21.6703,16.6665 22.3333,16.6665 L25.6666,16.6665 C26.3297,16.6665 26.9656,16.9299 27.4344,17.3987 C27.9033,17.8676 28.1666,18.5035 28.1666,19.1665 L28.1666,32.4998 C28.1666,32.9601 27.7935,33.3332 27.3333,33.3332 C26.8731,33.3332 26.5,32.9601 26.5,32.4998 L26.5,19.1665 C26.5,18.9455 26.4122,18.7335 26.2559,18.5772 C26.0996,18.421 25.8877,18.3332 25.6666,18.3332 L22.3333,18.3332 C22.1123,18.3332 21.9003,18.421 21.7441,18.5772 C21.5878,18.7335 21.5,18.9455 21.5,19.1665 L21.5,32.4998 C21.5,32.9601 21.1269,33.3332 20.6666,33.3332 C20.2064,33.3332 19.8333,32.9601 19.8333,32.4998 L19.8333,19.1665 C19.8333,18.5035 20.0967,17.8676 20.5655,17.3987 Z" id="Path" fill="#DD4F05"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
                   <div className="ml-2">
                     <h4>Register as Seller</h4>
                     <p>Get access to local and international buyers</p>
                   </div>
+                  <img className="action-icon align-center" src={actionIcon} />
                 </a>
               </div>
             </section>
