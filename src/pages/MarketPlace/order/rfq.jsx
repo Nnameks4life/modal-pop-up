@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-import Nav from "../../LandingPage/nav";
 
 export default function Rfq() {
   const [rfqDetail, setRfqDetail] = useState({
@@ -23,7 +22,7 @@ export default function Rfq() {
   };
   return (
     <>
-    <Nav/>
+  
     <section className='bg-secondary-white md:p-32'>
       <div className='bg-primary-white p-12'>
       <h2 className='text-4tl font-Mulish font-bold text-primary-black'>Enter Product Specifications</h2>

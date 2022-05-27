@@ -1,6 +1,4 @@
 import React from "react";
-
-import MarketNav from "./marketNav";
 import { useState } from "react";
 import Test from "../../../photos/test.png";
 import vector from "../../../photos/vector.png";
