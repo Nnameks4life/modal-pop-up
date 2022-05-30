@@ -44,7 +44,7 @@ const ContactUs = () => {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row justify-content-center">
         <div className="col-12 col-md-12 col-lg-6 contactus py-5">
           <h3 className="mx-5">Contact Us</h3>
           <div className="text-center">
@@ -56,7 +56,7 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-md-12 col-lg-6 contactus py-5 forms">
+        <div className="col-12 col-md-12 col-lg-6 contactus py-5 forms ">
           <form className="form py-4" onSubmit={handleSubmit}>
             <select
               className="form-control inputpartner"

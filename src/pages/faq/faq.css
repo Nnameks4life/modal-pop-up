@@ -5,6 +5,14 @@
     left: 0%;
     right: 0%;
     }
+
+    .faqtop{
+      margin-top: 20rem;
+    }
+
+    .accordion-w{
+      padding: 0 5rem;
+    }
   
   .faqss{
     width: 1110px;

@@ -58,7 +58,7 @@ const TofaAcademy = () => {
           <img src={point9} alt="" className="point9" />
         </div>
       </div>
-      <div className="row goals">
+      <div className="row align-items-center goals">
         <div className="col-12 col-lg-6 col-md-12">
           <video width="100%" height="240" controls>
             <source src={testv} type="video/mp4" className="video" />
@@ -131,7 +131,7 @@ const TofaAcademy = () => {
             automatically makes him a member of TOFA TRIBE.
           </p>
         </div>
-        <div className="col-5 orange ">
+        <div className="col-5 orange d-none d-md-block">
           <img
             src={pinklady}
             alt="woman in orange dress smiling"
@@ -179,23 +179,23 @@ const TofaAcademy = () => {
       <div>
         <h6 className="text-center partnerheading">Our partners</h6>
         <p className="partnersub">People and Organoizations we have been working with for years</p>
-        <div className="d-flex mx-auto mb-5 tofapartner image-container">
+        <div className="d-flex mx-auto mb-5 tofapartner image-container justify-content-evenly">
           <div className="">
             <img src={air} alt="airbnb logo" />
           </div>
-          <div className="">
+          <div className="mx-2">
             <img src={hub} alt="hubspot logo" />
           </div>
-          <div className="">
+          <div className="mx-2">
             <img src={goog} alt="google logo" />
           </div>
-          <div className="">
+          <div className="mx-2">
             <img src={micro} alt="microsoft logo" />
           </div>
-          <div className="">
+          <div className="mx-2">
             <img src={wal} alt="walmartlogo" />
           </div>
-          <div className="">
+          <div className="mx-2">
             <img src={fed} alt="fedex logo" />
           </div>
         </div>

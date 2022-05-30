@@ -122,6 +122,10 @@ top: 16.47%;
 bottom: 14.15%;
 }
 
+.icon-hover :hover::after{
+    background-color:#dd4f05;
+}
+
 .imgholder{
     width: 623px;
 height: 431px;

@@ -94,17 +94,17 @@ const ProdSourcing = () => {
           <div className="col-md-12 col-lg-6 col-12">
             <h3>Our Services</h3>
             <p onClick={() => setText(note1)} style={{ cursor: "pointer" }}>
-              <img src={cart} alt=''/>Product
+              <img src={cart} alt='' className="icon-hover" />Product
               Sourcing
             </p>
             <p onClick={() => setText(note2)} style={{ cursor: "pointer" }}>
-              <img src={savetime} alt=''/>Save Time
+              <img src={savetime} alt='' className="icon-hover"/>Save Time
             </p>
             <p onClick={() => setText(note3)} style={{ cursor: "pointer" }}>
-              <img src={cred} alt=''/>Credibility
+              <img src={cred} alt='' className="icon-hover"/>Credibility
             </p>
             <p onClick={() => setText(note4)} style={{ cursor: "pointer" }}>
-              <img src={easybuy} alt=''/>Easy Buy
+              <img src={easybuy} alt='' className="icon-hover"/>Easy Buy
             </p>
           </div>
           <div className="col-md-12 col-lg-6 col-12 boxx">
