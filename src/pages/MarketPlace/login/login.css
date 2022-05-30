@@ -3,6 +3,9 @@
 #user-auth {
 	height: 100vh !important;
 }
+#buyer-page{
+	height: 100vh;
+}
 
 .map-img {
 	height: 100vh;
