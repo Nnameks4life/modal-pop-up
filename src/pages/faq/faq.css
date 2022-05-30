@@ -1,3 +1,9 @@
+.container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .top{
     width: 100vw;
     height: 509px;
@@ -6,9 +12,9 @@
     right: 0%;
     }
 
-    .faqtop{
+    /* .faqtop{
       margin-top: 20rem;
-    }
+    } */
 
     .accordion-w{
       padding: 0 5rem;
@@ -16,7 +22,7 @@
   
   .faqss{
     width: 1110px;
-  height: 56px;
+  
   left: 165px;
   top: 260px;
   font-family: 'Mulish';
@@ -24,6 +30,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .faqss{
+      width: 400px;    
+      
+    }
   }
   
   .faqsheading {
@@ -77,6 +90,12 @@ font-family: 'Mulish';
 font-style: normal;
 font-weight: 800;
 font-size: 44px;
+  }
+
+  @media screen and (max-width:688px) {
+    .headerr{
+      width: 300px;
+    }
   }
 
   .borderliner{

@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapse } from "antd";
+
 
 // const { Panel } = Collapse;
 
@@ -21,7 +21,7 @@ const Demo = (props) => {
                   class="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target={props.collapseId}
+                  
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >

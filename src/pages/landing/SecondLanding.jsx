@@ -20,7 +20,7 @@ import Constant from "../allblogs/Constant";
 
 const SecondLanding = () => {
   return (
-    <div className="">
+    <div className="containe">
       <Carousel autoplay>
         <div>
           <div className="content">
@@ -34,14 +34,18 @@ const SecondLanding = () => {
               <h1 className="descrip story">
                 Small Business Communities, Big Market Opportunity{" "}
               </h1>
+              <div className="paragraph">
               <p className="text-light story">
                 Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad,
                 am no suscipit quaerendum. At nam minimum
               </p>
-              <button className="btn btncolor text-light mx-2">
+              </div>
+              <div className=" d-flex ">
+              <button className="btn btncolor text-light">
                 Go to Market
               </button>
-              <button className="btn btnlight text-light ">Learn More</button>
+              <button className="btn btnlight text-light ms-2">Learn More</button>
+              </div>
             </div>
           </div>
         </div>
