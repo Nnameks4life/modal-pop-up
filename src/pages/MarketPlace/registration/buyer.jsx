@@ -23,7 +23,7 @@ export default function Buyer() {
   return (
     <section className="w-100" id="buyer-page">
       <div className="row g-0">
-        <div className="col-lg-6 d-none d-lg-block">
+      <div className="col-lg-6 d-none d-lg-block">
           <div className="map-img">
             <img className="auth-logo" src={LogoWhite} />
           </div>

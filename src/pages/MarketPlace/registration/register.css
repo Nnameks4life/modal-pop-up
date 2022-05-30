@@ -2,21 +2,16 @@
 	width: 120px;
 	position: absolute;
 }
-
 #register-page{
 	height: 100vh;
 }
-
-.map-img {
-	height: 100vh;
+.grain-img{
+	height: 100vh !important;
 	background-image: url(../../../photos/grainMap.jpeg);
 	background-repeat: no-repeat;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	padding: 30px;
+	background-size: cover;
 }
+
 .back-txt {
 	font-weight: 700;
 }
@@ -68,6 +63,7 @@
 .register-content:hover svg .shape {
 	fill: #FFFFFF;
 }
+
 /* End SVG */
 
 .register-content a{

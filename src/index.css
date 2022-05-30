@@ -6,6 +6,9 @@
 p,h1,h2,h3,h4,h5 {
 	color: #282828;
 }
+html,body{
+    height: 100vh;
+}
 button{
     background-color:#DD4F05 ;
     box-shadow:none !important;

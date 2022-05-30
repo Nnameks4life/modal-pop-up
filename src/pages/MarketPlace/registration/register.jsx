@@ -8,14 +8,14 @@ import "./register.css";
 
 export default function Register() {
   return (
-    <section className="w-100" id="register-page">
+    <section className="w-100" id='register-page'>
       <div className="row g-0">
-        <div className="col-lg-6 d-none d-lg-block">
-          <div className="map-img">
+      <div className="col-lg-6 d-none d-lg-block">
+          <div className="grain-img">
             <img className="auth-logo" src={LogoWhite} />
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6" id='register-section'>
           <main className="row m-3">
             <div className="col-lg-6 col-3" id="header-text">
               <p className="back-txt d-flex">
