@@ -3,6 +3,14 @@
 #user-auth {
 	height: 100vh !important;
 }
+#buyer-page{
+	height: 100vh;
+}
+.section-body{
+	margin: 0 !important;
+	padding: 0 !important;
+	 
+}
 
 .map-img {
 	height: 100vh;
@@ -18,7 +26,7 @@
 #form-page{
 	height: 100vh;
 	overflow: scroll;
-}
+}z
 
 .user-nav {
 	margin-bottom: 40px;

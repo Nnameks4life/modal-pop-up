@@ -2,21 +2,16 @@
 	width: 120px;
 	position: absolute;
 }
-
 #register-page{
 	height: 100vh;
 }
-
-.map-img {
-	height: 100vh;
+.grain-img{
+	height: 100vh !important;
 	background-image: url(../../../photos/grainMap.jpeg);
 	background-repeat: no-repeat;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	padding: 30px;
+	background-size: cover;
 }
+
 .back-txt {
 	font-weight: 700;
 }
@@ -40,17 +35,37 @@
 #header-text{
     margin-top: 15px;
 }
-.register-content img{
-	height: 65px;
-	padding: 5px ;
-	margin-right:20px;
+.register-content .action-icon{
+	height: 25px;
+	float: right;
+	margin: 20px 0 0 65px;
 	display: none;
 }
-.register-content span{
-	font-size: 50px;
+
+.register-content:hover .action-icon {
+	display: block;
+}
+
+/* SVG */
+.register-content svg{
+	width:65px;
 	padding: 5px ;
 	margin-right:20px;
 }
+.register-content:hover svg polygon {
+	fill: #DD4F05;
+	stroke: #DD4F05;
+	stroke-width: 2px;
+}
+.register-content:hover svg #shape {
+	stroke: #FFFFFF;
+}
+.register-content:hover svg .shape {
+	fill: #FFFFFF;
+}
+
+/* End SVG */
+
 .register-content a{
     text-decoration: none;
 }

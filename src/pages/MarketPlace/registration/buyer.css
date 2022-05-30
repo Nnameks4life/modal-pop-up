@@ -13,16 +13,6 @@
 	height: 100vh;
 	overflow: scroll;
 }
-.buyer-map-img {
-	height: 100vh !important;
-	background-image: url(../../../photos/grainMap.jpeg);
-	background-repeat: no-repeat;
-  	 -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover; 
-  	 background-size: cover; 
-	height: 120vh;
-}
 
 #header-text{
     margin-top: 15px;

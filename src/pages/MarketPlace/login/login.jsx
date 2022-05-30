@@ -21,8 +21,9 @@ export default function Buyer() {
     setLoginDetail({ ...loginDetail, [e.target.name]: [e.target.value] });
   };
   return (
+    <div className='section-body'>
     <section className="w-100" id="buyer-page">
-      <div className="row g-0">
+      <div className="row">
         <div className="col-lg-6 d-none d-lg-block">
           <div className="map-img">
             <img className="auth-logo" src={LogoWhite} />
@@ -118,5 +119,6 @@ export default function Buyer() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

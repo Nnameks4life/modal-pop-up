@@ -9,7 +9,7 @@ import point6 from "../../photos/point6.png";
 import point7 from "../../photos/point7.png";
 import point8 from "../../photos/point8.png";
 import point9 from "../../photos/point9.png";
-import testv from "../../photos/testv.mp4";
+// import testv from "../../photos/testv.mp4";
 import pinklady from "../../photos/pinklady.png";
 import tofaacademy from "../../photos/tofaacademy.png";
 import academy1 from "../../photos/academy1.png";
@@ -27,8 +27,6 @@ import goog from "../../photos/google.png";
 import wal from "../../photos/walmart.png";
 import fed from "../../photos/fedex.png";
 // import dotted from "../../photos/dotted.png";
-
-
 
 const TofaAcademy = () => {
   return (
@@ -61,7 +59,7 @@ const TofaAcademy = () => {
       <div className="row align-items-center goals">
         <div className="col-12 col-lg-6 col-md-12">
           <video width="100%" height="240" controls>
-            <source src={testv} type="video/mp4" className="video" />
+             <source src={testv} type="video/mp4" className="video" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -77,7 +75,6 @@ const TofaAcademy = () => {
           </p>
         </div>
       </div>
-      
       <div className="row goals text-center">
         <div className="col-3 border-start border-danger numbers">
           <h3 className="mt-3">562</h3>
@@ -199,7 +196,8 @@ const TofaAcademy = () => {
             <img src={fed} alt="fedex logo" />
           </div>
         </div>
-        </div>`
+      </div>
+      `
     </div>
   );
 };

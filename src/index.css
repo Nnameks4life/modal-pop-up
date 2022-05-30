@@ -6,6 +6,9 @@
 p,h1,h2,h3,h4,h5 {
 	color: #282828;
 }
+html,body{
+    height: 100vh;
+}
 button{
     background-color:#DD4F05 ;
     box-shadow:none !important;
@@ -27,10 +30,16 @@ button{
 }
 
 input {
-    height: 45px;
+    height: 40px;
     border-radius: 4px;
     box-shadow:none !important;
     outline:0px !important;
+}
+
+.form-control:focus {
+  color: #282828;
+  background-color: #FFFFFF;
+  border-color: #DD4F05;
 }
 
 select{
@@ -46,65 +55,3 @@ label {
 	font-size: .95rem;
 	font-weight: 400;
 }
-
-/* Icons */
-
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?evdg2x');
-    src:  url('fonts/icomoon.eot?evdg2x#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?evdg2x') format('truetype'),
-      url('fonts/icomoon.woff?evdg2x') format('woff'),
-      url('fonts/icomoon.svg?evdg2x#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-biz-icon:before {
-    content: "\e900";
-    color: #dd4f05;
-  }
-  .icon-easy-icon:before {
-    content: "\e901";
-    color: #dd4f05;
-  }
-  .icon-form-icon:before {
-    content: "\e902";
-    color: #dd4f05;
-  }
-  .icon-sourcing-icon:before {
-    content: "\e903";
-    color: #dd4f05;
-  }
-  .icon-time-icon:before {
-    content: "\e904";
-    color: #dd4f05;
-  }
-  .icon-user-icon:before {
-    content: "\e905";
-    color: #dd4f05;
-  }
-  .icon-users-icon:before {
-    content: "\e906";
-    color: #dd4f05;
-  }
-  .icon-verified-icon:before {
-    content: "\e907";
-    color: #dd4f05;
-  }
